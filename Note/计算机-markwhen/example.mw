@@ -1,0 +1,36 @@
+---
+title: Project plan
+
+#Project1: #d336b1
+#Danielle: yellow
+timezone: America/New_York
+---
+
+section All Projects
+  group Project 1 #Project1
+    // Supports ISO8601
+    2025-01/2025-03: Sub task #John
+    2025-03/2025-06: Sub task 2 #Michelle
+      More info about sub task 2
+
+      - [ ] We need to get this done
+      - [x] And this
+      - [ ] This one is extra
+
+    2025-07: Yearly planning
+endGroup
+
+group Project 2 #Project2
+  2025-04/4 months: Larger sub task #Danielle
+    contact: imeal@example.com
+
+  // Supports American date formats
+  03/2025 - 1 year: Longer ongoing task #Michelle
+    assignees: [Michelle, Johnathan]
+    location: "123 Main Street, Kansas City, MO"
+
+    - [x] Sub task 1
+    - [x] Sub task 2
+    - [ ] Sub task 3
+    - [ ] Sub task 4
+    - [ ] so many checkboxes omg

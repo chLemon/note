@@ -15,5 +15,6 @@
 
 # 列表
 
-+ WindowsTerminal.md
++ Windows Terminal.md
 + 双精度浮点数double.md
++ Jupyter Notebook.md

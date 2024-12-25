@@ -4,6 +4,16 @@ Microsoft Store 搜索 WindowsTerminal 即可安装。
 
 如果 Microsoft Store 因为网络问题打不开，关闭代理。因为 windows 为了安全，禁止应用链接到本地端口（UWP应用联网限制）
 
+# Powershell 7
+
+win10默认的 `Windows Powershell`版本是`5.1`。
+
+可以在 Github 上下载 PowerShell 7 的版本。
+
+但是微软在设计上，这两个终端是并行存在的关系，并不是将原本5.1的`Windows PowerShell`升级。
+
+在`Windows Terminal`里，设置 >> 启动 >> 默认配置文件，修改为`PowerShell`
+
 # 自定义设置
 
 ## 配置文件
@@ -116,15 +126,26 @@ oh-my-posh init pwsh --config ~/iterm2.omp.json | Invoke-Expression
 
 `alt + shift + +/-`  横竖分割窗口
 
-# alias设置
+# alias设置 / function
 
 在 powershell 的 `$profile` 里，可以写 function 。
 
 ## 打开 jupyter notebook
 
-```
+```shell
 function note {
     jupyter notebook --notebook-dir=D:\jupyterNote
+}
+```
+
+## 打开某个目录
+
+```shell
+function cdnote {
+    set-location "D:\坚果云\Note"
+}
+function cdjo {
+    set-location "D:\坚果云\Journal"
 }
 ```
 

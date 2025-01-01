@@ -297,11 +297,11 @@ brew install fish
 
 **配置文件路径**
 
-```
+```shell
 open -e ~/.config/fish/config.fish
 ```
 
-```
+```shell
 alias cdho="cd ~/WorkProject/house-on-sale"
 alias cden="cd ~/WorkProject/enroll"
 alias cdhr="cd ~/WorkProject/house-on-sale-read"
@@ -354,8 +354,6 @@ https://github.com/oh-my-fish/oh-my-fish
 https://www.bilibili.com/video/BV16c411M78T/?spm_id_from=333.337.search-card.all.click&vd_source=9f68829e78088d41d3127b97b83ed97f
 
 https://www.bilibili.com/video/BV1zA411v7a2/?spm_id_from=333.337.search-card.all.click&vd_source=9f68829e78088d41d3127b97b83ed97f
-
-https://www.bilibili.com/video/BV1cf4y157sv/?spm_id_from=333.337.search-card.all.click&vd_source=9f68829e78088d41d3127b97b83ed97f
 
 https://segmentfault.com/a/1190000007164195?utm_source=sf-related
 

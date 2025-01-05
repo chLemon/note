@@ -356,7 +356,7 @@ https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
 
 **配置文件路径**
 
-```
+```shell
 open -e ~/.config/fish/config.fish
 ```
 
@@ -396,3 +396,29 @@ alias cdnote="cd /Users/chen/Documents/jupyter_notes"
 ## 13.4. 修改默认shell
 
 先打开终端，左上角，终端，偏好设置，通用，Shell的打开方式，命令`/usr/local/bin/fish`
+
+## 11 安装的其他软件
+
+**cheatsheet**
+
+**Go2Shell**
+
+# iterm2 &fish
+
+
+
+https://iterm2.com/index.html
+
+https://lobster1234.github.io/2017/04/08/setting-up-fish-and-iterm2/
+
+https://github.com/oh-my-fish/oh-my-fish
+
+https://www.bilibili.com/video/BV16c411M78T/?spm_id_from=333.337.search-card.all.click&vd_source=9f68829e78088d41d3127b97b83ed97f
+
+https://www.bilibili.com/video/BV1zA411v7a2/?spm_id_from=333.337.search-card.all.click&vd_source=9f68829e78088d41d3127b97b83ed97f
+
+https://segmentfault.com/a/1190000007164195?utm_source=sf-related
+
+https://cloud.tencent.com/developer/article/2008550
+
+https://www.jianshu.com/p/fa9c09302ffc

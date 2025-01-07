@@ -1,3 +1,7 @@
+# 中文乱码
+
+https://zhuanlan.zhihu.com/p/133706032
+
 # 0 我的配置
 
 ```shell

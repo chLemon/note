@@ -1,17 +1,33 @@
-from pathlib import Path
+import os
 
+# 定义
 readme_path = './README.md'
-# 读取文件内容
+readme_retain_anchor = '# 列表'
+note_path = './Note/'
+doing_name = '&Doing'
+doing_path = note_path + doing_name
+
+
+
+# 读取 README 文件内容
 with open(readme_path, 'r', encoding='utf-8') as file:
     content = file.read()
 
-# 保留 列表 前面的部分
-anchor = '# 列表'
-keep = content[:content.find(anchor) + len(anchor)] + '\n\n'
+def optimize_file_name(file_name:str):
+    return file_name if not file_name.endswith('.md') else file_name[:-3]
+def filter_file_name(file_name:str):
+    return file_name == doing_name or file_name.startswith('.')
+def concat_dir_files(dir_path):
+    return '\n'.join('+ ' + optimize_file_name(file_name) for file_name in os.listdir(dir_path) if not filter_file_name(file_name)) + '\n\n'
 
-# 获取Note下所有的.md文件名，拼接在 keep 后面
-md_files = list(Path('./Note').rglob("*.md"))
-keep += '\n'.join('+ '+ file.name for file in md_files)
+# 保留 列表 前面的部分
+keep = content[:content.find(readme_retain_anchor) + len(readme_retain_anchor)] + '\n\n'
+# 获取Note下所有的一级目录名，拼接在 keep 后面
+keep += concat_dir_files(note_path)
+
+# 获取 Doing 下所有的一级目录名，拼接
+keep += '# Doing\n\n'
+keep += concat_dir_files(doing_path)
 
 # 写回文件
 with open(readme_path, 'w', encoding='utf-8') as file:

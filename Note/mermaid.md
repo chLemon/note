@@ -537,7 +537,7 @@ sequenceDiagram
 
 ### Sample stylesheet
 
-```mermaid
+```css
 body {
   background: white;
 }

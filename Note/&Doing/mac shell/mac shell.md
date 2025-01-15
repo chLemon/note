@@ -212,6 +212,13 @@ rm -rf fonts
 
 在 iTerm2 里设置字体，选择有 powerline 后缀的
 
+```shell
+set -g theme_color_scheme dracula
+# 永远展示分支名，默认情况下 master 不展示
+set -g theme_display_git_default_branch yes
+```
+
+
 ## 3.4. 基于web的可视化配置
 
 ```shell
@@ -242,6 +249,8 @@ open -e ~/.config/fish/config.fish
 ```shell
 # bobthefish theme
 set -g theme_color_scheme dracula
+set -g theme_display_git_default_branch yes
+# bobthefish END
 
 alias cdw="cd ~/work/"
 alias cdxx=""

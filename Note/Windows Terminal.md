@@ -34,7 +34,7 @@ New-Item -Path $PROFILE -Type File -Force
 
 ### 报错 无法加载文件……，因为此系统上禁止运行脚本
 
-右键左下角的win图标（开始菜单） > Windows Powershell（管理员） > 输入`set-ExecutionPolicy RemoteSigned` > 输入`y` 
+右键左下角的win图标（开始菜单） > Windows Powershell（管理员） > 输入`set-ExecutionPolicy RemoteSigned` > 输入`y`
 
 ## 设置快捷键冲突
 
@@ -95,7 +95,7 @@ on-my-posh font install Meslo
         {
             "font":
             {
-                "face": "MesloLGM Nerd Font"
+                "face": "MesloLGL Nerd Font"
             }
         }
     }

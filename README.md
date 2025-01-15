@@ -15,14 +15,25 @@
 
 # 列表
 
-+ 5Why分析法.md
-+ macOS.md
-+ Windows Terminal.md
-+ Git.md
-+ mac shell.md
-+ mermaid.md
-+ 双精度浮点数double.md
-+ Jupyter Notebook.md
-+ VSCode.md
-+ 开发环境配置.md
-+ 浏览器环境打标.md
++ 对标
++ Windows Terminal
++ macOS
++ Jupyter Notebook
++ 开发环境配置
++ Mockito文档总结
++ VSCode
++ 5Why分析法
++ mermaid
++ 浏览器环境打标
+
+# Doing
+
++ 反射和map
++ 双精度浮点数double
++ Google代码风格
++ iterm2
++ 单元测试&Mockito
++ Git
++ mac shell
++ vocabulary
+

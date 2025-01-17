@@ -282,4 +282,5 @@ export PATH="$PATH:$MAVEN_HOME/bin"
 # jupyter notebook
 alias note="python3 -m notebook --notebook-dir='/Users/chen/Documents/jupyter_notes'"
 alias cdnote="cd /Users/chen/Documents/jupyter_notes"
+export PATH="/Users/chen/Library/Python/3.9/bin:$PATH"
 ```

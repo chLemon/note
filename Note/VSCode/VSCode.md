@@ -2,42 +2,42 @@
 >
 > https://www.bilibili.com/video/BV1BT4y1W7Aw/
 
-# 配置
+# 1. 配置
 
-## 设置
+## 1.1. 设置
 
 左下角打开设置，比较方便。
 
 ![img](打开设置.png)
 
-+ 用户设置：全局生效
-+ 工作区设置：只对当前项目生效，优先级更高。保存在`.vscode/settings.json`中，可以提交到git，共享给团队其他成员。
-+ 右上角icon可以打开json文件形式的设置
+-   用户设置：全局生效
+-   工作区设置：只对当前项目生效，优先级更高。保存在`.vscode/settings.json`中，可以提交到 git，共享给团队其他成员。
+-   右上角 icon 可以打开 json 文件形式的设置
 
 ![](两种设置方式.png)
 
-## 配置
+## 1.2. 配置
 
-### 面包屑导航
+### 1.2.1. 面包屑导航
 
-用户设置 -> 工作台 -> 导航路径  => 打开
+用户设置 -> 工作台 -> 导航路径 => 打开
 
 ![](面包屑导航.png)
 
-### 显示代码行号
+### 1.2.2. 显示代码行号
 
 `Editor: Line Numbers` => on
 
-### 右侧显示代码缩略图
+### 1.2.3. 右侧显示代码缩略图
 
 `Editor: Minimap` => on
 
-### 高亮光标当前所在行
+### 1.2.4. 高亮光标当前所在行
 
 1. `Editor.renderLineHighlight` => `all / line`
 2. 设置里增加以下内容，意思是
-   1. 修改光标所在行的背景色
-   2. 修改光标所在行的边框色
+    1. 修改光标所在行的背景色
+    2. 修改光标所在行的边框色
 
 ```json
 "workbench.colorCustomizations": {
@@ -46,88 +46,88 @@
 }
 ```
 
-### 文件自动保存
+### 1.2.5. 文件自动保存
 
 `Files : Auto Save` => off
 
 在配置了保存自动格式化的情况下，会导致写代码的时候一直被自动格式化，很难受。
 
-### 保存代码后是否立刻格式化
+### 1.2.6. 保存代码后是否立刻格式化
 
 `Editor.formatOnSave` => off
 
-### 热退出，关闭时记住未保存的文件
+### 1.2.7. 热退出，关闭时记住未保存的文件
 
 `Files: Hot Exit` => `onExit`
 
-### 粘贴内容是否自动格式化
+### 1.2.8. 粘贴内容是否自动格式化
 
 `Editor: Format On Paste` => `on`
 
-### 字体大小
+### 1.2.9. 字体大小
 
 `Editor: Font Size`
 
-### 空格和制表符
+### 1.2.10. 空格和制表符
 
-#### 是否根据文件内容自动检测用空格还是制表符
+#### 1.2.10.1. 是否根据文件内容自动检测用空格还是制表符
 
 `Editor: Detect Indentation` => `off`
 
-#### 使用Tab时插入空格
+#### 1.2.10.2. 使用 Tab 时插入空格
 
 `Editor: Insert Spaces` => `on`
 
-#### 制表符等于多少空格
+#### 1.2.10.3. 制表符等于多少空格
 
 `Editor: Tab Size` => 4
 
 这个设置在 Prettier 插件里也可以设置
 
-#### 保存时自动去掉行末空格
+#### 1.2.10.4. 保存时自动去掉行末空格
 
 `Files: Trim Trailing Whitespace` => `on`
 
-#### 直观显示空格和制表符
+#### 1.2.10.5. 直观显示空格和制表符
 
 `Editor: Render Whitespace` => all
 
-### 删除文件是否弹出确认框
+### 1.2.11. 删除文件是否弹出确认框
 
 `Explorer: Confirm Delete` => `on`
 
-### 在新窗口打开文件/文件夹
+### 1.2.12. 在新窗口打开文件/文件夹
 
 `Window: Open Files In New Window` => `on`
 
 `Window: Open Folders In New Window` => `on`
 
-### 重新打开VSCode时， 是否展示之前的窗口
+### 1.2.13. 重新打开 VSCode 时， 是否展示之前的窗口
 
 `Window: Restore Windows` => `all`
 
-### 文件展示在文件夹之前
+### 1.2.14. 文件展示在文件夹之前
 
 Explorer >> Sort Order : filesFirst
 
-### 工作区的 Explorer 文件夹顺序
+### 1.2.15. 工作区的 Explorer 文件夹顺序
 
 打开保存的 code-workspace 文件，调整里面的 folders 里的顺序即可
 
-# 插件
+# 2. 插件
 
-## 插件市场
+## 2.1. 插件市场
 
 https://marketplace.visualstudio.com/vscode
 
-- Featured：由 VS Code团队精心推荐的插件。
-- Trending：近期热门插件。
-- Most Popular：按总安装量排序的插件。
-- Recently Added：最新发布的插件。
+-   Featured：由 VS Code 团队精心推荐的插件。
+-   Trending：近期热门插件。
+-   Most Popular：按总安装量排序的插件。
+-   Recently Added：最新发布的插件。
 
-## 推荐插件
+## 2.2. 推荐插件
 
-### 页面展示
+### 2.2.1. 页面展示
 
 | 插件名                   | 推荐 | 作用                                                                         |
 | ------------------------ | ---- | ---------------------------------------------------------------------------- |
@@ -137,25 +137,25 @@ https://marketplace.visualstudio.com/vscode
 | indent-rainbow           |      | 突出显示代码缩进                                                             |
 | Better Comments          |      | 注释色彩，醒目、带分类                                                       |
 
-### 代码管理
+### 2.2.2. 代码管理
 
 | 插件名          | 推荐 | 作用             |
 | --------------- | ---- | ---------------- |
-| GitLens         | √    | git相关          |
+| GitLens         | √    | git 相关         |
 | Local History   | √    | 维护本地历史记录 |
 | Project Manager |      | 管理常用项目     |
 | Waka Time       |      | 统计写代码的时间 |
 
-### 代码格式化
+### 2.2.3. 代码格式化
 
-| 插件名             | 推荐 | 作用                                                                                           |
-| ------------------ | ---- | ---------------------------------------------------------------------------------------------- |
-| Code Spell Checker |      | 单词拼写检查                                                                                   |
-| TODO Highlight     |      | 在命令面板中，Todohighlist可以显示所有的TODO（必须是大写的）                                   |
-| Prettier           |      | 代码格式化<br />在项目跟目录下新建 `.prettierrc`<br />默认使用2个空格，可以在通用设置里改为4个 |
-| ESLint             |      | 代码格式校验                                                                                   |
+| 插件名             | 推荐 | 作用                                                                                               |
+| ------------------ | ---- | -------------------------------------------------------------------------------------------------- |
+| Code Spell Checker |      | 单词拼写检查                                                                                       |
+| TODO Highlight     |      | 在命令面板中，Todohighlist 可以显示所有的 TODO（必须是大写的）                                     |
+| Prettier           |      | 代码格式化<br />在项目跟目录下新建 `.prettierrc`<br />默认使用 2 个空格，可以在通用设置里改为 4 个 |
+| ESLint             |      | 代码格式校验                                                                                       |
 
-Prettier设置文件参考
+Prettier 设置文件参考
 
 ```json
 {
@@ -169,26 +169,26 @@ Prettier设置文件参考
 }
 ```
 
-### 前端相关
+### 2.2.4. 前端相关
 
-| 插件名                                        | 推荐 | 作用                                             |
-| --------------------------------------------- | ---- | ------------------------------------------------ |
-| Live Server                                   | √    | 浏览器中实时预览                                 |
-| open in browser                               |      | HTML文件中，右键菜单增加 Open In Default Browser |
-| Auto Close Tag                                | √    | 自动闭合配对标签                                 |
-| Auto Rename Tag                               | √    | 同时修改匹配的标签                               |
-| HTML CSS Support                              | √    | 快速补全HTML和CSS                                |
-| Vetur                                         |      | Vue集成插件                                      |
-| ES7 React/Redux/GraphQL/React-Native snippets |      | React/Redux/react-router 的语法智能提示          |
-| JavaScript(ES6) code snippets                 |      | ES6 语法智能提示，支持快速输入                   |
-| javascript console utils                      | √    | Cmd + Shift + L 可以快速出现 `console.log()`     |
-| JS-CSS-HTML Formatter                         |      | 保存文件自动格式化 HTML CSS JS 代码              |
-| Image Preview                                 |      | 鼠标移动到url时，预览图片，并显示尺寸            |
-| CSS Peek                                      |      | 快速查看某个元素上的CSS样式                      |
-| Vue CSS Peek                                  |      | 增加了对Vue文件的支持                            |
-| Color Info                                    |      | 预览CSS中颜色的信息                              |
+| 插件名                                        | 推荐 | 作用                                              |
+| --------------------------------------------- | ---- | ------------------------------------------------- |
+| Live Server                                   | √    | 浏览器中实时预览                                  |
+| open in browser                               |      | HTML 文件中，右键菜单增加 Open In Default Browser |
+| Auto Close Tag                                | √    | 自动闭合配对标签                                  |
+| Auto Rename Tag                               | √    | 同时修改匹配的标签                                |
+| HTML CSS Support                              | √    | 快速补全 HTML 和 CSS                              |
+| Vetur                                         |      | Vue 集成插件                                      |
+| ES7 React/Redux/GraphQL/React-Native snippets |      | React/Redux/react-router 的语法智能提示           |
+| JavaScript(ES6) code snippets                 |      | ES6 语法智能提示，支持快速输入                    |
+| javascript console utils                      | √    | Cmd + Shift + L 可以快速出现 `console.log()`      |
+| JS-CSS-HTML Formatter                         |      | 保存文件自动格式化 HTML CSS JS 代码               |
+| Image Preview                                 |      | 鼠标移动到 url 时，预览图片，并显示尺寸           |
+| CSS Peek                                      |      | 快速查看某个元素上的 CSS 样式                     |
+| Vue CSS Peek                                  |      | 增加了对 Vue 文件的支持                           |
+| Color Info                                    |      | 预览 CSS 中颜色的信息                             |
 
-### Markdown
+### 2.2.5. Markdown
 
 | 插件名                          | 推荐 | 作用                        |
 | ------------------------------- | ---- | --------------------------- |
@@ -196,15 +196,15 @@ Prettier设置文件参考
 | Markdown All in One             |      | 一些便利的快捷键            |
 | Markdown Shortcuts              |      | 一些便利的快捷键            |
 
-### 其他
+### 2.2.6. 其他
 
-| 插件名                          | 推荐 | 作用                        |
-| ------------------------------- | ---- | --------------------------- |
-| Polacode-2020                   |      | 生成代码截图，做PPT时用     |
+| 插件名        | 推荐 | 作用                      |
+| ------------- | ---- | ------------------------- |
+| Polacode-2020 |      | 生成代码截图，做 PPT 时用 |
 
-# 快捷键
+# 3. 快捷键
 
-### 1. 工作区快捷键
+## 3.1. 工作区快捷键
 
 | Mac 快捷键           | Win 快捷键               | 作用                                          | 备注                 |
 | :------------------- | :----------------------- | :-------------------------------------------- | :------------------- |
@@ -219,18 +219,38 @@ Prettier设置文件参考
 | Cmd + N              | Ctrl + N                 | 新建文件                                      |                      |
 | Cmd + W              | Ctrl + W                 | 关闭当前文件                                  |                      |
 
-## 前端相关
+## 3.2. 前端相关
 
 快捷输入后，按`Tab`或者`Enter`。
 
-| 快捷输入         | 功能                                               |
-| ---------------- | -------------------------------------------------- |
-| !                | 生成html骨架                                       |
-| h1 / h2... / p … | h1等标签                                           |
-| .class_name      | 创建一个带有class属性，且值为`class_name`的div标签 |
-| `div.class_name` | 同上                                               |
-| #id_value        | 创建一个带有id属性，且值为`id_value`的div标签      |
-| `div#id_value`   | 同上                                               |
+| 快捷输入         | 功能                                                   |
+| ---------------- | ------------------------------------------------------ |
+| !                | 生成 html 骨架                                         |
+| h1 / h2... / p … | h1 等标签                                              |
+| .class_name      | 创建一个带有 class 属性，且值为`class_name`的 div 标签 |
+| `div.class_name` | 同上                                                   |
+| #id_value        | 创建一个带有 id 属性，且值为`id_value`的 div 标签      |
+| `div#id_value`   | 同上                                                   |
 
+# 用户片段 / 文件模板
 
+Code >> 首选项 >> 配置代码片段
 
+或者直接在 F1 里输入 snippets，选择 Snippets: Configure Snippets
+
+可以选择针对 某一种语言 / 文件夹 / 全局 配置代码片段
+
+| 内容        | 说明                                                                                                                            |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| scope       | 设置模板适用文件类型，为空时适用所有文件。如果需要对 markdown 文件生效，需要单独配置                                            |
+| prefix      | 用来触发代码片段的词语                                                                                                          |
+| body        | 模板内容。每行都要用双引号包围，结束后加逗号，注意字符的转义，可以识别空格。里面可以有`$1`, `$2`, `$final`这样的，用于 tab 定位 |
+| description | 对该模板代码的描述                                                                                                              |
+
+如果需要对 markdown 文件生效，需要配置
+
+```json
+"[markdown]":  {
+    "editor.quickSuggestions": true
+}
+```

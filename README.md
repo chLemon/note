@@ -28,17 +28,19 @@
 
 # 列表
 
+类别：计算机
+
 + 5Why分析法
-+ Git Pro[need merge]
-+ IDEA
-+ Jupyter Notebook
-+ mac shell
-+ macOS
-+ mermaid
-+ Mockito文档总结
-+ VSCode
-+ Windows Terminal
 + 对标
-+ 浏览器环境打标
 + 职业规划
++ 计算机-Git Pro[need merge]
++ 计算机-IDEA
++ 计算机-Jupyter Notebook
++ 计算机-mac shell
++ 计算机-macOS
++ 计算机-mermaid
++ 计算机-Mockito文档总结
++ 计算机-VSCode
++ 计算机-Windows Terminal
++ 计算机-浏览器环境打标
 

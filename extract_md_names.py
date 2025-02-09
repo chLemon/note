@@ -35,8 +35,7 @@ def update_readme_file(git_path: Path):
         else:
             items = [file.stem for file in dir.iterdir()
                      if valid_file(file.name)]
-        categories = (item.split('-')[0] for item in items if '-' in item)
-        print
+        categories = {item.split('-')[0] for item in items if '-' in item}
         return '\n'.join(f'+ {item}' for item in items), '、'.join(categories)
 
     # 1. Doing 目录下所有的内容

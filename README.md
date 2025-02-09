@@ -13,27 +13,32 @@
       |--README.md
 ```
 
-# 列表
-
-+ 对标
-+ Windows Terminal
-+ macOS
-+ Jupyter Notebook
-+ 开发环境配置
-+ Mockito文档总结
-+ VSCode
-+ 5Why分析法
-+ mermaid
-+ 浏览器环境打标
+------------------------------------------------------
 
 # Doing
 
-+ 反射和map
-+ 双精度浮点数double
-+ Google代码风格
-+ iterm2
-+ 单元测试&Mockito
 + Git
-+ mac shell
++ Google代码风格
 + vocabulary
++ 冥想
++ 单元测试&Mockito
++ 双精度浮点数double
++ 反射和map
++ 字体
+
+# 列表
+
++ 5Why分析法
++ Git Pro[need merge]
++ IDEA
++ Jupyter Notebook
++ mac shell
++ macOS
++ mermaid
++ Mockito文档总结
++ VSCode
++ Windows Terminal
++ 对标
++ 浏览器环境打标
++ 职业规划
 

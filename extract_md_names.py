@@ -31,11 +31,12 @@ def update_readme_file(git_path: Path):
             return '', ''
         # TODO 特殊逻辑兼容
         if dir.name == 'Journal':
-            items = (file.stem for file in dir.rglob('*.md'))
+            items = [file.stem for file in dir.rglob('*.md')]
         else:
-            items = (file.stem for file in dir.iterdir()
-                     if valid_file(file.name))
-        categories = (item.split('-')[0] for item in items if '-' in items)
+            items = [file.stem for file in dir.iterdir()
+                     if valid_file(file.name)]
+        categories = (item.split('-')[0] for item in items if '-' in item)
+        print
         return '\n'.join(f'+ {item}' for item in items), '、'.join(categories)
 
     # 1. Doing 目录下所有的内容
@@ -46,9 +47,10 @@ def update_readme_file(git_path: Path):
     def concat_content(title: str, categories: str, items: str):
         if items == '':
             return ''
+        res = '# ' + title + '\n\n'
         if categories != '':
-            categories += '\n\n'
-        return '# ' + title + '\n\n' + categories + items + '\n\n'
+            res += '类别：' + categories + '\n\n'
+        return res + items + '\n\n'
 
     content += concat_content('Doing', doing_categories, doing_items)
     content += concat_content('列表', note_categories, note_items)

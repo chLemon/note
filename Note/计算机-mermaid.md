@@ -635,3 +635,6 @@ mermaid.sequenceConfig = {
     mirrorActors: true,
 };
 ```
+
+# Flowchart
+

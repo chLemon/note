@@ -114,6 +114,8 @@ Explorer >> Sort Order : filesFirst
 
 打开保存的 code-workspace 文件，调整里面的 folders 里的顺序即可
 
+打开该文件：F1 >> Open Workspace Configuration File
+
 # 2. 插件
 
 ## 2.1. 插件市场

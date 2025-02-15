@@ -256,3 +256,11 @@ Code >> 首选项 >> 配置代码片段
     "editor.quickSuggestions": true
 }
 ```
+
+# 问题记录
+
+## Windows 上重启后 VSCode 消失/快捷方式失效
+
+在 Windows 更新、VSCode 更新的时候有可能出现这个问题。可以通过快捷方式查看原本 exe 文件所在的目录，原来很多内容都被移动到该目录下的一个新目录`_`中，剪切出来即可。
+
+通常是：`C:\Users\<user>\AppData\Local\Programs\Microsoft VS Code\_`

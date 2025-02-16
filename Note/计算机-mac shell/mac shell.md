@@ -234,9 +234,19 @@ fish_config
 help
 ```
 
-## 3.6. oh-my-posh
+## 3.5. oh-my-posh
 
 可以应用于任何一个 shell 的主题管理
+
+## 3.6. 补全 completion
+
+一些命令输入一部分后，按下 tab 键，会提示出一些补全的选项。这些逻辑叫 completions
+
+文档：https://fishshell.com/docs/current/completions.html
+
+git 配置文件在 https://github.com/fish-shell/fish-shell/blob/master/share/completions/git.fish
+
+
 
 ## 3.7. 配置文件
 

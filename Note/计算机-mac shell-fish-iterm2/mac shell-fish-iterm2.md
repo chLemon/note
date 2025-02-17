@@ -333,12 +333,9 @@ complete -c timedatectl -f
 # -"list-timezones"
 #
 # `-n`/`--condition` 可选项接收一个字符串，作为执行脚本。如果返回 true，则提供补全。
-# 这里条件是 `__fish_seen_subcommands_from` 函数，如果返回
-# Here the condition is the `__fish_seen_subcommands_from` helper function.
-# If returns true if any of the given commands is used on the commandline,
-# as determined by a simple heuristic.
-# For more complex uses, you can write your own function.
-# See e.g. the git completions for an example.
+# 这里条件是 `__fish_seen_subcommands_from` 函数。
+# 如果命令行上已经输入了任何命令，就会返回 true，这就是一个简单的启发式算法。
+# 如果想要实现更复杂的场景，你可以自己写一个函数，可以看看 git completions 里的写法作为例子。
 #
 complete -c timedatectl -n "not __fish_seen_subcommand_from $commands" \
     -a "status set-time set-timezone list-timezones"

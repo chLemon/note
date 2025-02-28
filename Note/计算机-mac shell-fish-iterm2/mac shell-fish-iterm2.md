@@ -106,7 +106,7 @@ Profiles:
   Keys: 快捷键
     hot key 快捷打开 iterm2
 
-spaceship-prompt 
+spaceship-prompt
 
 
 # 3. 更加友好的 Shell: fish
@@ -240,13 +240,133 @@ help
 
 ## 3.6. 补全 completion
 
-一些命令输入一部分后，按下 tab 键，会提示出一些补全的选项。这些逻辑叫 completions
+> 文档：https://fishshell.com/docs/current/completions.html
 
-文档：https://fishshell.com/docs/current/completions.html
+### 3.6.1. 路径
+
+补全相关的配置文件存在 `$fish_complete_path` 里，按照顺序加载，前者优先级更高
+
+### 3.6.2. 基本写法
+
+使用 `complete` 命令来指定一个补全。
+
+将需要补全的命令名称作为 `complete` 的参数。例如，为了给程序 `myprog` 添加补全：
+`complete -c myprog`
+
+| 可选项                       | 含义                       | 例子                                                                                                               | 说明                                                                                                                                                                                                      |
+| ---------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-a`                         | 添加补全时出现的参数（argument）       | `myprog`有参数`start`和`stop`，可以写为`complete -c myprog -a 'start stop'`                                        | `-a`的参数是一个字符串。在补全时，会根据空格和TAB分割开，并且变量拓展（占位符）、命令拓展也会进行替换                                                                                                     |
+| `-s / -l / -o`               | 支持命令的可选项           | `myprog`有一个可选项`-o / --output`，接受参数`yes`或`no`，可以写为 `complete -c myprog -s o -l output -a "yes no"` | `-s`是用来指定短可选项（short switch）（单个字符，如`ls -l`里的`-l`，`-l`是 gnu 风格的长可选项（long switch）（例如这里的 `--output`），`-o`是老风格的长可选项（old-style long switch）（例如`-shuffle`） |
+| `-r` / `--require-parameter` | 指定命令的可选项必须有参数 | `complete -c myprog -s o -l output -ra "yes no"`                                                                   |                                                                                                                                                                                                           |
+
+### 3.6.3. 关于`-s / -l / -o / -r` 的说明
+
+```shell
+# 1
+myprog -o<TAB>
+# 2
+myprog --output=<TAB>
+# 3
+myprog -o <TAB>
+# 4
+myprog --output <TAB>
+```
+
+在 `complete -c myprog -s o -l output -a "yes no"` （对 myprog 进行补全，该命令有 o 的短可选项，有 output 的长可选项，有参数 yes 和 no）的情况下，只有 #1 和 #2 可以正常补全。因为默认情况下，可选项的参数是可选的，很可能没有参数，如`ls -l`。
+如果加上`-r`，`complete -c myprog -s o -l output -ra "yes no"`，表示可选项肯定有参数，那么 #1 - #4 都可以正常进行补全。
+
+### 3.6.4. 文件补全
+
+```shell
+# 3
+myprog -o <TAB>
+# 4
+myprog --output <TAB>
+```
+在上面的例子中，按下TAB进行补全时，也会提示当前目录下的所有文件名。
+
+因为文件补全默认是开启的。
+
+可以通过 `--no-files` 或 特定的condition 关闭命令在某个情况下的文件补全：
+
+```shell
+# --no-files
+complete -c myprog -s o -l output --no-files -ra "yes no"
+
+# specific condition
+complete -c myprog -f --condition '__fish_seen_subcommand_from somesubcommand'
+```
+
+可以通过下面这个命令，全局禁用这个程序（命令）的文件补全：
+
+```shell
+complete -c myprog -f
+```
+
+在全局禁用的情况下，也可以通过 `--force-files` / `-F` 或者 特定condition 开启在某个情况下文件补全：
+```shell
+# 默认禁用
+complete -c myprog -f
+
+# 但是在 myprog --config-file 的时候打开
+complete -c myprog -l config-file --force-files -r
+```
+
+### 3.6.5. 完整例子 `timedatectl`
+
+```shell
+# All subcommands that timedatectl knows - this is useful for later.
+set -l commands status set-time set-timezone list-timezones set-local-rtc set-ntp
+
+# 对整个命令都禁用掉文件匹配。
+# 因为这个命令不会需要文件作为参数。
+# 注意，可以用 "-F" 来打开
+#
+# 如果你想对提供的文件做更多的控制，文件补全也需要被禁用
+# （例如只提供目录，或者只要 ".mp3" 结尾的文件）
+complete -c timedatectl -f
+
+# 如果目前还没有给出子命令的话，这行提供这些子命令
+# -"status",
+# -"set-timezone",
+# -"set-time"
+# -"list-timezones"
+#
+# `-n`/`--condition` 可选项接收一个字符串，作为执行脚本。如果返回 true，则提供补全。
+# 这里条件是 `__fish_seen_subcommands_from` 函数。
+# 如果命令行上已经输入了任何命令，就会返回 true，这就是一个简单的启发式算法。
+# 如果想要实现更复杂的场景，你可以自己写一个函数，可以看看 git completions 里的写法作为例子。
+#
+complete -c timedatectl -n "not __fish_seen_subcommand_from $commands" \
+    -a "status set-time set-timezone list-timezones"
+
+# If the "set-timezone" subcommand is used,
+# offer the output of `timedatectl list-timezones` as completions.
+# Each line of output is used as a separate candidate,
+# and anything after a tab is taken as the description.
+# It's often useful to transform command output with `string` into that form.
+complete -c timedatectl -n "__fish_seen_subcommand_from set-timezone" \
+    -a "(timedatectl list-timezones)"
+
+# Completion candidates can also be described via `-d`,
+# which is useful if the description is constant.
+# Try to keep these short, because that means the user gets to see more at once.
+complete -c timedatectl -n "not __fish_seen_subcommand_from $commands" \
+    -a "set-local-rtc" -d "Maintain RTC in local time"
+
+# We can also limit options to certain subcommands by using conditions.
+complete -c timedatectl -n "__fish_seen_subcommand_from set-local-rtc" \
+    -l adjust-system-clock -d 'Synchronize system clock from the RTC'
+
+# These are simple options that can be used everywhere.
+complete -c timedatectl -s h -l help -d 'Print a short help text and exit'
+complete -c timedatectl -l version -d 'Print a short version string and exit'
+complete -c timedatectl -l no-pager -d 'Do not pipe output into a pager'
+```
+
+### 3.6.6. 完整例子 `git`
 
 git 配置文件在 https://github.com/fish-shell/fish-shell/blob/master/share/completions/git.fish
-
-
 
 ## 3.7. 配置文件
 

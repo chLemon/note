@@ -1,20 +1,4 @@
-> https://mermaid.js.org/intro/
-
-# 简介
-
-一个 markdown 支持的，可以直接用“写代码”的方式来画图的 js 项目。
-
-# VSCode 支持
-
-Markdown Preview Enhanced: 预览时可以设置 markdown 的背景颜色
-
-Mermaid Markdown Syntax Highlighting: 支持 mermaid 语法高亮
-
-# Doc-Rot 文档腐化问题
-
-Doc-Rot 文档腐化 是软件领域的 22 条军规（Catch-22）。不可避免。
-
-Mermaid 希望让图表易于修改，来缓解这个问题。
+> https://mermaid.js.org/syntax/sequenceDiagram.html
 
 # Sequence diagrams 序列图 / 顺序图
 
@@ -636,36 +620,3 @@ mermaid.sequenceConfig = {
     mirrorActors: true,
 };
 ```
-
-# Flowchart 流程图
-
-> 警告：
->
-> 如果 node 命名中含有全小写的单词 end，会破坏图表。要将整个单词，或者部分字母大写，比如 END 或 End。或者用下面这种写法：
-> ```mermaid
-> graph TD
->   start --> state
->   state --> endnode["end"]
-> ```
-
-> 警告：
->
-> 如果连接中后面的 node 的首字母要用 o 或 x 开头，要添加空格或将字母大写。例如：dev--- ops / dev---Ops
-
-## 图表声明
-
-既可以用 `flowchart`，也可以用 `graph`
-
-## 标题
-
-```mermaid
----
-title: 写个标题
----
-flowchart LR
-    id
-```
-
-## 方向
-
-

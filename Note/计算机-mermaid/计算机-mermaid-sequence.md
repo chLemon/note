@@ -1,8 +1,6 @@
 > https://mermaid.js.org/syntax/sequenceDiagram.html
 
-# Sequence diagrams 序列图 / 顺序图
-
-> https://mermaid.js.org/syntax/sequenceDiagram.html#syntax
+# 1. Sequence diagrams 序列图 / 顺序图 示例
 
 ```mermaid
 sequenceDiagram
@@ -11,13 +9,13 @@ sequenceDiagram
     Alice-)John: See you later!
 ```
 
-## 语句结束
+# 2. 语句结束
 
 即可以用换行表示语句结束，也可以用`;`
 
-## 注释 和 转义
+# 3. 注释 和 转义
 
-### 注释
+## 3.1. 注释
 
 必须以`%%`开头，单独一行，截止到换行符
 
@@ -28,11 +26,11 @@ sequenceDiagram
     John-->>Alice: Great!
 ```
 
-### end
+## 3.2. end
 
 end 这个词在很多语法中在使用，可能会破坏图表，如果必须要用这个单词，则必须用 () "" [] {} 将 end 包起来
 
-### 转义
+## 3.3. 转义
 
 可以通过`#...;`来转义字符
 
@@ -49,9 +47,9 @@ sequenceDiagram
 
 由于`;`也可以表示语句结束，所以`;`要用`#59;`
 
-## 参与者(Participant + Actor)
+# 4. 参与者(Participant + Actor)
 
-### 参与者 方框 Participants
+## 4.1. 参与者 方框 Participants
 
 参与者可以隐式定义。如上面的例子。参与者出现的顺序就是在源码中出现的顺序。
 
@@ -65,7 +63,7 @@ sequenceDiagram
     Alice->>Bob: Hi Bob
 ```
 
-### 行为人 小人 Actors
+## 4.2. 行为人 小人 Actors
 
 如果你不想用方框，而是想用小人符号，可以用 `actor`
 
@@ -77,7 +75,7 @@ sequenceDiagram
     Bob->>Alice: Hi Alice
 ```
 
-### 别名 Aliases
+## 4.3. 别名 Aliases
 
 可以给参与者起一个别名，一个用于方便地写源码，一个用于展示
 
@@ -89,7 +87,7 @@ sequenceDiagram
     J->>A: Great!
 ```
 
-## 消息 Message
+# 5. 消息 Message
 
 消息的格式为：
 `[Actor][Arrow][Actor]:Message text`
@@ -120,7 +118,7 @@ sequenceDiagram
     A --) B: m1
 ```
 
-## 箭头序号
+# 6. 箭头序号
 
 ```mermaid
 sequenceDiagram
@@ -135,7 +133,7 @@ sequenceDiagram
     Bob-->>John: Jolly good!
 ```
 
-## 笔记 Note
+# 7. 笔记 Note
 
 可以添加笔记。语法是：
 
@@ -155,7 +153,7 @@ sequenceDiagram
     Note over Alice,John: A typical interaction
 ```
 
-## 换行
+# 8. 换行
 
 Note 和 Message 里可以有换行。`<br/>`
 
@@ -168,7 +166,7 @@ sequenceDiagram
     Note over Alice,John: A typical interaction<br/>But now in two lines
 ```
 
-## 参与者的创建和销毁 create / destroy
+# 9. 参与者的创建和销毁 create / destroy
 
 ```mermaid
 sequenceDiagram
@@ -192,7 +190,7 @@ sequenceDiagram
     Bob->>Alice: I agree
 ```
 
-#### Unfixable actor/participant creation/deletion error
+## 9.1. Unfixable actor/participant creation/deletion error
 
 如果在创建和销毁参与者时报了这个错：
 
@@ -200,7 +198,7 @@ sequenceDiagram
 
 然后改了源码后还是有这个问题，并且会导致所有图表报这个错，那说明需要将 mermaid 升级到 10.7.0+
 
-## 激活 activate
+# 10. 激活 activate
 
 可以激活或停用一个参与者。可以显式声明。
 
@@ -231,7 +229,7 @@ sequenceDiagram
 ```
 
 
-## 参与者详情列表 Acotr Menus
+# 11. 参与者详情列表 Acotr Menus
 
 可以给参与者添加一个可以点开的列表，里面可以有一些外部链接
 
@@ -252,7 +250,7 @@ sequenceDiagram
     Alice-)John: See you later!
 ```
 
-### 高级语法
+## 11.1. 高级语法
 
 还有一种 json 格式的语法
 
@@ -271,7 +269,7 @@ sequenceDiagram
     Alice-)John: See you later!
 ```
 
-## 垂直分组 Grouping / Box
+# 12. 垂直分组 Grouping / Box
 
 可以将参与者进行垂直分组。可以加上背景颜色和分组名：
 
@@ -317,7 +315,7 @@ sequenceDiagram
     B->>C: Hello Charley, how are you?
 ```
 
-## 水平背景高亮
+# 13. 水平背景高亮
 
 可以水平修改信息的背景颜色，来凸出流程。语法如下：
 
@@ -347,9 +345,9 @@ sequenceDiagram
     John -->>- Alice: Yeah! See you there.
 ```
 
-## 特殊逻辑标识
+# 14. 特殊逻辑标识
 
-### 循环 Loop
+## 14.1. 循环 Loop
 
 可以通过下面的语法表达循环：
 
@@ -367,7 +365,7 @@ sequenceDiagram
     end
 ```
 
-### 分支 Alt
+## 14.2. 分支 Alt
 
 表达替代路径 alternative path
 
@@ -400,7 +398,7 @@ sequenceDiagram
     end
 ```
 
-### 并行 Parallel
+## 14.3. 并行 Parallel
 
 ```
 par [Action 1]
@@ -439,7 +437,7 @@ sequenceDiagram
     end
 ```
 
-### 关键区/临界区 Critical Region
+## 14.4. 关键区/临界区 Critical Region
 
 当条件出现时，必须自动执行的动作
 
@@ -475,7 +473,7 @@ sequenceDiagram
 
 和 `par` 一样，可以嵌套
 
-### 中断 break
+## 14.5. 中断 break
 
 可以用来表示流程的中止，通常用于模拟异常
 
@@ -495,11 +493,11 @@ sequenceDiagram
     API-->BillingService: Start billing process
 ```
 
-## 样式 Styling
+# 15. 样式 Styling
 
 序列图的样式是通过多个 css 类来定义的。在渲染时，在 `src/themes/sequence.scss` 处获取这些 css 文件。
 
-### Classes used
+## 15.1. Classes used
 
 | Class            | Description                                                    |
 | ---------------- | -------------------------------------------------------------- |
@@ -520,7 +518,7 @@ sequenceDiagram
 | note             | Styles for the note box.                                       |
 | noteText         | Styles for the text on in the note boxes.                      |
 
-### Sample stylesheet
+## 15.2. Sample stylesheet
 
 ```css
 body {
@@ -602,7 +600,7 @@ text.actor {
 }
 ```
 
-## 配置
+# 16. 配置
 
 > https://mermaid.js.org/config/configuration.html
 

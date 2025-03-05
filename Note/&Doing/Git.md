@@ -26,133 +26,27 @@ alias cdc="cd ~/Private/CProject"
 
 ```shell
 [alias]
-	co = checkout
 	cc = checkout
 	cm = commit
+	cmm = commit -m 
 	br = branch
+	brd = branch -d
+	brdd = branch -D
 	st = status
 	sw = switch
+	swc = switch -c
+	sl = stash list
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lgme = lg --author=chenweijun
+	last = log -1
 
 	fix = commit -m "fix"
 	conf = commit -m "解决代码冲突"
 
 	unstage = reset HEAD
-	last = log -1
+[pull]
+	rebase = false
 
-	swcdev = switch -c dev
-	swc1 = switch -c feature-dev-1
-	swc2 = switch -c feature-dev-2
-	swc3 = switch -c feature-dev-3
-	swc4 = switch -c feature-dev-4
-	swc5 = switch -c feature-dev-5
-	swc6 = switch -c feature-dev-6
-	swc7 = switch -c feature-dev-7
-	swc8 = switch -c feature-dev-8
-	swc9 = switch -c feature-dev-9
-	swc10 = switch -c feature-dev-10
-	swc11 = switch -c feature-dev-11
-	swc12 = switch -c feature-dev-12
-	swc13 = switch -c feature-dev-13
-	swc14 = switch -c feature-dev-14
-	swc15 = switch -c feature-dev-15
-	swc16 = switch -c feature-dev-16
-	swc17 = switch -c feature-dev-17
-	swc18 = switch -c feature-dev-18
-	swc19 = switch -c feature-dev-19
-	swc20 = switch -c feature-dev-20
-
-	swdev = switch dev
-	sw1 = switch feature-dev-1
-	sw2 = switch feature-dev-2
-	sw3 = switch feature-dev-3
-	sw4 = switch feature-dev-4
-	sw5 = switch feature-dev-5
-	sw6 = switch feature-dev-6
-	sw7 = switch feature-dev-7
-	sw8 = switch feature-dev-8
-	sw9 = switch feature-dev-9
-	sw10 = switch feature-dev-10
-	sw11 = switch feature-dev-11
-	sw12 = switch feature-dev-12
-	sw13 = switch feature-dev-13
-	sw14 = switch feature-dev-14
-	sw15 = switch feature-dev-15
-	sw16 = switch feature-dev-16
-	sw17 = switch feature-dev-17
-	sw18 = switch feature-dev-18
-	sw19 = switch feature-dev-19
-	sw20 = switch feature-dev-20
-
-	brddev = branch -D dev
-	brd1 = branch -D feature-dev-1
-	brd2 = branch -D feature-dev-2
-	brd3 = branch -D feature-dev-3
-	brd4 = branch -D feature-dev-4
-	brd5 = branch -D feature-dev-5
-	brd6 = branch -D feature-dev-6
-	brd7 = branch -D feature-dev-7
-	brd8 = branch -D feature-dev-8
-	brd9 = branch -D feature-dev-9
-	brd10 = branch -D feature-dev-10
-	brd11 = branch -D feature-dev-11
-	brd12 = branch -D feature-dev-12
-	brd13 = branch -D feature-dev-13
-	brd14 = branch -D feature-dev-14
-	brd15 = branch -D feature-dev-15
-	brd16 = branch -D feature-dev-16
-	brd17 = branch -D feature-dev-17
-	brd18 = branch -D feature-dev-18
-	brd19 = branch -D feature-dev-19
-	brd20 = branch -D feature-dev-20
-
-	pulldev = pull origin dev
-	pullm = pull origin master
-	pullmi = pull origin main
-	pull1 = pull origin feature-dev-1
-	pull2 = pull origin feature-dev-2
-	pull3 = pull origin feature-dev-3
-	pull4 = pull origin feature-dev-4
-	pull5 = pull origin feature-dev-5
-	pull6 = pull origin feature-dev-6
-	pull7 = pull origin feature-dev-7
-	pull8 = pull origin feature-dev-8
-	pull9 = pull origin feature-dev-9
-	pull10 = pull origin feature-dev-10
-	pull11 = pull origin feature-dev-11
-	pull12 = pull origin feature-dev-12
-	pull13 = pull origin feature-dev-13
-	pull14 = pull origin feature-dev-14
-	pull15 = pull origin feature-dev-15
-	pull16 = pull origin feature-dev-16
-	pull17 = pull origin feature-dev-17
-	pull18 = pull origin feature-dev-18
-	pull19 = pull origin feature-dev-19
-	pull20 = pull origin feature-dev-20
-
-	pushdev = push origin dev
-	pushm = push origin master
-	pushmi = push origin main
-	push1 = push origin feature-dev-1
-	push2 = push origin feature-dev-2
-	push3 = push origin feature-dev-3
-	push4 = push origin feature-dev-4
-	push5 = push origin feature-dev-5
-	push6 = push origin feature-dev-6
-	push7 = push origin feature-dev-7
-	push8 = push origin feature-dev-8
-	push9 = push origin feature-dev-9
-	push10 = push origin feature-dev-10
-	push11 = push origin feature-dev-11
-	push12 = push origin feature-dev-12
-	push13 = push origin feature-dev-13
-	push14 = push origin feature-dev-14
-	push15 = push origin feature-dev-15
-	push16 = push origin feature-dev-16
-	push17 = push origin feature-dev-17
-	push18 = push origin feature-dev-18
-	push19 = push origin feature-dev-19
-	push20 = push origin feature-dev-20
 
 [http "https://github.com"]
 	proxy = socks5://127.0.0.1:1086

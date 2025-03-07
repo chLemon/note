@@ -246,6 +246,12 @@ help
 
 补全相关的配置文件存在 `$fish_complete_path` 里，按照顺序加载，前者优先级更高
 
+```shell
+# 目前电脑上的地址
+/Users/chen/.local/share/fish/generated_completions
+/opt/homebrew/Cellar/fish/3.7.1/share/fish/completions
+```
+
 ### 3.6.2. 基本写法
 
 使用 `complete` 命令来指定一个补全。

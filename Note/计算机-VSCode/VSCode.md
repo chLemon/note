@@ -116,6 +116,14 @@ Explorer >> Sort Order : filesFirst
 
 打开该文件：F1 >> Open Workspace Configuration File
 
+### 1.2.16. 单词分隔符
+
+默认情况下，中文标点不会被视为单词分隔符，在使用 alt/option + ←/→ 跳转时会视为一个大单词。
+
+Editor >> Word Separators
+
+增加 `，。、（）：`
+
 # 2. 插件
 
 ## 2.1. 插件市场

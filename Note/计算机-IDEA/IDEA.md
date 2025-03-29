@@ -16,3 +16,7 @@ IDEA Help >> Change Memory Settings 增大IDEA的运行内存，Settings >> Buil
 # Code Style
 
 勾选了所有的 align when multiline
+
+# 代码优化小技巧
+
+选中整个项目，reformat

@@ -30,7 +30,7 @@ def update_readme_file(git_path: Path):
     """
     更新当前笔记仓库下的 README.md 文件
     
-    每个笔记仓库，一定有以下2个文件夹，需要整理到 README 中：
+    每个笔记仓库，主要是以下2个文件夹，需要整理到 README 中：
     &Doing: 近期正在处理的一些东西
     笔记仓库同名文件夹 note_dir: 已完成的笔记，同时作为坚果云同步的笔记文件夹
     """

@@ -37,9 +37,12 @@ def check(paths):
         pics_in_mds.update(collect_pics(md))
     retain = pic_files - pics_in_mds
     for i in retain:
-        print(i)
+        print(i + "没有被使用")
 
+def main(git_path: Path):
+    # 定义
+    note_path = git_path / 'Note'
+    rcheck(note_path)
 
-# 定义
-note_path = './Note/'
-rcheck(note_path)
+if __name__ == '__main__':
+    main(Path().cwd().parent)

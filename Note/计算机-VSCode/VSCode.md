@@ -122,7 +122,7 @@ Explorer >> Sort Order : filesFirst
 
 Editor >> Word Separators
 
-增加 `，。、（）：`
+增加 `，。、（）：？”“`
 
 # 2. 插件
 

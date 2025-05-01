@@ -175,3 +175,29 @@ Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 Import-Module posh-git # git的自动补全
 ```
 
+# Git 中文相关
+
+最主要的是这个设置
+
+```shell
+# 禁用路径转义，默认情况下，Git会将非ASCII字符的路径进行转义
+git config --global core.quotepath false
+```
+
+其余的看情况设置
+```shell
+# 设置图形界面的编码为 utf-8
+git config --global gui.encoding utf-8
+
+# 提交信息编码为 utf-8
+git config --global i18n.commit.encoding utf-8
+# 日志输出编码为 utf-8
+git config --global i18n.logoutputencoding utf-8
+```
+
+# 编码
+
+`$profile`里添加（默认应该不用）
+```shell
+$OutputEncoding = [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+```

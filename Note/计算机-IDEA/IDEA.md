@@ -20,3 +20,7 @@ IDEA Help >> Change Memory Settings 增大IDEA的运行内存，Settings >> Buil
 # 代码优化小技巧
 
 选中整个项目，reformat
+
+# 本地IDEA运行项目 | java.lang.OutOfMemoryError | GC overhead limit exceeded
+
+Settings > Build, Execution, Deployment > Compiler > Build Process > Shared heap size 增大程序堆内存

@@ -242,7 +242,60 @@ Prettier 设置文件参考
 | #id_value        | 创建一个带有 id 属性，且值为`id_value`的 div 标签      |
 | `div#id_value`   | 同上                                                   |
 
-# 用户片段 / 文件模板
+## 3.3. 自定义的一些快捷键设置
+
+### 3.3.1. mac
+
+```json
+// 将键绑定放在此文件中以覆盖默认值
+[
+    {
+        "key": "cmd+1",
+        "command": "md-shortcut.toggleTitleH1"
+    },
+    {
+        "key": "cmd+2",
+        "command": "md-shortcut.toggleTitleH2"
+    },
+    {
+        "key": "cmd+3",
+        "command": "md-shortcut.toggleTitleH3"
+    },
+    {
+        "key": "cmd+4",
+        "command": "md-shortcut.toggleTitleH4"
+    },
+    {
+        "key": "cmd+5",
+        "command": "md-shortcut.toggleTitleH5"
+    },
+    {
+        "key": "cmd+6",
+        "command": "md-shortcut.toggleTitleH6"
+    },
+    {
+        "key": "alt+`",
+        "command": "markdown.extension.editing.toggleCodeBlock"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.closeSidebar",
+        "when": "sideBarVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    }
+]
+```
+
+# 4. 用户片段 / 文件模板
 
 Code >> 首选项 >> 配置代码片段
 
@@ -265,10 +318,17 @@ Code >> 首选项 >> 配置代码片段
 }
 ```
 
-# 问题记录
+# 5. 问题记录
 
-## Windows 上重启后 VSCode 消失/快捷方式失效
+## 5.1. Windows 上重启后 VSCode 消失/快捷方式失效
 
 在 Windows 更新、VSCode 更新的时候有可能出现这个问题。可以通过快捷方式查看原本 exe 文件所在的目录，原来很多内容都被移动到该目录下的一个新目录`_`中，剪切出来即可。
 
 通常是：`C:\Users\<user>\AppData\Local\Programs\Microsoft VS Code\_`
+
+## 5.2. 回车 Enter 或者 Backspace 失效
+
+看一下后台是不是有疯狂在执行的脚本，ctrl + c 中止后就好了
+
+之前遇到疯狂在执行的 git status 等一大堆不知道什么插件的命令
+

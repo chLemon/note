@@ -304,3 +304,18 @@ brew: 精酿啤酒
 # 12. Shell配置
 
 详见 [mac shell.md](./mac%20shell.md)
+
+# 13. JDK 版本切换
+
+mac 在 shell 里通过 `whereis java` 可以看到，执行的 `java` 是 `/usr/bin/java`
+
+这个不是一个软连接，是一个脚本程序。只修改环境变量中的 `JAVA_HOME` 并不会改变 `java -version` 的输出。
+
+参考 https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-macos/44169445#44169445
+
+所有 JDK 默认位于 `Library/Java/JavaVirtualMachines`，该脚本会选择最高版本的JDK。
+
+要将某个 JDK 排除在默认选择之外，将 `Contents/Info.plist` 重命名为 `Info.plist.disabled`。
+```shell
+sudo mv Info.plist Info.plist.disabled
+```

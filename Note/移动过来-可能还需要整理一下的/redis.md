@@ -1,0 +1,1 @@
+redis-cli -h tools.internal.focus.cn域名或者ip -p 7084 -a focus_redis密码

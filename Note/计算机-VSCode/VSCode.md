@@ -2,9 +2,17 @@
 >
 > https://www.bilibili.com/video/BV1BT4y1W7Aw/
 
-# 1. 配置
+# 1. Profile
 
-## 1.1. 设置
+> https://code.visualstudio.com/docs/configure/profiles#_access-the-profiles-editor
+
+可以创建一个 Profile，代表一套 的设置、插件、UI 布局、快捷键，可以在不同的工作区，启用不同的 Profile。
+
+例如写 Java 时，用相关的插件、快捷键；写 Python 的时候，切换为另一套。
+
+# 2. 设置
+
+## 2.1. 设置
 
 左下角打开设置，比较方便。
 
@@ -16,28 +24,33 @@
 
 ![](两种设置方式.png)
 
-## 1.2. 配置
+## 2.2. 推荐设置
 
-### 1.2.1. 面包屑导航
+| 大概含义                                 | 设置名称 | 设置路径                                                                  | 推荐值                    | 图示/说明                                                                                  |
+| ---------------------------------------- | -------- | ------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------ |
+| 面包屑导航                               | 1        | 用户设置 -> 工作台 -> 导航路径                                            | 打开                      | ![](面包屑导航.png)                                                                        |
+| 显示代码行号                             | 1        | `Editor: Line Numbers`                                                    | on                        |
+| 右侧显示代码缩略图                       | 1        | `Editor: Minimap`                                                         | on                        |
+| 高亮光标当前所在行                       | 1        | `Editor.renderLineHighlight`                                              | `all / line`              | 这里还需要一些其他设置内容，见下方                                                         |
+| 文件自动保存                             | 1        | `Files : Auto Save`                                                       | off                       | 在配置了保存自动格式化的情况下，会导致写代码的时候一直被自动格式化，很难受。               |
+| 保存代码后是否立刻格式化                 | 1        | `Editor.formatOnSave`                                                     | off                       |
+| 热退出，关闭时记住未保存的文件           | 1        | `Files: Hot Exit`                                                         | `onExit`                  |
+| 粘贴内容是否自动格式化                   | 1        | `Editor: Format On Paste`                                                 | `on`                      |
+| 字体大小                                 |          | `Editor: Font Size`                                                       |
+| 是否根据文件内容自动检测用空格还是制表符 |          | `Editor: Detect Indentation`                                              | `off`                     |
+| 按下键盘上的 Tab 时插入空格              |          | `Editor: Insert Spaces`                                                   | `on`                      |
+| 制表符等于多少空格                       |          | `Editor: Tab Size`                                                        | 4                         | 这个设置在 Prettier 插件里也可以设置                                                       |
+| 保存时自动去掉行末空格                   |          | `Files: Trim Trailing Whitespace`                                         | `on`                      |
+| 直观显示空格和制表符                     |          | `Editor: Render Whitespace`                                               | all                       |
+| 删除文件是否弹出确认框                   |          | `Explorer: Confirm Delete`                                                | `on`                      |
+| 在新窗口打开文件/文件夹                  |          | `Window: Open Files In New Window` / `Window: Open Folders In New Window` | `on`                      |
+| 重新打开 VSCode 时， 是否展示之前的窗口  |          | `Window: Restore Windows`                                                 | `all`                     |
+| 文件展示在文件夹之前                     |          | `Explorer >> Sort Order : filesFirst`                                     |
+| 中文标点也作为单词分隔符                 |          | `Editor >> Word Separators`                                               | 增加 `，。、（）：？”“！` | 默认情况下，中文标点不会被视为单词分隔符，在使用 alt/option + ←/→ 跳转时会视为一个大单词。 |
 
-用户设置 -> 工作台 -> 导航路径 => 打开
+**高亮光标当前所在行 其他设置**
 
-![](面包屑导航.png)
-
-### 1.2.2. 显示代码行号
-
-`Editor: Line Numbers` => on
-
-### 1.2.3. 右侧显示代码缩略图
-
-`Editor: Minimap` => on
-
-### 1.2.4. 高亮光标当前所在行
-
-1. `Editor.renderLineHighlight` => `all / line`
-2. 设置里增加以下内容，意思是
-    1. 修改光标所在行的背景色
-    2. 修改光标所在行的边框色
+设置里还要增加以下内容，意思是 1. 修改光标所在行的背景色 2. 修改光标所在行的边框色
 
 ```json
 "workbench.colorCustomizations": {
@@ -46,87 +59,57 @@
 }
 ```
 
-### 1.2.5. 文件自动保存
-
-`Files : Auto Save` => off
-
-在配置了保存自动格式化的情况下，会导致写代码的时候一直被自动格式化，很难受。
-
-### 1.2.6. 保存代码后是否立刻格式化
-
-`Editor.formatOnSave` => off
-
-### 1.2.7. 热退出，关闭时记住未保存的文件
-
-`Files: Hot Exit` => `onExit`
-
-### 1.2.8. 粘贴内容是否自动格式化
-
-`Editor: Format On Paste` => `on`
-
-### 1.2.9. 字体大小
-
-`Editor: Font Size`
-
-### 1.2.10. 空格和制表符
-
-#### 1.2.10.1. 是否根据文件内容自动检测用空格还是制表符
-
-`Editor: Detect Indentation` => `off`
-
-#### 1.2.10.2. 使用 Tab 时插入空格
-
-`Editor: Insert Spaces` => `on`
-
-#### 1.2.10.3. 制表符等于多少空格
-
-`Editor: Tab Size` => 4
-
-这个设置在 Prettier 插件里也可以设置
-
-#### 1.2.10.4. 保存时自动去掉行末空格
-
-`Files: Trim Trailing Whitespace` => `on`
-
-#### 1.2.10.5. 直观显示空格和制表符
-
-`Editor: Render Whitespace` => all
-
-### 1.2.11. 删除文件是否弹出确认框
-
-`Explorer: Confirm Delete` => `on`
-
-### 1.2.12. 在新窗口打开文件/文件夹
-
-`Window: Open Files In New Window` => `on`
-
-`Window: Open Folders In New Window` => `on`
-
-### 1.2.13. 重新打开 VSCode 时， 是否展示之前的窗口
-
-`Window: Restore Windows` => `all`
-
-### 1.2.14. 文件展示在文件夹之前
-
-Explorer >> Sort Order : filesFirst
-
-### 1.2.15. 工作区的 Explorer 文件夹顺序
+### 2.2.1. 工作区的 Explorer 文件夹顺序
 
 打开保存的 code-workspace 文件，调整里面的 folders 里的顺序即可
 
 打开该文件：F1 >> Open Workspace Configuration File
 
-### 1.2.16. 单词分隔符
+### mac 目前的设置
 
-默认情况下，中文标点不会被视为单词分隔符，在使用 alt/option + ←/→ 跳转时会视为一个大单词。
+```json
+{
+    "editor.wordWrap": "on",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "json.maxItemsComputed": 10000000,
+    "editor.maxTokenizationLineLength": 10000000,
+    "json.format.enable": false,
+    "[csharp]": {
+        "editor.maxTokenizationLineLength": 10000000
+    },
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 10000000
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
+    },
+    "prettier.tabWidth": 4,
+    "markdown.extension.list.indentationSize": "inherit",
+    "markdown.extension.print.absoluteImgPath": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.fontFamily": "Menlo, 'Courier New', monospace",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?，。、（）：？”“！",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "marquee.widgets.weather.scale": "Celsius"
+}
+```
 
-Editor >> Word Separators
+# 3. 插件
 
-增加 `，。、（）：？”“！`
-
-# 2. 插件
-
-## 2.1. 插件市场
+## 3.1. 插件市场
 
 https://marketplace.visualstudio.com/vscode
 
@@ -135,9 +118,9 @@ https://marketplace.visualstudio.com/vscode
 -   Most Popular：按总安装量排序的插件。
 -   Recently Added：最新发布的插件。
 
-## 2.2. 推荐插件
+## 3.2. 推荐插件
 
-### 2.2.1. 页面展示
+### 3.2.1. 页面展示
 
 | 插件名                   | 推荐 | 作用                                                                         |
 | ------------------------ | ---- | ---------------------------------------------------------------------------- |
@@ -147,7 +130,7 @@ https://marketplace.visualstudio.com/vscode
 | indent-rainbow           |      | 突出显示代码缩进                                                             |
 | Better Comments          |      | 注释色彩，醒目、带分类                                                       |
 
-### 2.2.2. 代码管理
+### 3.2.2. 代码管理
 
 | 插件名          | 推荐 | 作用             |
 | --------------- | ---- | ---------------- |
@@ -156,7 +139,7 @@ https://marketplace.visualstudio.com/vscode
 | Project Manager |      | 管理常用项目     |
 | Waka Time       |      | 统计写代码的时间 |
 
-### 2.2.3. 代码格式化
+### 3.2.3. 代码格式化
 
 | 插件名             | 推荐 | 作用                                                                                               |
 | ------------------ | ---- | -------------------------------------------------------------------------------------------------- |
@@ -179,7 +162,7 @@ Prettier 设置文件参考
 }
 ```
 
-### 2.2.4. 前端相关
+### 3.2.4. 前端相关
 
 | 插件名                                        | 推荐 | 作用                                              |
 | --------------------------------------------- | ---- | ------------------------------------------------- |
@@ -198,7 +181,7 @@ Prettier 设置文件参考
 | Vue CSS Peek                                  |      | 增加了对 Vue 文件的支持                           |
 | Color Info                                    |      | 预览 CSS 中颜色的信息                             |
 
-### 2.2.5. Markdown
+### 3.2.5. Markdown
 
 | 插件名                          | 推荐 | 作用                        |
 | ------------------------------- | ---- | --------------------------- |
@@ -206,15 +189,15 @@ Prettier 设置文件参考
 | Markdown All in One             |      | 一些便利的快捷键            |
 | Markdown Shortcuts              |      | 一些便利的快捷键            |
 
-### 2.2.6. 其他
+### 3.2.6. 其他
 
 | 插件名        | 推荐 | 作用                      |
 | ------------- | ---- | ------------------------- |
 | Polacode-2020 |      | 生成代码截图，做 PPT 时用 |
 
-# 3. 快捷键
+# 4. 快捷键
 
-## 3.1. 工作区快捷键
+## 4.1. 工作区快捷键
 
 | Mac 快捷键           | Win 快捷键               | 作用                                          | 备注                 |
 | :------------------- | :----------------------- | :-------------------------------------------- | :------------------- |
@@ -229,7 +212,7 @@ Prettier 设置文件参考
 | Cmd + N              | Ctrl + N                 | 新建文件                                      |                      |
 | Cmd + W              | Ctrl + W                 | 关闭当前文件                                  |                      |
 
-## 3.2. 前端相关
+## 4.2. 前端相关
 
 快捷输入后，按`Tab`或者`Enter`。
 
@@ -242,9 +225,9 @@ Prettier 设置文件参考
 | #id_value        | 创建一个带有 id 属性，且值为`id_value`的 div 标签      |
 | `div#id_value`   | 同上                                                   |
 
-## 3.3. 自定义的一些快捷键设置
+## 4.3. 自定义的一些快捷键设置
 
-### 3.3.1. mac
+### 4.3.1. mac
 
 ```json
 // 将键绑定放在此文件中以覆盖默认值
@@ -295,7 +278,7 @@ Prettier 设置文件参考
 ]
 ```
 
-# 4. 用户片段 / 文件模板
+# 5. 用户片段 / 文件模板 / 文件夹模板
 
 Code >> 首选项 >> 配置代码片段
 
@@ -318,17 +301,18 @@ Code >> 首选项 >> 配置代码片段
 }
 ```
 
-# 5. 问题记录
+## 
 
-## 5.1. Windows 上重启后 VSCode 消失/快捷方式失效
+# 6. 问题记录
+
+## 6.1. Windows 上重启后 VSCode 消失/快捷方式失效
 
 在 Windows 更新、VSCode 更新的时候有可能出现这个问题。可以通过快捷方式查看原本 exe 文件所在的目录，原来很多内容都被移动到该目录下的一个新目录`_`中，剪切出来即可。
 
 通常是：`C:\Users\<user>\AppData\Local\Programs\Microsoft VS Code\_`
 
-## 5.2. 回车 Enter 或者 Backspace 失效
+## 6.2. 回车 Enter 或者 Backspace 失效
 
 看一下后台是不是有疯狂在执行的脚本，ctrl + c 中止后就好了
 
 之前遇到疯狂在执行的 git status 等一大堆不知道什么插件的命令
-

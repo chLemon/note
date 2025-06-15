@@ -1,4 +1,4 @@
-import py_script.extract_md_names as update_readme
+import Note.py_script.collect_all_md_names as update_readme
 import py_script.check_every_note_is_classified as classified_check
 import py_script.check_every_pic_is_valid as pic_valid_check
 

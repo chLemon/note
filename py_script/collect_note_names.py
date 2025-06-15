@@ -1,5 +1,18 @@
 from pathlib import Path
 
+
+
+def main(note_git_path: Path):
+    """这三个 git 文件夹通常都在一起，我决定将这个 py 文件放在 Note 中，一次性更新所有的笔记仓库的README"""
+    parent_path = note_git_path.parent
+    update_readme_file(parent_path / 'Journal')
+    update_readme_file(note_git_path)
+    update_readme_file(parent_path / 'Secret_note')
+
+if __name__ == '__main__':
+    main(Path.cwd().parent)
+
+    
 readme_file_name = 'README.md'
 doing_dir_name = '&Doing'
 
@@ -70,12 +83,3 @@ def update_readme_file(git_path: Path):
         file.write(content)
     print(git_name + " 的 README 已更新完毕")
 
-def main(note_git_path: Path):
-    """这三个 git 文件夹通常都在一起，我决定将这个 py 文件放在 Note 中，一次性更新所有的笔记仓库的README"""
-    parent_path = note_git_path.parent
-    update_readme_file(parent_path / 'Journal')
-    update_readme_file(note_git_path)
-    update_readme_file(parent_path / 'Secret_note')
-
-if __name__ == '__main__':
-    main(Path.cwd().parent)

@@ -24,11 +24,11 @@
 
 ![](images/两种设置方式.png)
 
-## 2.2. 推荐设置
+## 2.2. 常用设置
 
 | 大概含义                                 | 设置名称 | 设置路径                                                                  | 推荐值                    | 图示/说明                                                                                  |
 | ---------------------------------------- | -------- | ------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------ |
-| 面包屑导航                               | 1        | 用户设置 -> 工作台 -> 导航路径                                            | 打开                      | ![](images/面包屑导航.png)                                                                        |
+| 面包屑导航                               | 1        | 用户设置 -> 工作台 -> 导航路径                                            | 打开                      | ![](images/面包屑导航.png)                                                                 |
 | 显示代码行号                             | 1        | `Editor: Line Numbers`                                                    | on                        |
 | 右侧显示代码缩略图                       | 1        | `Editor: Minimap`                                                         | on                        |
 | 高亮光标当前所在行                       | 1        | `Editor.renderLineHighlight`                                              | `all / line`              | 这里还需要一些其他设置内容，见下方                                                         |
@@ -64,48 +64,6 @@
 打开保存的 code-workspace 文件，调整里面的 folders 里的顺序即可
 
 打开该文件：F1 >> Open Workspace Configuration File
-
-### mac 目前的设置
-
-```json
-{
-    "editor.wordWrap": "on",
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "json.maxItemsComputed": 10000000,
-    "editor.maxTokenizationLineLength": 10000000,
-    "json.format.enable": false,
-    "[csharp]": {
-        "editor.maxTokenizationLineLength": 10000000
-    },
-    "[javascript]": {
-        "editor.maxTokenizationLineLength": 10000000
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.quickSuggestions": {
-            "comments": "on",
-            "strings": "on",
-            "other": "on"
-        }
-    },
-    "prettier.tabWidth": 4,
-    "markdown.extension.list.indentationSize": "inherit",
-    "markdown.extension.print.absoluteImgPath": false,
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "editor.fontFamily": "Menlo, 'Courier New', monospace",
-    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?，。、（）：？”“！",
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "marquee.widgets.weather.scale": "Celsius"
-}
-```
 
 # 3. 插件
 
@@ -301,7 +259,7 @@ Code >> 首选项 >> 配置代码片段
 }
 ```
 
-## 
+## 5.1.
 
 # 6. 问题记录
 
@@ -316,3 +274,88 @@ Code >> 首选项 >> 配置代码片段
 看一下后台是不是有疯狂在执行的脚本，ctrl + c 中止后就好了
 
 之前遇到疯狂在执行的 git status 等一大堆不知道什么插件的命令
+
+# 个人推荐配置
+
+## 2.2. 设置
+
+| 大概含义                                 | 设置名称 | 设置路径                                                                  | 推荐值                    | 图示/说明                                                                                  |
+| ---------------------------------------- | -------- | ------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------ |
+| 面包屑导航                               | 1        | 用户设置 -> 工作台 -> 导航路径                                            | 打开                      | ![](images/面包屑导航.png)                                                                 |
+| 显示代码行号                             | 1        | `Editor: Line Numbers`                                                    | on                        |
+| 右侧显示代码缩略图                       | 1        | `Editor: Minimap`                                                         | on                        |
+| 高亮光标当前所在行                       | 1        | `Editor.renderLineHighlight`                                              | `all / line`              | 这里还需要一些其他设置内容，见下方                                                         |
+| 文件自动保存                             | 1        | `Files : Auto Save`                                                       | off                       | 在配置了保存自动格式化的情况下，会导致写代码的时候一直被自动格式化，很难受。               |
+| 保存代码后是否立刻格式化                 | 1        | `Editor.formatOnSave`                                                     | off                       |
+| 热退出，关闭时记住未保存的文件           | 1        | `Files: Hot Exit`                                                         | `onExit`                  |
+| 粘贴内容是否自动格式化                   | 1        | `Editor: Format On Paste`                                                 | `on`                      |
+| 字体大小                                 |          | `Editor: Font Size`                                                       |
+| 是否根据文件内容自动检测用空格还是制表符 |          | `Editor: Detect Indentation`                                              | `off`                     |
+| 按下键盘上的 Tab 时插入空格              |          | `Editor: Insert Spaces`                                                   | `on`                      |
+| 制表符等于多少空格                       |          | `Editor: Tab Size`                                                        | 4                         | 这个设置在 Prettier 插件里也可以设置                                                       |
+| 保存时自动去掉行末空格                   |          | `Files: Trim Trailing Whitespace`                                         | `on`                      |
+| 直观显示空格和制表符                     |          | `Editor: Render Whitespace`                                               | all                       |
+| 删除文件是否弹出确认框                   |          | `Explorer: Confirm Delete`                                                | `on`                      |
+| 在新窗口打开文件/文件夹                  |          | `Window: Open Files In New Window` / `Window: Open Folders In New Window` | `on`                      |
+| 重新打开 VSCode 时， 是否展示之前的窗口  |          | `Window: Restore Windows`                                                 | `all`                     |
+| 文件展示在文件夹之前                     |          | `Explorer >> Sort Order : filesFirst`                                     |
+| 中文标点也作为单词分隔符                 |          | `Editor >> Word Separators`                                               | 增加 `，。、（）：？”“！` | 默认情况下，中文标点不会被视为单词分隔符，在使用 alt/option + ←/→ 跳转时会视为一个大单词。 |
+
+**高亮光标当前所在行 其他设置**
+
+设置里还要增加以下内容，意思是 1. 修改光标所在行的背景色 2. 修改光标所在行的边框色
+
+```json
+"workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#00000090",
+    "editor.lineHighlightBorder": "#ffffff30"
+}
+```
+
+### 2.2.1. 工作区的 Explorer 文件夹顺序
+
+打开保存的 code-workspace 文件，调整里面的 folders 里的顺序即可
+
+打开该文件：F1 >> Open Workspace Configuration File
+
+### 2.2.2. mac 目前的设置
+
+```json
+{
+    "editor.wordWrap": "on",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "json.maxItemsComputed": 10000000,
+    "editor.maxTokenizationLineLength": 10000000,
+    "json.format.enable": false,
+    "[csharp]": {
+        "editor.maxTokenizationLineLength": 10000000
+    },
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 10000000
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
+    },
+    "prettier.tabWidth": 4,
+    "markdown.extension.list.indentationSize": "inherit",
+    "markdown.extension.print.absoluteImgPath": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.fontFamily": "Menlo, 'Courier New', monospace",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?，。、（）：？”“！",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "marquee.widgets.weather.scale": "Celsius"
+}
+```

@@ -26,7 +26,7 @@ def check_every_note_is_classified(git_path: Path):
             not_classified.append(l)
     return not_classified
 
-def main(git_path: Path):
+def check_every_note_is_classified(git_path: Path):
     not_classified = check_every_note_is_classified(git_path)
     if not_classified:
         print('以下文件没有被分类\n' + '\n'.join(not_classified))
@@ -34,4 +34,4 @@ def main(git_path: Path):
         print("全部都已分类")
 
 if __name__ == '__main__':
-    main(Path().cwd().parent)
+    check_every_note_is_classified(Path().cwd().parent)

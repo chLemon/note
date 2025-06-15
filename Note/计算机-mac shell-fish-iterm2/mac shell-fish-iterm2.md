@@ -52,14 +52,14 @@ https://iterm2.com/documentation-highlights.html
 
 打开 iTerm2, 点击
 
-![](make_iterm2_default.png)
+![](images/make_iterm2_default.png)
 
 取消设置：
 点击时按住 option，就会出现 Make Terminal Default Term
 
 ## 2.3. install shell integration
 
-![install_shell_integration](./install_shell_integration.png)
+![install_shell_integration](./images/install_shell_integration.png)
 
 ## 2.4. 配置
 
@@ -176,13 +176,13 @@ https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
 + bobthefish(powerline风格，横条有多种配色选择)
 
 ays:
-![](ays.png)
+![](images/ays.png)
 
 batman:
-![](batman.png)
+![](images/batman.png)
 
 bobthefish
-![](bobthefish.gif)
+![](images/bobthefish.gif)
 
 #### 3.3.2.1. bobthefish 详细设置
 

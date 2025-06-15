@@ -28,7 +28,7 @@ pip install jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --user  # can be skipped for notebook >=5.3
 ```
 
-![](./扩展管理器.png)
+![](./images/扩展管理器.png)
 
 ## 自动补全
 

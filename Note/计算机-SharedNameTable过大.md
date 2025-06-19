@@ -1,6 +1,6 @@
 # 问题背景
 
-compute 项目在执行单元测试时，如果设置了 maven-surefire 的 forkCount = 0，则大对象检测会发现存在大对象，类型为 `com.sun.tools.javac.util.SharedNameTable`
+某项目在执行单元测试时，如果设置了 maven-surefire 的 forkCount = 0，则大对象检测会发现存在大对象，类型为 `com.sun.tools.javac.util.SharedNameTable`
 
 # 排查
 

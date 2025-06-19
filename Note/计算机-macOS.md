@@ -303,7 +303,7 @@ brew: 精酿啤酒
 
 # 12. Shell配置
 
-详见 [mac shell.md](./mac%20shell.md)
+详见 [mac shell.md](./计算机-mac_shell_fish_iterm2/mac%20shell-fish-iterm2.md)
 
 # 13. JDK 版本切换
 

@@ -22,7 +22,8 @@
             "comments": "on",
             "other": "on",
             "strings": "on"
-        }
+        },
+        "files.trimTrailingWhitespace": false
     },
     "editor.fontFamily": "Menlo, 'Courier New', monospace",
     "editor.maxTokenizationLineLength": 10000000,

@@ -28,6 +28,9 @@
     "[mermaid]": {
         "files.trimTrailingWhitespace": false
     },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
     "editor.fontFamily": "Menlo, 'Courier New', monospace",
     "editor.minimap.showSlider": "always",
     "editor.maxTokenizationLineLength": 10000000,
@@ -124,6 +127,47 @@
 ```
 
 ### 插件
+
+| 插件名                                                               | 插件 id                                | 简述              |
+| -------------------------------------------------------------------- | -------------------------------------- | ----------------- |
+| Better Comments                                                      | aaron-bond.better-comments             | 注释优化          |
+| Black Formatter                                                      | ms-python.black-formatter              | python 代码格式化 |
+| Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code | ms-ceintl.vscode-language-pack-zh-hans | 中文支持          |
+| Code Spell Checker                                                   | streetsidesoftware.code-spell-checker  | 拼写检查          |
+| Folder Templates                                                     | huuums.vscode-fast-folder-structure    | 快速创建目录      |
+| GitHub Copilot                                                       | github.copilot                         | Copilot           |
+| GitHub Copilot Chat                                                  | github.copilot-chat                    | Copilot           |
+| GitHub Markdown Preview                                              | bierner.github-markdown-preview        | markdown          |
+| Jupyter                                                              | ms-toolsai.jupyter                     | jupyter           |
+| Jupyter Cell Tags                                                    | ms-toolsai.vscode-jupyter-cell-tags    | jupyter           |
+| Jupyter Keymap                                                       | ms-toolsai.jupyter-keymap              | jupyter           |
+| Jupyter Notebook Renderers                                           | ms-toolsai.jupyter-renderers           | jupyter           |
+| Jupyter Slide Show                                                   | ms-toolsai.vscode-jupyter-slideshow    | jupyter           |
+| Local History                                                        | xyz.local-history                      | 本地历史插件      |
+| Markdown All in One                                                  | yzhang.markdown-all-in-one             | markdown          |
+| Markdown Checkboxes                                                  | bierner.markdown-checkbox              | markdown          |
+| Markdown Emoji                                                       | bierner.markdown-emoji                 | markdown          |
+| Markdown Footnotes                                                   | bierner.markdown-footnotes             | markdown          |
+| Markdown Preview Enhanced                                            | shd101wyy.markdown-preview-enhanced    | markdown          |
+| Markdown Preview Github Styling                                      | bierner.markdown-preview-github-styles | markdown          |
+| Markdown Preview Mermaid Support                                     | bierner.markdown-mermaid               | markdown          |
+| Markdown Preview with Bitbucket Styles                               | hbrok.markdown-preview-bitbucket       | markdown          |
+| Markdown Shortcuts                                                   | mdickin.markdown-shortcuts             | markdown          |
+| Markdown Theme Kit                                                   | ms-vscode.theme-markdownkit            | markdown          |
+| Markdown yaml Preamble                                               | bierner.markdown-yaml-preamble         | markdown          |
+| Markdown+Math                                                        | goessner.mdmath                        | markdown          |
+| Marquee                                                              | stateful.marquee                       | 项目管理          |
+| Mermaid Editor                                                       | tomoyukim.vscode-mermaid-editor        | markdown          |
+| Prettier - Code formatter                                            | esbenp.prettier-vscode                 | 代码格式化        |
+| Prettier SQL VSCode                                                  | inferrinizzard.prettier-sql-vscode     | sql 代码格式化    |
+| Print                                                                | pdconsec.vscode-print                  | markdown          |
+| Pylance                                                              | ms-python.vscode-pylance               | python            |
+| Python                                                               | ms-python.python                       | python            |
+| Python Debugger                                                      | ms-python.debugpy                      | python            |
+| Read Time                                                            | johnpapa.read-time                     | markdown          |
+| Word Count                                                           | ms-vscode.wordcount                    | markdown          |
+| XML                                                                  | redhat.vscode-xml                      | xml 支持          |
+| markdownlint                                                         | davidanson.vscode-markdownlint         | markdown          |
 
 ## 1.2 win
 

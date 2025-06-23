@@ -29,9 +29,9 @@
         "files.trimTrailingWhitespace": false
     },
     "editor.fontFamily": "Menlo, 'Courier New', monospace",
+    "editor.minimap.showSlider": "always",
     "editor.maxTokenizationLineLength": 10000000,
     "editor.renderWhitespace": "all",
-    "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?，。、（）：？”“！",
     "editor.wordWrap": "on",
     "files.trimTrailingWhitespace": true,
@@ -59,7 +59,9 @@
     "window.openFilesInNewWindow": "on",
     "window.openFoldersInNewWindow": "on",
     "workbench.colorCustomizations": {
-        "tree.indentGuidesStroke": "#008700"
+        "tree.indentGuidesStroke": "#008700",
+        "editor.lineHighlightBackground": "#00000090",
+        "editor.lineHighlightBorder": "#ffffff30"
     },
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 16
@@ -120,6 +122,123 @@
     }
 ]
 ```
+
+### 插件
+
+## 1.2 win
+
+### 设置
+
+```json
+{
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "other": "on",
+            "strings": "on"
+        },
+        "files.trimTrailingWhitespace": false
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "editor.formatOnPaste": true,
+    "editor.minimap.showSlider": "always",
+    "editor.renderWhitespace": "all",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?，。、（）：？”“！",
+    "editor.wordWrap": "on",
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "folderTemplates.globalTemplateDirectoryPath": "/Users/chen/Documents/chen/requirement【需求】/.fttemplates",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "jupyter.askForKernelRestart": false,
+    "markdown.copyFiles.destination": {
+        "/**/*": "images/"
+    },
+    "markdown.extension.list.indentationSize": "inherit",
+    "markdown.extension.print.absoluteImgPath": false,
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "markdown.validate.enabled": true,
+    "marquee.configuration.name": "chen",
+    "marquee.configuration.workspaceLaunch": false,
+    "marquee.widgets.github.since": "Weekly",
+    "marquee.widgets.todo.showArchived": false,
+    "marquee.widgets.weather.city": "Beijing",
+    "marquee.widgets.weather.scale": "Celsius",
+    "prettier.tabWidth": 4,
+    "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#00000090",
+        "editor.lineHighlightBorder": "#ffffff30",
+        "tree.indentGuidesStroke": "#008700"
+    },
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 16
+}
+```
+
+### 自定义的一些快捷键设置
+
+```json
+// 将键绑定放在此文件中以覆盖默认值
+[
+    {
+        "key": "ctrl+1",
+        "command": "md-shortcut.toggleTitleH1"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "md-shortcut.toggleTitleH2"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "md-shortcut.toggleTitleH3"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "md-shortcut.toggleTitleH4"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "md-shortcut.toggleTitleH5"
+    },
+    {
+        "key": "ctrl+6",
+        "command": "md-shortcut.toggleTitleH6"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.closeSidebar",
+        "when": "sideBarVisible"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    }
+]
+```
+
+### 插件
 
 # 2. Profile
 

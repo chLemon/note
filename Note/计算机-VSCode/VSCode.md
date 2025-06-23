@@ -203,13 +203,13 @@
     "editor.renderWhitespace": "all",
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?，。、（）：？”“！",
     "editor.wordWrap": "on",
-    "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
     "folderTemplates.globalTemplateDirectoryPath": "/Users/chen/Documents/chen/requirement【需求】/.fttemplates",
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "jupyter.askForKernelRestart": false,
+    "json.maxItemsComputed": 10000000,
     "markdown.copyFiles.destination": {
         "/**/*": "images/"
     },
@@ -299,7 +299,67 @@
 | Auto Rename Tag                               | √    | 同时修改匹配的标签                                |
 | HTML CSS Support                              | √    | 快速补全 HTML 和 CSS                              |
 | javascript console utils                      | √    | Cmd + Shift + L 可以快速出现 `console.log()`      |
-
+Auto Close Tag|formulahendry.auto-close-tag
+Auto Rename Tag|formulahendry.auto-rename-tag
+Better Comments|aaron-bond.better-comments
+C/C++|ms-vscode.cpptools
+CSS Peek|pranaygp.vscode-css-peek
+Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code|ms-ceintl.vscode-language-pack-zh-hans
+Code Runner|formulahendry.code-runner
+Code Spell Checker|streetsidesoftware.code-spell-checker
+CodeSnap|adpyke.codesnap
+Color Info|bierner.color-info
+Debugger for Java|vscjava.vscode-java-debug
+Extension Pack for Java|vscjava.vscode-java-pack
+GitHub Copilot|github.copilot
+GitHub Copilot Chat|github.copilot-chat
+GitLens — Git supercharged|eamodio.gitlens
+Gradle for Java|vscjava.vscode-gradle
+Image preview|kisstkondoros.vscode-gutter-preview
+IntelliCode|visualstudioexptteam.vscodeintellicode
+IntelliCode API Usage Examples|visualstudioexptteam.intellicode-api-usage-examples
+JS-CSS-HTML Formatter|lonefy.vscode-js-css-html-formatter
+Jupyter|ms-toolsai.jupyter
+Jupyter Cell Tags|ms-toolsai.vscode-jupyter-cell-tags
+Jupyter Keymap|ms-toolsai.jupyter-keymap
+Jupyter Notebook Renderers|ms-toolsai.jupyter-renderers
+Jupyter Slide Show|ms-toolsai.vscode-jupyter-slideshow
+Language Support for Java(TM) by Red Hat|redhat.java
+LeetCode|leetcode.vscode-leetcode
+Live Server|ritwickdey.liveserver
+Local History|xyz.local-history
+Markdown All in One|yzhang.markdown-all-in-one
+Markdown Preview Enhanced|shd101wyy.markdown-preview-enhanced
+Markdown Preview Github Styling|bierner.markdown-preview-github-styles
+Markdown Preview Mermaid Support|bierner.markdown-mermaid
+Markdown Shortcuts|mdickin.markdown-shortcuts
+Markmap|gera2ld.markmap-vscode
+Maven for Java|vscjava.vscode-maven
+Mermaid Markdown Syntax Highlighting|bpruitt-goddard.mermaid-markdown-syntax-highlighting
+Mermaid Preview|vstirbu.vscode-mermaid-preview
+MscGen|mscgenjs.vscode-mscgen
+Prettier - Code formatter|esbenp.prettier-vscode
+Project Manager for Java|vscjava.vscode-java-dependency
+Pylance|ms-python.vscode-pylance
+Python|ms-python.python
+Python Debugger|ms-python.debugpy
+Python Indent|kevinrose.vsc-python-indent
+Rainbow Brackets 2|tejasvi.rainbow-brackets-2
+Rainbow CSV|mechatroner.rainbow-csv
+TODO Highlight|wayou.vscode-todo-highlight
+Test Runner for Java|vscjava.vscode-java-test
+WakaTime|wakatime.vscode-wakatime
+XML Tools|dotjoshjohnson.xml
+autoDocstring - Python Docstring Generator|njpwerner.autodocstring
+autopep8|ms-python.autopep8
+compareit|in4margaret.compareit
+highlight-icemode|iceliu.highlight-icemode
+indent-rainbow|oderwat.indent-rainbow
+isort|ms-python.isort
+javascript console utils|whtouche.vscode-js-console-utils
+open in browser|techer.open-in-browser
+vscode-icons|vscode-icons-team.vscode-icons
+vscode-pdf|tomoki1207.pdf
 
 # 2. Profile
 

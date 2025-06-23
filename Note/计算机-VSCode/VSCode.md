@@ -237,6 +237,23 @@
 
 ### 插件
 
+| Better Comments | √    | 注释色彩，醒目、带分类   |
+| GitLens         | √    | git 相关         |
+| Local History   | √    | 维护本地历史记录 |
+| Code Spell Checker | √    | 单词拼写检查                                                                                       |
+| Prettier           | √    | 代码格式化<br />在项目跟目录下新建 `.prettierrc`<br />默认使用 2 个空格，可以在通用设置里改为 4 个 |
+| Polacode- | √    | 生成代码截图，做 PPT 时用 |
+| Markdown Preview Github Styling | √    | 以 GitHub 风格预览 Markdown |
+| Markdown All in One             | √    | 一些便利的快捷键            |
+| Markdown Shortcuts              | √    | 一些便利的快捷键            |
+
+| Live Server                                   | √    | 浏览器中实时预览                                  |
+| Auto Close Tag                                | √    | 自动闭合配对标签                                  |
+| Auto Rename Tag                               | √    | 同时修改匹配的标签                                |
+| HTML CSS Support                              | √    | 快速补全 HTML 和 CSS                              |
+| javascript console utils                      | √    | Cmd + Shift + L 可以快速出现 `console.log()`      |
+
+
 # 2. Profile
 
 > https://code.visualstudio.com/docs/configure/profiles#_access-the-profiles-editor

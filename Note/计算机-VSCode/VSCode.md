@@ -25,6 +25,9 @@
         },
         "files.trimTrailingWhitespace": false
     },
+    "[mermaid]": {
+        "files.trimTrailingWhitespace": false
+    },
     "editor.fontFamily": "Menlo, 'Courier New', monospace",
     "editor.maxTokenizationLineLength": 10000000,
     "editor.renderWhitespace": "all",

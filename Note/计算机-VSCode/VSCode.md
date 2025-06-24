@@ -284,82 +284,85 @@
 
 ### 插件
 
-| Better Comments | √    | 注释色彩，醒目、带分类   |
-| GitLens         | √    | git 相关         |
-| Local History   | √    | 维护本地历史记录 |
-| Code Spell Checker | √    | 单词拼写检查                                                                                       |
-| Prettier           | √    | 代码格式化<br />在项目跟目录下新建 `.prettierrc`<br />默认使用 2 个空格，可以在通用设置里改为 4 个 |
-| Polacode- | √    | 生成代码截图，做 PPT 时用 |
-| Markdown Preview Github Styling | √    | 以 GitHub 风格预览 Markdown |
-| Markdown All in One             | √    | 一些便利的快捷键            |
-| Markdown Shortcuts              | √    | 一些便利的快捷键            |
+| 插件名                                                               | 插件 id                                              | 简述                                                                                               |
+| -------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Auto Close Tag                                                       | formulahendry.auto-close-tag                         |
+| Auto Close Tag                                                       | √                                                    | 自动闭合配对标签                                                                                   |
+| Auto Rename Tag                                                      | formulahendry.auto-rename-tag                        |
+| Auto Rename Tag                                                      | √                                                    | 同时修改匹配的标签                                                                                 |
+| Better Comments                                                      | aaron-bond.better-comments                           |
+| Better Comments                                                      | √                                                    | 注释色彩，醒目、带分类                                                                             |
+| C/C++                                                                | ms-vscode.cpptools                                   |
+| CSS Peek                                                             | pranaygp.vscode-css-peek                             |
+| Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code | ms-ceintl.vscode-language-pack-zh-hans               |
+| Code Runner                                                          | formulahendry.code-runner                            |
+| Code Spell Checker                                                   | streetsidesoftware.code-spell-checker                |
+| Code Spell Checker                                                   | √                                                    | 单词拼写检查                                                                                       |
+| CodeSnap                                                             | adpyke.codesnap                                      |
+| Color Info                                                           | bierner.color-info                                   |
+| Debugger for Java                                                    | vscjava.vscode-java-debug                            |
+| Extension Pack for Java                                              | vscjava.vscode-java-pack                             |
+| GitHub Copilot                                                       | github.copilot                                       |
+| GitHub Copilot Chat                                                  | github.copilot-chat                                  |
+| GitLens                                                              | √                                                    | git 相关                                                                                           |
+| GitLens — Git supercharged                                           | eamodio.gitlens                                      |
+| Gradle for Java                                                      | vscjava.vscode-gradle                                |
+| HTML CSS Support                                                     | √                                                    | 快速补全 HTML 和 CSS                                                                               |
+| Image preview                                                        | kisstkondoros.vscode-gutter-preview                  |
+| IntelliCode                                                          | visualstudioexptteam.vscodeintellicode               |
+| IntelliCode API Usage Examples                                       | visualstudioexptteam.intellicode-api-usage-examples  |
+| JS-CSS-HTML Formatter                                                | lonefy.vscode-js-css-html-formatter                  |
+| Jupyter                                                              | ms-toolsai.jupyter                                   |
+| Jupyter Cell Tags                                                    | ms-toolsai.vscode-jupyter-cell-tags                  |
+| Jupyter Keymap                                                       | ms-toolsai.jupyter-keymap                            |
+| Jupyter Notebook Renderers                                           | ms-toolsai.jupyter-renderers                         |
+| Jupyter Slide Show                                                   | ms-toolsai.vscode-jupyter-slideshow                  |
+| Language Support for Java(TM) by Red Hat                             | redhat.java                                          |
+| LeetCode                                                             | leetcode.vscode-leetcode                             |
+| Live Server                                                          | ritwickdey.liveserver                                |
+| Live Server                                                          | √                                                    | 浏览器中实时预览                                                                                   |
+| Local History                                                        | xyz.local-history                                    |
+| Local History                                                        | √                                                    | 维护本地历史记录                                                                                   |
+| Markdown All in One                                                  | yzhang.markdown-all-in-one                           |
+| Markdown All in One                                                  | √                                                    | 一些便利的快捷键                                                                                   |
+| Markdown Preview Enhanced                                            | shd101wyy.markdown-preview-enhanced                  |
+| Markdown Preview Github Styling                                      | bierner.markdown-preview-github-styles               |
+| Markdown Preview Github Styling                                      | √                                                    | 以 GitHub 风格预览 Markdown                                                                        |
+| Markdown Preview Mermaid Support                                     | bierner.markdown-mermaid                             |
+| Markdown Shortcuts                                                   | mdickin.markdown-shortcuts                           |
+| Markdown Shortcuts                                                   | √                                                    | 一些便利的快捷键                                                                                   |
+| Markmap                                                              | gera2ld.markmap-vscode                               |
+| Maven for Java                                                       | vscjava.vscode-maven                                 |
+| Mermaid Markdown Syntax Highlighting                                 | bpruitt-goddard.mermaid-markdown-syntax-highlighting |
+| Mermaid Preview                                                      | vstirbu.vscode-mermaid-preview                       |
+| MscGen                                                               | mscgenjs.vscode-mscgen                               |
+| Polacode-                                                            | √                                                    | 生成代码截图，做 PPT 时用                                                                          |
+| Prettier                                                             | √                                                    | 代码格式化<br />在项目根目录下新建 `.prettierrc`<br />默认使用 2 个空格，可以在通用设置里改为 4 个 |
+| Prettier - Code formatter                                            | esbenp.prettier-vscode                               |
+| Project Manager for Java                                             | vscjava.vscode-java-dependency                       |
+| Pylance                                                              | ms-python.vscode-pylance                             |
+| Python                                                               | ms-python.python                                     |
+| Python Debugger                                                      | ms-python.debugpy                                    |
+| Python Indent                                                        | kevinrose.vsc-python-indent                          |
+| Rainbow Brackets 2                                                   | tejasvi.rainbow-brackets-2                           |
+| Rainbow CSV                                                          | mechatroner.rainbow-csv                              |
+| TODO Highlight                                                       | wayou.vscode-todo-highlight                          |
+| Test Runner for Java                                                 | vscjava.vscode-java-test                             |
+| WakaTime                                                             | wakatime.vscode-wakatime                             |
+| XML Tools                                                            | dotjoshjohnson.xml                                   |
+| autoDocstring - Python Docstring Generator                           | njpwerner.autodocstring                              |
+| autopep8                                                             | ms-python.autopep8                                   |
+| compareit                                                            | in4margaret.compareit                                |
+| highlight-icemode                                                    | iceliu.highlight-icemode                             |
+| indent-rainbow                                                       | oderwat.indent-rainbow                               |
+| isort                                                                | ms-python.isort                                      |
+| javascript console utils                                             | whtouche.vscode-js-console-utils                     |
+| javascript console utils                                             | √                                                    | Cmd + Shift + L 可以快速出现 `console.log()`                                                       |
+| open in browser                                                      | techer.open-in-browser                               |
+| vscode-icons                                                         | vscode-icons-team.vscode-icons                       |
+| vscode-pdf                                                           | tomoki1207.pdf                                       |
 
-| Live Server                                   | √    | 浏览器中实时预览                                  |
-| Auto Close Tag                                | √    | 自动闭合配对标签                                  |
-| Auto Rename Tag                               | √    | 同时修改匹配的标签                                |
-| HTML CSS Support                              | √    | 快速补全 HTML 和 CSS                              |
-| javascript console utils                      | √    | Cmd + Shift + L 可以快速出现 `console.log()`      |
-Auto Close Tag|formulahendry.auto-close-tag
-Auto Rename Tag|formulahendry.auto-rename-tag
-Better Comments|aaron-bond.better-comments
-C/C++|ms-vscode.cpptools
-CSS Peek|pranaygp.vscode-css-peek
-Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code|ms-ceintl.vscode-language-pack-zh-hans
-Code Runner|formulahendry.code-runner
-Code Spell Checker|streetsidesoftware.code-spell-checker
-CodeSnap|adpyke.codesnap
-Color Info|bierner.color-info
-Debugger for Java|vscjava.vscode-java-debug
-Extension Pack for Java|vscjava.vscode-java-pack
-GitHub Copilot|github.copilot
-GitHub Copilot Chat|github.copilot-chat
-GitLens — Git supercharged|eamodio.gitlens
-Gradle for Java|vscjava.vscode-gradle
-Image preview|kisstkondoros.vscode-gutter-preview
-IntelliCode|visualstudioexptteam.vscodeintellicode
-IntelliCode API Usage Examples|visualstudioexptteam.intellicode-api-usage-examples
-JS-CSS-HTML Formatter|lonefy.vscode-js-css-html-formatter
-Jupyter|ms-toolsai.jupyter
-Jupyter Cell Tags|ms-toolsai.vscode-jupyter-cell-tags
-Jupyter Keymap|ms-toolsai.jupyter-keymap
-Jupyter Notebook Renderers|ms-toolsai.jupyter-renderers
-Jupyter Slide Show|ms-toolsai.vscode-jupyter-slideshow
-Language Support for Java(TM) by Red Hat|redhat.java
-LeetCode|leetcode.vscode-leetcode
-Live Server|ritwickdey.liveserver
-Local History|xyz.local-history
-Markdown All in One|yzhang.markdown-all-in-one
-Markdown Preview Enhanced|shd101wyy.markdown-preview-enhanced
-Markdown Preview Github Styling|bierner.markdown-preview-github-styles
-Markdown Preview Mermaid Support|bierner.markdown-mermaid
-Markdown Shortcuts|mdickin.markdown-shortcuts
-Markmap|gera2ld.markmap-vscode
-Maven for Java|vscjava.vscode-maven
-Mermaid Markdown Syntax Highlighting|bpruitt-goddard.mermaid-markdown-syntax-highlighting
-Mermaid Preview|vstirbu.vscode-mermaid-preview
-MscGen|mscgenjs.vscode-mscgen
-Prettier - Code formatter|esbenp.prettier-vscode
-Project Manager for Java|vscjava.vscode-java-dependency
-Pylance|ms-python.vscode-pylance
-Python|ms-python.python
-Python Debugger|ms-python.debugpy
-Python Indent|kevinrose.vsc-python-indent
-Rainbow Brackets 2|tejasvi.rainbow-brackets-2
-Rainbow CSV|mechatroner.rainbow-csv
-TODO Highlight|wayou.vscode-todo-highlight
-Test Runner for Java|vscjava.vscode-java-test
-WakaTime|wakatime.vscode-wakatime
-XML Tools|dotjoshjohnson.xml
-autoDocstring - Python Docstring Generator|njpwerner.autodocstring
-autopep8|ms-python.autopep8
-compareit|in4margaret.compareit
-highlight-icemode|iceliu.highlight-icemode
-indent-rainbow|oderwat.indent-rainbow
-isort|ms-python.isort
-javascript console utils|whtouche.vscode-js-console-utils
-open in browser|techer.open-in-browser
-vscode-icons|vscode-icons-team.vscode-icons
-vscode-pdf|tomoki1207.pdf
+
 
 # 2. Profile
 

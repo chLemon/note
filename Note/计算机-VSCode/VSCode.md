@@ -204,7 +204,6 @@
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?，。、（）：？”“！",
     "editor.wordWrap": "on",
     "files.trimTrailingWhitespace": true,
-    "folderTemplates.globalTemplateDirectoryPath": "/Users/chen/Documents/chen/requirement【需求】/.fttemplates",
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
@@ -284,76 +283,60 @@
 
 ### 1.2.3. 插件
 
-| 插件名                                                               | 插件 id                                              | 简述                                               |
-| -------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------- |
-| Better Comments                                                      | aaron-bond.better-comments                           | 注释色彩，醒目、带分类                             |
-| TODO Highlight                                                       | wayou.vscode-todo-highlight                          | 高亮所有 TODO                                      |
+| 插件名                                                               | 插件 id                                              | 简述                                           |
+| -------------------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------- |
+| Better Comments                                                      | aaron-bond.better-comments                           | 注释色彩，醒目、带分类                         |
+| TODO Highlight                                                       | wayou.vscode-todo-highlight                          | 高亮所有 TODO                                  |
 | Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code | ms-ceintl.vscode-language-pack-zh-hans               |
-| Code Spell Checker                                                   | streetsidesoftware.code-spell-checker                | 单词拼写检查                                       |
-| Local History                                                        | xyz.local-history                                    | 本地历史插件                                       |
-| Marquee                                                              | stateful.marquee                                     | 项目管理                                           |
-| GitHub Copilot                                                       | github.copilot                                       | Copilot                                            |
-| GitHub Copilot Chat                                                  | github.copilot-chat                                  | Copilot                                            |
-| Jupyter                                                              | ms-toolsai.jupyter                                   | jupyter                                            |
-| Jupyter Cell Tags                                                    | ms-toolsai.vscode-jupyter-cell-tags                  | jupyter                                            |
-| Jupyter Keymap                                                       | ms-toolsai.jupyter-keymap                            | jupyter                                            |
-| Jupyter Notebook Renderers                                           | ms-toolsai.jupyter-renderers                         | jupyter                                            |
-| Jupyter Slide Show                                                   | ms-toolsai.vscode-jupyter-slideshow                  | jupyter                                            |
+| Code Spell Checker                                                   | streetsidesoftware.code-spell-checker                | 单词拼写检查                                   |
+| Local History                                                        | xyz.local-history                                    | 本地历史                                       |
+| Marquee                                                              | stateful.marquee                                     | 项目管理                                       |
+| GitHub Copilot                                                       | github.copilot                                       | Copilot                                        |
+| GitHub Copilot Chat                                                  | github.copilot-chat                                  | Copilot                                        |
+| Jupyter                                                              | ms-toolsai.jupyter                                   | jupyter 包                                     |
 | autoDocstring - Python Docstring Generator                           | njpwerner.autodocstring                              |
-| Black Formatter                                                      | ms-python.black-formatter                            | python 代码格式化                                  |
-| Pylance                                                              | ms-python.vscode-pylance                             | python                                             |
-| Python                                                               | ms-python.python                                     | python                                             |
-| Python Debugger                                                      | ms-python.debugpy                                    | python                                             |
-| Python Indent                                                        | kevinrose.vsc-python-indent                          | python 写的时候，正确自动缩进                      |
-| isort                                                                | ms-python.isort                                      | 对 import 进行分类和排序                           |
-| GitHub Markdown Preview                                              | bierner.github-markdown-preview                      | markdown                                           |
-| Markdown All in One                                                  | yzhang.markdown-all-in-one                           | markdown                                           |
-| Markdown Checkboxes                                                  | bierner.markdown-checkbox                            | markdown                                           |
-| Markdown Emoji                                                       | bierner.markdown-emoji                               | markdown                                           |
-| Markdown Footnotes                                                   | bierner.markdown-footnotes                           | markdown                                           |
-| Markdown Preview Enhanced                                            | shd101wyy.markdown-preview-enhanced                  | markdown                                           |
-| Markdown Preview Github Styling                                      | bierner.markdown-preview-github-styles               | markdown                                           |
-| Markdown Preview Mermaid Support                                     | bierner.markdown-mermaid                             | markdown                                           |
-| Markdown Preview with Bitbucket Styles                               | hbrok.markdown-preview-bitbucket                     | markdown                                           |
-| Markdown Shortcuts                                                   | mdickin.markdown-shortcuts                           | markdown                                           |
-| Markdown Theme Kit                                                   | ms-vscode.theme-markdownkit                          | markdown                                           |
-| Markdown yaml Preamble                                               | bierner.markdown-yaml-preamble                       | markdown                                           |
-| Markdown+Math                                                        | goessner.mdmath                                      | markdown                                           |
-| markdownlint                                                         | davidanson.vscode-markdownlint                       | markdown                                           |
-| Markmap                                                              | gera2ld.markmap-vscode                               | markdown 用 markdown 画脑图                        |
-| Mermaid Editor                                                       | tomoyukim.vscode-mermaid-editor                      | markdown                                           |
-| Print                                                                | pdconsec.vscode-print                                | markdown                                           |
-| Read Time                                                            | johnpapa.read-time                                   | markdown                                           |
-| Word Count                                                           | ms-vscode.wordcount                                  | markdown                                           |
-| Mermaid Markdown Syntax Highlighting                                 | bpruitt-goddard.mermaid-markdown-syntax-highlighting | markdown mermaid 语法高亮                          |
-| Mermaid Preview                                                      | vstirbu.vscode-mermaid-preview                       | mermaid 预览                                       |
-| Auto Close Tag                                                       | formulahendry.auto-close-tag                         | 前端，自动闭合配对标签                             |
-| Auto Rename Tag                                                      | formulahendry.auto-rename-tag                        | 前端，同时修改匹配的标签                           |
-| CSS Peek                                                             | pranaygp.vscode-css-peek                             | 前端                                               |
-| Color Info                                                           | bierner.color-info                                   | 前端，CSS 快速查看颜色                             |
-| HTML CSS Support                                                     |                                                      | 前端，快速补全 HTML 和 CSS                         |
-| Image preview                                                        | kisstkondoros.vscode-gutter-preview                  | 前端，图片预览                                     |
-| Live Server                                                          | ritwickdey.liveserver                                | 前端，浏览器中实时预览                             |
-| javascript console utils                                             | whtouche.vscode-js-console-utils                     | 前端，Cmd + Shift + L 可以快速出现 `console.log()` |
-| JS-CSS-HTML Formatter                                                | lonefy.vscode-js-css-html-formatter                  | 前端                                               |
+| Black Formatter                                                      | ms-python.black-formatter                            | python 代码格式化                              |
+| Pylance                                                              | ms-python.vscode-pylance                             | python                                         |
+| Python                                                               | ms-python.python                                     | python                                         |
+| Python Debugger                                                      | ms-python.debugpy                                    | python                                         |
+| Python Indent                                                        | kevinrose.vsc-python-indent                          | python 写的时候，正确自动缩进                  |
+| isort                                                                | ms-python.isort                                      | 对 import 进行分类和排序                       |
+| GitHub Markdown Preview                                              | bierner.github-markdown-preview                      | markdown 包                                    |
+| Markdown All in One                                                  | yzhang.markdown-all-in-one                           | markdown                                       |
+| Markdown Preview Enhanced                                            | shd101wyy.markdown-preview-enhanced                  | markdown                                       |
+| Markdown Preview with Bitbucket Styles                               | hbrok.markdown-preview-bitbucket                     | markdown                                       |
+| Markdown Shortcuts                                                   | mdickin.markdown-shortcuts                           | markdown                                       |
+| Markdown Theme Kit                                                   | ms-vscode.theme-markdownkit                          | markdown                                       |
+| Markdown+Math                                                        | goessner.mdmath                                      | markdown                                       |
+| markdownlint                                                         | davidanson.vscode-markdownlint                       | markdown                                       |
+| Markmap                                                              | gera2ld.markmap-vscode                               | markdown 用 markdown 画脑图                    |
+| Mermaid Editor                                                       | tomoyukim.vscode-mermaid-editor                      | markdown                                       |
+| Print                                                                | pdconsec.vscode-print                                | markdown                                       |
+| Read Time                                                            | johnpapa.read-time                                   | markdown                                       |
+| Word Count                                                           | ms-vscode.wordcount                                  | markdown                                       |
+| Mermaid Markdown Syntax Highlighting                                 | bpruitt-goddard.mermaid-markdown-syntax-highlighting | markdown mermaid 语法高亮                      |
+| Mermaid Preview                                                      | vstirbu.vscode-mermaid-preview                       | mermaid 预览                                   |
+| Auto Complete Tag                                                    | formulahendry.auto-complete-tag                      | 前端，自动闭合配对标签                         |
+| CSS Peek                                                             | pranaygp.vscode-css-peek                             | 前端                                           |
+| Color Info                                                           | bierner.color-info                                   | 前端，CSS 快速查看颜色                         |
+| HTML CSS Support                                                     |                                                      | 前端，快速补全 HTML 和 CSS                     |
+| Image preview                                                        | kisstkondoros.vscode-gutter-preview                  | 前端，图片预览                                 |
+| Live Server                                                          | ritwickdey.liveserver                                | 前端，浏览器中实时预览                         |
+| javascript console utils                                             | whtouche.vscode-js-console-utils                     | 前端，Cmd + Shift + L 快速出现 `console.log()` |
+| JS-CSS-HTML Formatter                                                | lonefy.vscode-js-css-html-formatter                  | 前端                                           |
 | open in browser                                                      | techer.open-in-browser                               |
-| C/C++                                                                | ms-vscode.cpptools                                   | C/C++                                              |
-| Debugger for Java                                                    | vscjava.vscode-java-debug                            | Java                                               |
-| Extension Pack for Java                                              | vscjava.vscode-java-pack                             | Java                                               |
-| Gradle for Java                                                      | vscjava.vscode-gradle                                | Java                                               |
-| Language Support for Java(TM) by Red Hat                             | redhat.java                                          | Java                                               |
-| Maven for Java                                                       | vscjava.vscode-maven                                 | Java                                               |
-| Project Manager for Java                                             | vscjava.vscode-java-dependency                       | Java                                               |
+| C/C++                                                                | ms-vscode.cpptools                                   | C/C++                                          |
+| Extension Pack for Java                                              | vscjava.vscode-java-pack                             | Java                                           |
 | Test Runner for Java                                                 | vscjava.vscode-java-test                             |
-| CodeSnap                                                             | adpyke.codesnap                                      | 做 PPT 用                                          |
-| Polacode-                                                            | √                                                    | 生成代码截图，做 PPT 时用                          |
-| Prettier - Code formatter                                            | esbenp.prettier-vscode                               | 代码格式化，额外说明见下方[](#1231-prettier-说明)  |
-| GitLens — Git supercharged                                           | eamodio.gitlens                                      | git 增强                                           |
+| CodeSnap                                                             | adpyke.codesnap                                      | 做 PPT 用                                      |
+| Polacode-                                                            | √                                                    | 生成代码截图，做 PPT 时用                      |
+| Prettier - Code formatter                                            | esbenp.prettier-vscode                               | 代码格式化，额外说明[见](#1231-prettier-说明)  |
+| GitLens — Git supercharged                                           | eamodio.gitlens                                      | git 增强                                       |
 | LeetCode                                                             | leetcode.vscode-leetcode                             |
-| Rainbow CSV                                                          | mechatroner.rainbow-csv                              | csv 彩虹                                           |
+| Rainbow CSV                                                          | mechatroner.rainbow-csv                              | csv 彩虹                                       |
 | WakaTime                                                             | wakatime.vscode-wakatime                             |
 | XML Tools                                                            | dotjoshjohnson.xml                                   |
-| indent-rainbow                                                       | oderwat.indent-rainbow                               | 彩虹缩进                                           |
+| indent-rainbow                                                       | oderwat.indent-rainbow                               | 彩虹缩进                                       |
 | vscode-icons                                                         | vscode-icons-team.vscode-icons                       |
 | vscode-pdf                                                           | tomoki1207.pdf                                       |
 

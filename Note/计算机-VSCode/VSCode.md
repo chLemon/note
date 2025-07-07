@@ -67,7 +67,8 @@
         "editor.lineHighlightBorder": "#ffffff30"
     },
     "workbench.startupEditor": "none",
-    "workbench.tree.indent": 16
+    "workbench.tree.indent": 16,
+    "window.zoomLevel": 1
 }
 ```
 
@@ -231,7 +232,8 @@
         "tree.indentGuidesStroke": "#008700"
     },
     "workbench.startupEditor": "none",
-    "workbench.tree.indent": 16
+    "workbench.tree.indent": 16,
+    "window.zoomLevel": 1
 }
 ```
 

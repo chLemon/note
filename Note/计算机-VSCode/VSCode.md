@@ -1,12 +1,12 @@
-> <https://web.qianguyihao.com/#%E5%89%8D%E8%A8%80>
->
-> <https://www.bilibili.com/video/BV1BT4y1W7Aw/>
+# VSCode
 
-# 1. 我的配置备份
+[TOC]
 
-## 1.1. mac
+## 1. 我的配置备份
 
-### 1.1.1. 设置
+### 1.1. mac
+
+#### 1.1.1. 设置
 
 ```json
 {
@@ -32,8 +32,8 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "editor.fontFamily": "Menlo, 'Courier New', monospace",
-    "editor.minimap.showSlider": "always",
     "editor.maxTokenizationLineLength": 10000000,
+    "editor.minimap.showSlider": "always",
     "editor.renderWhitespace": "all",
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?，。、（）：？”“！",
     "editor.wordWrap": "on",
@@ -61,18 +61,18 @@
     "security.workspace.trust.untrustedFiles": "open",
     "window.openFilesInNewWindow": "on",
     "window.openFoldersInNewWindow": "on",
+    "window.zoomLevel": 1,
     "workbench.colorCustomizations": {
-        "tree.indentGuidesStroke": "#008700",
         "editor.lineHighlightBackground": "#00000090",
-        "editor.lineHighlightBorder": "#ffffff30"
+        "editor.lineHighlightBorder": "#ffffff30",
+        "tree.indentGuidesStroke": "#008700"
     },
     "workbench.startupEditor": "none",
-    "workbench.tree.indent": 16,
-    "window.zoomLevel": 1
+    "workbench.tree.indent": 16
 }
 ```
 
-### 1.1.2. 自定义的一些快捷键设置
+#### 1.1.2. 自定义的一些快捷键设置
 
 ```json
 // 将键绑定放在此文件中以覆盖默认值
@@ -127,7 +127,7 @@
 ]
 ```
 
-### 1.1.3. 插件
+#### 1.1.3. 插件
 
 | 插件名                                                               | 插件 id                                | 简述              |
 | -------------------------------------------------------------------- | -------------------------------------- | ----------------- |
@@ -170,9 +170,9 @@
 | Word Count                                                           | ms-vscode.wordcount                    | markdown          |
 | markdownlint                                                         | davidanson.vscode-markdownlint         | markdown          |
 
-## 1.2. win
+### 1.2. win
 
-### 1.2.1. 设置
+#### 1.2.1. 设置
 
 ```json
 {
@@ -237,7 +237,7 @@
 }
 ```
 
-### 1.2.2. 自定义的一些快捷键设置
+#### 1.2.2. 自定义的一些快捷键设置
 
 ```json
 // 将键绑定放在此文件中以覆盖默认值
@@ -283,7 +283,7 @@
 ]
 ```
 
-### 1.2.3. 插件
+#### 1.2.3. 插件
 
 | 插件名                                                               | 插件 id                                              | 简述                                           |
 | -------------------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------- |
@@ -342,13 +342,13 @@
 | vscode-icons                                                         | vscode-icons-team.vscode-icons                       |                                                |
 | vscode-pdf                                                           | tomoki1207.pdf                                       |                                                |
 
-#### 1.2.3.1. Prettier 说明
+##### 1.2.3.1. Prettier 说明
 
 在项目根目录下新建 `.prettierrc`
 
 默认使用 2 个空格，可以在通用设置里改为 4 个
 
-# 2. Profile
+## 2. Profile
 
 > <https://code.visualstudio.com/docs/configure/profiles#_access-the-profiles-editor>
 
@@ -356,19 +356,19 @@
 
 例如写 Java 时，用相关的插件、快捷键；写 Python 的时候，切换为另一套。
 
-# 3. 工作区 Workspace
+## 3. 工作区 Workspace
 
 可以将一些目录按需组织在一起，形成一个工作区
 
-## 3.1. 工作区的 Explorer 文件夹顺序
+### 3.1. 工作区的 Explorer 文件夹顺序
 
 打开保存的 code-workspace 文件，调整里面的 folders 里的顺序即可
 
 打开该文件：F1 >> Open Workspace Configuration File
 
-# 4. 设置
+## 4. 设置
 
-## 4.1. 设置
+### 4.1. 设置
 
 左下角打开设置，比较方便。
 
@@ -380,7 +380,7 @@
 
 ![两种设置方式](images/两种设置方式.png)
 
-## 4.2. 常用设置
+### 4.2. 常用设置
 
 | 大概含义                                 | 设置名称 | 设置路径                                                                  | 推荐值                    | 图示/说明                                                                                  |
 | ---------------------------------------- | -------- | ------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------ |
@@ -415,9 +415,9 @@
 }
 ```
 
-# 5. 插件
+## 5. 插件
 
-## 5.1. 插件市场
+### 5.1. 插件市场
 
 <https://marketplace.visualstudio.com/vscode>
 
@@ -426,9 +426,9 @@
 -   Most Popular：按总安装量排序的插件。
 -   Recently Added：最新发布的插件。
 
-## 5.2. 常用插件
+### 5.2. 常用插件
 
-### 5.2.1. 页面展示
+#### 5.2.1. 页面展示
 
 | 插件名          | 推荐 | 作用                     |
 | --------------- | ---- | ------------------------ |
@@ -436,7 +436,7 @@
 | indent-rainbow  |      | 突出显示代码缩进         |
 | Better Comments | √    | 注释色彩，醒目、带分类   |
 
-### 5.2.2. 代码管理
+#### 5.2.2. 代码管理
 
 | 插件名          | 推荐 | 作用             |
 | --------------- | ---- | ---------------- |
@@ -445,7 +445,7 @@
 | Project Manager |      | 管理常用项目     |
 | Waka Time       |      | 统计写代码的时间 |
 
-### 5.2.3. 代码格式化
+#### 5.2.3. 代码格式化
 
 | 插件名             | 推荐 | 作用                                                                                             |
 | ------------------ | ---- | ------------------------------------------------------------------------------------------------ |
@@ -468,7 +468,7 @@ Prettier 设置文件参考
 }
 ```
 
-### 5.2.4. 前端相关
+#### 5.2.4. 前端相关
 
 | 插件名                                        | 推荐 | 作用                                              |
 | --------------------------------------------- | ---- | ------------------------------------------------- |
@@ -487,7 +487,7 @@ Prettier 设置文件参考
 | Vue CSS Peek                                  |      | 增加了对 Vue 文件的支持                           |
 | Color Info                                    |      | 预览 CSS 中颜色的信息                             |
 
-### 5.2.5. Markdown
+#### 5.2.5. Markdown
 
 | 插件名                          | 推荐 | 作用                        |
 | ------------------------------- | ---- | --------------------------- |
@@ -495,15 +495,15 @@ Prettier 设置文件参考
 | Markdown All in One             | √    | 一些便利的快捷键            |
 | Markdown Shortcuts              | √    | 一些便利的快捷键            |
 
-### 5.2.6. 其他
+#### 5.2.6. 其他
 
 | 插件名    | 推荐 | 作用                      |
 | --------- | ---- | ------------------------- |
 | Polacode- | √    | 生成代码截图，做 PPT 时用 |
 
-# 6. 快捷键
+## 6. 快捷键
 
-## 6.1. 工作区快捷键
+### 6.1. 工作区快捷键
 
 | Mac 快捷键           | Win 快捷键               | 作用                                          | 备注                 |
 | :------------------- | :----------------------- | :-------------------------------------------- | :------------------- |
@@ -518,7 +518,7 @@ Prettier 设置文件参考
 | Cmd + N              | Ctrl + N                 | 新建文件                                      |                      |
 | Cmd + W              | Ctrl + W                 | 关闭当前文件                                  |                      |
 
-## 6.2. 前端相关
+### 6.2. 前端相关
 
 快捷输入后，按`Tab`或者`Enter`。
 
@@ -531,7 +531,7 @@ Prettier 设置文件参考
 | #id_value        | 创建一个带有 id 属性，且值为`id_value`的 div 标签      |
 | `div#id_value`   | 同上                                                   |
 
-# 7. 用户片段 / 文件模板 / 文件夹模板
+## 7. 用户片段 / 文件模板 / 文件夹模板
 
 Code >> 首选项 >> 配置代码片段
 
@@ -554,15 +554,15 @@ Code >> 首选项 >> 配置代码片段
 }
 ```
 
-# 8. 问题记录
+## 8. 问题记录
 
-## 8.1. Windows 上重启后 VSCode 消失/快捷方式失效
+### 8.1. Windows 上重启后 VSCode 消失/快捷方式失效
 
 在 Windows 更新、VSCode 更新的时候有可能出现这个问题。可以通过快捷方式查看原本 exe 文件所在的目录，原来很多内容都被移动到该目录下的一个新目录`_`中，剪切出来即可。
 
 通常是：`C:\Users\<user>\AppData\Local\Programs\Microsoft VS Code\_`
 
-## 8.2. 回车 Enter 或者 Backspace 失效
+### 8.2. 回车 Enter 或者 Backspace 失效
 
 看一下后台是不是有疯狂在执行的脚本，ctrl + c 中止后就好了
 

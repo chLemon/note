@@ -1,6 +1,6 @@
-> https://web.qianguyihao.com/#%E5%89%8D%E8%A8%80
+> <https://web.qianguyihao.com/#%E5%89%8D%E8%A8%80>
 >
-> https://www.bilibili.com/video/BV1BT4y1W7Aw/
+> <https://www.bilibili.com/video/BV1BT4y1W7Aw/>
 
 # 1. 我的配置备份
 
@@ -326,29 +326,31 @@
 | Live Server                                                          | ritwickdey.liveserver                                | 前端，浏览器中实时预览                         |
 | javascript console utils                                             | whtouche.vscode-js-console-utils                     | 前端，Cmd + Shift + L 快速出现 `console.log()` |
 | JS-CSS-HTML Formatter                                                | lonefy.vscode-js-css-html-formatter                  | 前端                                           |
-| open in browser                                                      | techer.open-in-browser                               |
+| open in browser                                                      | techer.open-in-browser                               |                                                |
 | C/C++                                                                | ms-vscode.cpptools                                   | C/C++                                          |
 | Extension Pack for Java                                              | vscjava.vscode-java-pack                             | Java                                           |
-| Test Runner for Java                                                 | vscjava.vscode-java-test                             |
+| Test Runner for Java                                                 | vscjava.vscode-java-test                             |                                                |
 | CodeSnap                                                             | adpyke.codesnap                                      | 做 PPT 用                                      |
 | Polacode-                                                            | √                                                    | 生成代码截图，做 PPT 时用                      |
 | Prettier - Code formatter                                            | esbenp.prettier-vscode                               | 代码格式化，额外说明[见](#1231-prettier-说明)  |
 | GitLens — Git supercharged                                           | eamodio.gitlens                                      | git 增强                                       |
-| LeetCode                                                             | leetcode.vscode-leetcode                             |
+| LeetCode                                                             | leetcode.vscode-leetcode                             |                                                |
 | Rainbow CSV                                                          | mechatroner.rainbow-csv                              | csv 彩虹                                       |
-| WakaTime                                                             | wakatime.vscode-wakatime                             |
-| XML Tools                                                            | dotjoshjohnson.xml                                   |
+| WakaTime                                                             | wakatime.vscode-wakatime                             |                                                |
+| XML Tools                                                            | dotjoshjohnson.xml                                   |                                                |
 | indent-rainbow                                                       | oderwat.indent-rainbow                               | 彩虹缩进                                       |
-| vscode-icons                                                         | vscode-icons-team.vscode-icons                       |
-| vscode-pdf                                                           | tomoki1207.pdf                                       |
+| vscode-icons                                                         | vscode-icons-team.vscode-icons                       |                                                |
+| vscode-pdf                                                           | tomoki1207.pdf                                       |                                                |
 
 #### 1.2.3.1. Prettier 说明
 
-<br />在项目根目录下新建 `.prettierrc`<br />默认使用 2 个空格，可以在通用设置里改为 4 个
+在项目根目录下新建 `.prettierrc`
+
+默认使用 2 个空格，可以在通用设置里改为 4 个
 
 # 2. Profile
 
-> https://code.visualstudio.com/docs/configure/profiles#_access-the-profiles-editor
+> <https://code.visualstudio.com/docs/configure/profiles#_access-the-profiles-editor>
 
 可以创建一个 Profile，代表一套 的设置、插件、UI 布局、快捷键，可以在不同的工作区，启用不同的 Profile。
 
@@ -370,36 +372,36 @@
 
 左下角打开设置，比较方便。
 
-![img](images/打开设置.png)
+![打开设置](images/打开设置.png)
 
 -   用户设置：全局生效
 -   工作区设置：只对当前项目生效，优先级更高。保存在`.vscode/settings.json`中，可以提交到 git，共享给团队其他成员。
 -   右上角 icon 可以打开 json 文件形式的设置
 
-![](images/两种设置方式.png)
+![两种设置方式](images/两种设置方式.png)
 
 ## 4.2. 常用设置
 
 | 大概含义                                 | 设置名称 | 设置路径                                                                  | 推荐值                    | 图示/说明                                                                                  |
 | ---------------------------------------- | -------- | ------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------ |
-| 面包屑导航                               | 1        | 用户设置 -> 工作台 -> 导航路径 -> `Breadcrumbs`                           | `on`                      | ![](images/面包屑导航.png)                                                                 |
-| 显示代码行号                             | 1        | `Editor: Line Numbers`                                                    | `on`                      |
-| 右侧显示代码缩略图                       | 1        | `Editor: Minimap`                                                         | `on`                      |
+| 面包屑导航                               | 1        | 用户设置 -> 工作台 -> 导航路径 -> `Breadcrumbs`                           | `on`                      | ![面包屑导航](images/面包屑导航.png)                                                       |
+| 显示代码行号                             | 1        | `Editor: Line Numbers`                                                    | `on`                      |                                                                                            |
+| 右侧显示代码缩略图                       | 1        | `Editor: Minimap`                                                         | `on`                      |                                                                                            |
 | 高亮光标当前所在行                       | 1        | `Editor.renderLineHighlight`                                              | `all / line`              | 这里还需要一些其他设置内容，见下方                                                         |
 | 文件自动保存                             | 1        | `Files : Auto Save`                                                       | `off`                     | 在配置了保存自动格式化的情况下，会导致写代码的时候一直被自动格式化，很难受。               |
-| 保存代码后是否立刻格式化                 | 1        | `Editor.formatOnSave`                                                     | `off`                     |
-| 热退出，关闭时记住未保存的文件           | 1        | `Files: Hot Exit`                                                         | `onExit`                  |
-| 粘贴内容是否自动格式化                   | 1        | `Editor: Format On Paste`                                                 | `off`                     |
-| 字体大小                                 |          | `Editor: Font Size`                                                       |
-| 是否根据文件内容自动检测用空格还是制表符 |          | `Editor: Detect Indentation`                                              | `on`                      |
-| 按下键盘上的 Tab 时插入空格              |          | `Editor: Insert Spaces`                                                   | `on`                      |
+| 保存代码后是否立刻格式化                 | 1        | `Editor.formatOnSave`                                                     | `off`                     |                                                                                            |
+| 热退出，关闭时记住未保存的文件           | 1        | `Files: Hot Exit`                                                         | `onExit`                  |                                                                                            |
+| 粘贴内容是否自动格式化                   | 1        | `Editor: Format On Paste`                                                 | `off`                     |                                                                                            |
+| 字体大小                                 |          | `Editor: Font Size`                                                       |                           |
+| 是否根据文件内容自动检测用空格还是制表符 |          | `Editor: Detect Indentation`                                              | `on`                      |                                                                                            |
+| 按下键盘上的 Tab 时插入空格              |          | `Editor: Insert Spaces`                                                   | `on`                      |                                                                                            |
 | 制表符等于多少空格                       |          | `Editor: Tab Size`                                                        | `4`                       | 这个设置在 Prettier 插件里也可以设置                                                       |
-| 保存时自动去掉行末空格                   |          | `Files: Trim Trailing Whitespace`                                         | `on`                      |
-| 直观显示空格和制表符                     |          | `Editor: Render Whitespace`                                               | `all`                     |
-| 删除文件是否弹出确认框                   |          | `Explorer: Confirm Delete`                                                | `on`                      |
-| 在新窗口打开文件/文件夹                  |          | `Window: Open Files In New Window` / `Window: Open Folders In New Window` | `on`                      |
-| 重新打开 VSCode 时， 是否展示之前的窗口  |          | `Window: Restore Windows`                                                 | `all`                     |
-| 文件展示在文件夹之前                     |          | `Explorer >> Sort Order : filesFirst`                                     |
+| 保存时自动去掉行末空格                   |          | `Files: Trim Trailing Whitespace`                                         | `on`                      |                                                                                            |
+| 直观显示空格和制表符                     |          | `Editor: Render Whitespace`                                               | `all`                     |                                                                                            |
+| 删除文件是否弹出确认框                   |          | `Explorer: Confirm Delete`                                                | `on`                      |                                                                                            |
+| 在新窗口打开文件/文件夹                  |          | `Window: Open Files In New Window` / `Window: Open Folders In New Window` | `on`                      |                                                                                            |
+| 重新打开 VSCode 时， 是否展示之前的窗口  |          | `Window: Restore Windows`                                                 | `all`                     |                                                                                            |
+| 文件展示在文件夹之前                     |          | `Explorer >> Sort Order : filesFirst`                                     |                           |
 | 中文标点也作为单词分隔符                 |          | `Editor >> Word Separators`                                               | 增加 `，。、（）：？”“！` | 默认情况下，中文标点不会被视为单词分隔符，在使用 alt/option + ←/→ 跳转时会视为一个大单词。 |
 
 **高亮光标当前所在行 其他设置**
@@ -417,7 +419,7 @@
 
 ## 5.1. 插件市场
 
-https://marketplace.visualstudio.com/vscode
+<https://marketplace.visualstudio.com/vscode>
 
 -   Featured：由 VS Code 团队精心推荐的插件。
 -   Trending：近期热门插件。
@@ -445,12 +447,12 @@ https://marketplace.visualstudio.com/vscode
 
 ### 5.2.3. 代码格式化
 
-| 插件名             | 推荐 | 作用                                                                                               |
-| ------------------ | ---- | -------------------------------------------------------------------------------------------------- |
-| Code Spell Checker | √    | 单词拼写检查                                                                                       |
-| TODO Highlight     |      | 在命令面板中，Todohighlist 可以显示所有的 TODO（必须是大写的）                                     |
-| Prettier           | √    | 代码格式化<br />在项目跟目录下新建 `.prettierrc`<br />默认使用 2 个空格，可以在通用设置里改为 4 个 |
-| ESLint             |      | 代码格式校验                                                                                       |
+| 插件名             | 推荐 | 作用                                                                                             |
+| ------------------ | ---- | ------------------------------------------------------------------------------------------------ |
+| Code Spell Checker | √    | 单词拼写检查                                                                                     |
+| TODO Highlight     |      | 在命令面板中，Todohighlist 可以显示所有的 TODO（必须是大写的）                                   |
+| Prettier           | √    | 代码格式化<br/>在项目跟目录下新建 `.prettierrc`<br/>默认使用 2 个空格，可以在通用设置里改为 4 个 |
+| ESLint             |      | 代码格式校验                                                                                     |
 
 Prettier 设置文件参考
 

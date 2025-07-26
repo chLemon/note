@@ -44,13 +44,20 @@
     "git.enableSmartCommit": true,
     "json.format.enable": false,
     "json.maxItemsComputed": 10000000,
+    "markdown-preview-github-styles.colorTheme": "light",
     "markdown.copyFiles.destination": {
         "/**/*": "images/"
     },
+    "markdown.extension.completion.enabled": true,
     "markdown.extension.list.indentationSize": "inherit",
     "markdown.extension.print.absoluteImgPath": false,
+    "markdown.extension.toc.levels": "2..6",
     "markdown.updateLinksOnFileMove.enabled": "always",
     "markdown.validate.enabled": true,
+    "markdownlint.config": {
+        "MD033": false,
+        "MD036": false
+    },
     "marquee.configuration.name": "chen",
     "marquee.configuration.workspaceLaunch": false,
     "marquee.widgets.github.since": "Weekly",
@@ -342,12 +349,6 @@
 | vscode-icons                                                         | vscode-icons-team.vscode-icons                       |                                                |
 | vscode-pdf                                                           | tomoki1207.pdf                                       |                                                |
 
-##### 1.2.3.1. Prettier 说明
-
-在项目根目录下新建 `.prettierrc`
-
-默认使用 2 个空格，可以在通用设置里改为 4 个
-
 ## 2. Profile
 
 > <https://code.visualstudio.com/docs/configure/profiles#_access-the-profiles-editor>
@@ -428,7 +429,175 @@
 
 ### 5.2. 常用插件
 
-#### 5.2.1. 页面展示
+#### 5.2.1. Better Comments
+
+> identity: aaron-bond.better-comments
+
+#### 5.2.2. GitHub Markdown Preview
+
+> identity: bierner.github-markdown-preview
+
+#### 5.2.3. Markdown Checkboxes
+
+bierner.markdown-checkbox
+
+#### 5.2.4. Markdown Emoji
+
+bierner.markdown-emoji
+
+#### 5.2.5. Markdown Footnotes
+
+bierner.markdown-footnotes
+
+#### 5.2.6. Markdown Preview Mermaid Support
+
+bierner.markdown-mermaid
+
+#### 5.2.7. Markdown Preview Github Styling
+
+bierner.markdown-preview-github-styles
+
+#### 5.2.8. Markdown yaml Preamble
+
+bierner.markdown-yaml-preamble
+
+#### 5.2.9. markdownlint
+
+davidanson.vscode-markdownlint
+
+#### 5.2.10. Prettier - Code formatter
+
+esbenp.prettier-vscode
+
+#### 5.2.11. Markdown+Math
+
+goessner.mdmath
+
+#### 5.2.12. Markdown Preview with Bitbucket Styles
+
+hbrok.markdown-preview-bitbucket
+
+#### 5.2.13. Folder Templates
+
+huuums.vscode-fast-folder-structure
+
+#### 5.2.14. Prettier SQL VSCode
+
+inferrinizzard.prettier-sql-vscode
+
+#### 5.2.15. Read Time
+
+johnpapa.read-time
+
+#### 5.2.16. Markwhen
+
+markwhen.markwhen
+
+#### 5.2.17. Markdown Shortcuts
+
+mdickin.markdown-shortcuts
+
+#### 5.2.18. Rainbow CSV
+
+mechatroner.rainbow-csv
+
+#### 5.2.19. Mermaid Chart
+
+mermaidchart.vscode-mermaid-chart
+
+#### 5.2.20. Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code
+
+ms-ceintl.vscode-language-pack-zh-hans
+
+#### 5.2.21. Black Formatter
+
+ms-python.black-formatter
+
+#### 5.2.22. Python Debugger
+
+ms-python.debugpy
+
+#### 5.2.23. Python
+
+ms-python.python
+
+#### 5.2.24. Pylance
+
+ms-python.vscode-pylance
+
+#### 5.2.25. Python Environments
+
+ms-python.vscode-python-envs
+
+#### 5.2.26. Jupyter
+
+ms-toolsai.jupyter
+
+#### 5.2.27. Jupyter Keymap
+
+ms-toolsai.jupyter-keymap
+
+#### 5.2.28. Jupyter Notebook Renderers
+
+ms-toolsai.jupyter-renderers
+
+#### 5.2.29. Jupyter Cell Tags
+
+ms-toolsai.vscode-jupyter-cell-tags
+
+#### 5.2.30. Jupyter Slide Show
+
+ms-toolsai.vscode-jupyter-slideshow
+
+#### 5.2.31. Markdown Theme Kit
+
+ms-vscode.theme-markdownkit
+
+#### 5.2.32. Word Count
+
+ms-vscode.wordcount
+
+#### 5.2.33. JSON Parse & Stringify
+
+nextfaze.json-parse-stringify
+
+#### 5.2.34. Print
+
+pdconsec.vscode-print
+
+#### 5.2.35. XML
+
+redhat.vscode-xml
+
+#### 5.2.36. Markdown 增强预览
+
+shd101wyy.markdown-preview-enhanced
+
+#### 5.2.37. Marquee
+
+stateful.marquee
+
+#### 5.2.38. Code Spell Checker
+
+streetsidesoftware.code-spell-checker
+
+#### 5.2.39. Mermaid Editor
+
+tomoyukim.vscode-mermaid-editor
+
+#### 5.2.40. Mermaid Preview
+
+vstirbu.vscode-mermaid-preview
+
+#### 5.2.41. Local History
+
+xyz.local-history
+
+#### 5.2.42. Markdown All in One
+
+yzhang.markdown-all-in-one
+
+#### 5.2.43. 页面展示
 
 | 插件名          | 推荐 | 作用                     |
 | --------------- | ---- | ------------------------ |
@@ -436,7 +605,7 @@
 | indent-rainbow  |      | 突出显示代码缩进         |
 | Better Comments | √    | 注释色彩，醒目、带分类   |
 
-#### 5.2.2. 代码管理
+#### 5.2.44. 代码管理
 
 | 插件名          | 推荐 | 作用             |
 | --------------- | ---- | ---------------- |
@@ -445,7 +614,7 @@
 | Project Manager |      | 管理常用项目     |
 | Waka Time       |      | 统计写代码的时间 |
 
-#### 5.2.3. 代码格式化
+#### 5.2.45. 代码格式化
 
 | 插件名             | 推荐 | 作用                                                                                             |
 | ------------------ | ---- | ------------------------------------------------------------------------------------------------ |
@@ -455,6 +624,12 @@
 | ESLint             |      | 代码格式校验                                                                                     |
 
 Prettier 设置文件参考
+
+##### 5.2.45.1. Prettier 说明
+
+在项目根目录下新建 `.prettierrc`
+
+默认使用 2 个空格，可以在通用设置里改为 4 个
 
 ```json
 {
@@ -468,7 +643,7 @@ Prettier 设置文件参考
 }
 ```
 
-#### 5.2.4. 前端相关
+#### 5.2.46. 前端相关
 
 | 插件名                                        | 推荐 | 作用                                              |
 | --------------------------------------------- | ---- | ------------------------------------------------- |
@@ -487,7 +662,7 @@ Prettier 设置文件参考
 | Vue CSS Peek                                  |      | 增加了对 Vue 文件的支持                           |
 | Color Info                                    |      | 预览 CSS 中颜色的信息                             |
 
-#### 5.2.5. Markdown
+#### 5.2.47. Markdown
 
 | 插件名                          | 推荐 | 作用                        |
 | ------------------------------- | ---- | --------------------------- |
@@ -495,7 +670,7 @@ Prettier 设置文件参考
 | Markdown All in One             | √    | 一些便利的快捷键            |
 | Markdown Shortcuts              | √    | 一些便利的快捷键            |
 
-#### 5.2.6. 其他
+#### 5.2.48. 其他
 
 | 插件名    | 推荐 | 作用                      |
 | --------- | ---- | ------------------------- |

@@ -552,11 +552,10 @@ id: huuums.vscode-fast-folder-structure
 
 文件夹模板，快速创建一个目录结构
 
-模板创建
+**模板创建方式**
 
-在工作区的目录下，创建`.fttemplates`文件夹，在这个文件夹下直接创建一个文件夹目录结构。
-
-一种方法是在项目根目录中创建一个 `.fttemplates` 文件夹，并将您希望在此项目中访问的所有模板保存到该文件夹中。此路径可以通过 VS Code 设置中的 `folderTemplates.templateFolderPath` 进行更改。
+1. 创建一个文件夹目录结构
+2. 通过设置文件指定
 
 ## 6. 快捷键
 

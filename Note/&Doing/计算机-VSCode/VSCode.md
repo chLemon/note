@@ -434,134 +434,102 @@
 
 ### 5.2. 常用插件
 
+#### 5.2.1. Copilot
 
-| 插件名                                                               | 插件 id                                | 简述              |
-| -------------------------------------------------------------------- | -------------------------------------- | ----------------- |
-| Better Comments                                                      | aaron-bond.better-comments             | 注释优化          |
-| Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code | ms-ceintl.vscode-language-pack-zh-hans | 中文支持          |
-| Code Spell Checker                                                   | streetsidesoftware.code-spell-checker  | 拼写检查          |
-| Folder Templates                                                     | huuums.vscode-fast-folder-structure    | 快速创建目录      |
-| Local History                                                        | xyz.local-history                      | 本地历史插件      |
-| Marquee                                                              | stateful.marquee                       | 项目管理          |
-| Prettier - Code formatter                                            | esbenp.prettier-vscode                 | 代码格式化        |
-| Prettier SQL VSCode                                                  | inferrinizzard.prettier-sql-vscode     | sql 代码格式化    |
-| XML                                                                  | redhat.vscode-xml                      | xml 支持          |
-| GitHub Copilot                                                       | github.copilot                         | Copilot           |
-| GitHub Copilot Chat                                                  | github.copilot-chat                    | Copilot           |
-| Jupyter                                                              | ms-toolsai.jupyter                     | jupyter           |
-| Jupyter Cell Tags                                                    | ms-toolsai.vscode-jupyter-cell-tags    | jupyter           |
-| Jupyter Keymap                                                       | ms-toolsai.jupyter-keymap              | jupyter           |
-| Jupyter Notebook Renderers                                           | ms-toolsai.jupyter-renderers           | jupyter           |
-| Jupyter Slide Show                                                   | ms-toolsai.vscode-jupyter-slideshow    | jupyter           |
-| Black Formatter                                                      | ms-python.black-formatter              | python 代码格式化 |
-| Pylance                                                              | ms-python.vscode-pylance               | python            |
-| Python                                                               | ms-python.python                       | python            |
-| Python Debugger                                                      | ms-python.debugpy                      | python            |
-| GitHub Markdown Preview                                              | bierner.github-markdown-preview        | markdown          |
-| Markdown All in One                                                  | yzhang.markdown-all-in-one             | markdown          |
-| Markdown Checkboxes                                                  | bierner.markdown-checkbox              | markdown          |
-| Markdown Emoji                                                       | bierner.markdown-emoji                 | markdown          |
-| Markdown Footnotes                                                   | bierner.markdown-footnotes             | markdown          |
-| Markdown Preview Enhanced                                            | shd101wyy.markdown-preview-enhanced    | markdown          |
-| Markdown Preview Github Styling                                      | bierner.markdown-preview-github-styles | markdown          |
-| Markdown Preview Mermaid Support                                     | bierner.markdown-mermaid               | markdown          |
-| Markdown Preview with Bitbucket Styles                               | hbrok.markdown-preview-bitbucket       | markdown          |
-| Markdown Shortcuts                                                   | mdickin.markdown-shortcuts             | markdown          |
-| Markdown Theme Kit                                                   | ms-vscode.theme-markdownkit            | markdown          |
-| Markdown yaml Preamble                                               | bierner.markdown-yaml-preamble         | markdown          |
-| Markdown+Math                                                        | goessner.mdmath                        | markdown          |
-| Mermaid Editor                                                       | tomoyukim.vscode-mermaid-editor        | markdown          |
-| Print                                                                | pdconsec.vscode-print                  | markdown          |
-| Read Time                                                            | johnpapa.read-time                     | markdown          |
-| Word Count                                                           | ms-vscode.wordcount                    | markdown          |
-| markdownlint                                                         | davidanson.vscode-markdownlint         | markdown          |
+| 插件名              | 插件 id             | 作用    |
+| ------------------- | ------------------- | ------- |
+| GitHub Copilot      | github.copilot      | Copilot |
+| GitHub Copilot Chat | github.copilot-chat | Copilot |
 
-| 插件名                                                               | 插件 id                                              | 简述                                           |
-| -------------------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------- |
-| Better Comments                                                      | aaron-bond.better-comments                           | 注释色彩，醒目、带分类                         |
-| TODO Highlight                                                       | wayou.vscode-todo-highlight                          | 高亮所有 TODO                                  |
-| Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code | ms-ceintl.vscode-language-pack-zh-hans               |
-| Code Spell Checker                                                   | streetsidesoftware.code-spell-checker                | 单词拼写检查                                   |
-| Local History                                                        | xyz.local-history                                    | 本地历史                                       |
-| Marquee                                                              | stateful.marquee                                     | 项目管理                                       |
-| GitHub Copilot                                                       | github.copilot                                       | Copilot                                        |
-| GitHub Copilot Chat                                                  | github.copilot-chat                                  | Copilot                                        |
-| Jupyter                                                              | ms-toolsai.jupyter                                   | jupyter 包                                     |
-| autoDocstring - Python Docstring Generator                           | njpwerner.autodocstring                              |
-| Black Formatter                                                      | ms-python.black-formatter                            | python 代码格式化                              |
-| Pylance                                                              | ms-python.vscode-pylance                             | python                                         |
-| Python                                                               | ms-python.python                                     | python                                         |
-| Python Debugger                                                      | ms-python.debugpy                                    | python                                         |
-| Python Indent                                                        | kevinrose.vsc-python-indent                          | python 写的时候，正确自动缩进                  |
-| isort                                                                | ms-python.isort                                      | 对 import 进行分类和排序                       |
-| GitHub Markdown Preview                                              | bierner.github-markdown-preview                      | markdown 包                                    |
-| Markdown All in One                                                  | yzhang.markdown-all-in-one                           | markdown                                       |
-| Markdown Preview Enhanced                                            | shd101wyy.markdown-preview-enhanced                  | markdown                                       |
-| Markdown Preview with Bitbucket Styles                               | hbrok.markdown-preview-bitbucket                     | markdown                                       |
-| Markdown Shortcuts                                                   | mdickin.markdown-shortcuts                           | markdown                                       |
-| Markdown Theme Kit                                                   | ms-vscode.theme-markdownkit                          | markdown                                       |
-| Markdown+Math                                                        | goessner.mdmath                                      | markdown                                       |
-| markdownlint                                                         | davidanson.vscode-markdownlint                       | markdown                                       |
-| Markmap                                                              | gera2ld.markmap-vscode                               | markdown 用 markdown 画脑图                    |
-| Mermaid Editor                                                       | tomoyukim.vscode-mermaid-editor                      | markdown                                       |
-| Print                                                                | pdconsec.vscode-print                                | markdown                                       |
-| Read Time                                                            | johnpapa.read-time                                   | markdown                                       |
-| Word Count                                                           | ms-vscode.wordcount                                  | markdown                                       |
-| Mermaid Markdown Syntax Highlighting                                 | bpruitt-goddard.mermaid-markdown-syntax-highlighting | markdown mermaid 语法高亮                      |
-| Mermaid Preview                                                      | vstirbu.vscode-mermaid-preview                       | mermaid 预览                                   |
-| Auto Complete Tag                                                    | formulahendry.auto-complete-tag                      | 前端，自动闭合配对标签                         |
-| CSS Peek                                                             | pranaygp.vscode-css-peek                             | 前端                                           |
-| Color Info                                                           | bierner.color-info                                   | 前端，CSS 快速查看颜色                         |
-| HTML CSS Support                                                     |                                                      | 前端，快速补全 HTML 和 CSS                     |
-| Image preview                                                        | kisstkondoros.vscode-gutter-preview                  | 前端，图片预览                                 |
-| Live Server                                                          | ritwickdey.liveserver                                | 前端，浏览器中实时预览                         |
-| javascript console utils                                             | whtouche.vscode-js-console-utils                     | 前端，Cmd + Shift + L 快速出现 `console.log()` |
-| JS-CSS-HTML Formatter                                                | lonefy.vscode-js-css-html-formatter                  | 前端                                           |
-| open in browser                                                      | techer.open-in-browser                               |                                                |
-| C/C++                                                                | ms-vscode.cpptools                                   | C/C++                                          |
-| Extension Pack for Java                                              | vscjava.vscode-java-pack                             | Java                                           |
-| Test Runner for Java                                                 | vscjava.vscode-java-test                             |                                                |
-| CodeSnap                                                             | adpyke.codesnap                                      | 做 PPT 用                                      |
-| Polacode-                                                            | √                                                    | 生成代码截图，做 PPT 时用                      |
-| Prettier - Code formatter                                            | esbenp.prettier-vscode                               | 代码格式化，额外说明[见](#1231-prettier-说明)  |
-| GitLens — Git supercharged                                           | eamodio.gitlens                                      | git 增强                                       |
-| LeetCode                                                             | leetcode.vscode-leetcode                             |                                                |
-| Rainbow CSV                                                          | mechatroner.rainbow-csv                              | csv 彩虹                                       |
-| WakaTime                                                             | wakatime.vscode-wakatime                             |                                                |
-| XML Tools                                                            | dotjoshjohnson.xml                                   |                                                |
-| indent-rainbow                                                       | oderwat.indent-rainbow                               | 彩虹缩进                                       |
-| vscode-icons                                                         | vscode-icons-team.vscode-icons                       |                                                |
-| vscode-pdf                                                           | tomoki1207.pdf                                       |                                                |
+#### 5.2.2. python
 
-#### 5.2.43. 页面展示
+| 插件名                                     | 插件 id                     | 作用                                                            |
+| ------------------------------------------ | --------------------------- | --------------------------------------------------------------- |
+| autoDocstring - Python Docstring Generator | njpwerner.autodocstring     |                                                                 |
+| Black Formatter                            | ms-python.black-formatter   | python 代码格式化                                               |
+| Python                                     | ms-python.python            | python 包，包括 `Pylance, Python Debugger, Python Environments` |
+| Python Indent                              | kevinrose.vsc-python-indent | python 写的时候，正确自动缩进                                   |
+| isort                                      | ms-python.isort             | 对 import 进行分类和排序                                        |
 
-| 插件名          | 推荐 | 作用                     |
-| --------------- | ---- | ------------------------ |
-| vscode-icons    |      | 根据文件后缀显示不同图标 |
-| indent-rainbow  |      | 突出显示代码缩进         |
-| Better Comments | √    | 注释色彩，醒目、带分类   |
+#### 5.2.3. jupyter
 
-#### 5.2.44. 代码管理
+| 插件名  | 插件 id            | 作用                                                                                            |
+| ------- | ------------------ | ----------------------------------------------------------------------------------------------- |
+| Jupyter | ms-toolsai.jupyter | jupyter 包，`Jupyter Cell Tags, Jupyter Keymap, Jupyter Notebook Renderers, Jupyter Slide Show` |
 
-| 插件名          | 推荐 | 作用             |
-| --------------- | ---- | ---------------- |
-| GitLens         | √    | git 相关         |
-| Local History   | √    | 维护本地历史记录 |
-| Project Manager |      | 管理常用项目     |
-| Waka Time       |      | 统计写代码的时间 |
+#### 5.2.4. markdown
 
-#### 5.2.45. 代码格式化
+详见 [](#82-插件汇总)
 
-| 插件名             | 推荐 | 作用                                                                                             |
-| ------------------ | ---- | ------------------------------------------------------------------------------------------------ |
-| Code Spell Checker | √    | 单词拼写检查                                                                                     |
-| TODO Highlight     |      | 在命令面板中，Todohighlist 可以显示所有的 TODO（必须是大写的）                                   |
-| Prettier           | √    | 代码格式化<br/>在项目跟目录下新建 `.prettierrc`<br/>默认使用 2 个空格，可以在通用设置里改为 4 个 |
-| ESLint             |      | 代码格式校验                                                                                     |
+#### 5.2.5. 前端
 
-Prettier 设置文件参考
+| 插件名                                        | 插件 id                             | 作用                                              |
+| --------------------------------------------- | ----------------------------------- | ------------------------------------------------- |
+| Live Server                                   | √                                   | 浏览器中实时预览                                  |
+| open in browser                               |                                     | HTML 文件中，右键菜单增加 Open In Default Browser |
+| Auto Close Tag                                | √                                   | 自动闭合配对标签                                  |
+| Auto Rename Tag                               | √                                   | 同时修改匹配的标签                                |
+| HTML CSS Support                              | √                                   | 快速补全 HTML 和 CSS                              |
+| Vetur                                         |                                     | Vue 集成插件                                      |
+| ES7 React/Redux/GraphQL/React-Native snippets |                                     | React/Redux/react-router 的语法智能提示           |
+| JavaScript(ES6) code snippets                 |                                     | ES6 语法智能提示，支持快速输入                    |
+| javascript console utils                      | √                                   | Cmd + Shift + L 可以快速出现 `console.log()`      |
+| JS-CSS-HTML Formatter                         |                                     | 保存文件自动格式化 HTML CSS JS 代码               |
+| Image Preview                                 |                                     | 鼠标移动到 url 时，预览图片，并显示尺寸           |
+| CSS Peek                                      |                                     | 快速查看某个元素上的 CSS 样式                     |
+| Vue CSS Peek                                  |                                     | 增加了对 Vue 文件的支持                           |
+| Color Info                                    |                                     | 预览 CSS 中颜色的信息                             |
+| Auto Complete Tag                             | formulahendry.auto-complete-tag     | 前端，自动闭合配对标签                            |
+| CSS Peek                                      | pranaygp.vscode-css-peek            | 前端                                              |
+| Color Info                                    | bierner.color-info                  | 前端，CSS 快速查看颜色                            |
+| HTML CSS Support                              |                                     | 前端，快速补全 HTML 和 CSS                        |
+| Image preview                                 | kisstkondoros.vscode-gutter-preview | 前端，图片预览                                    |
+| Live Server                                   | ritwickdey.liveserver               | 前端，浏览器中实时预览                            |
+| javascript console utils                      | whtouche.vscode-js-console-utils    | 前端，Cmd + Shift + L 快速出现 `console.log()`    |
+| JS-CSS-HTML Formatter                         | lonefy.vscode-js-css-html-formatter | 前端                                              |
+| open in browser                               | techer.open-in-browser              |                                                   |
+| ESLint                                        |                                     | 代码格式校验                                      |
 
-##### 5.2.45.1. Prettier 说明
+#### 5.2.6. 其他
+
+| 插件名                                                               | 插件 id                                | 简述                                                           |
+| -------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------- |
+| Better Comments                                                      | aaron-bond.better-comments             | 注释色彩，醒目、带分类                                         |
+| TODO Highlight                                                       | wayou.vscode-todo-highlight            | 在命令面板中，Todohighlist 可以显示所有的 TODO（必须是大写的） |
+| Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code | ms-ceintl.vscode-language-pack-zh-hans | 中文支持                                                       |
+| Folder Templates                                                     | huuums.vscode-fast-folder-structure    | 快速创建目录                                                   |
+| Local History                                                        | xyz.local-history                      | 本地历史插件                                                   |
+| Prettier SQL VSCode                                                  | inferrinizzard.prettier-sql-vscode     | sql 代码格式化                                                 |
+| XML                                                                  | redhat.vscode-xml                      | xml 支持                                                       |
+| XML Tools                                                            | dotjoshjohnson.xml                     |                                                                |
+| C/C++                                                                | ms-vscode.cpptools                     | C/C++                                                          |
+| Extension Pack for Java                                              | vscjava.vscode-java-pack               | Java                                                           |
+| Test Runner for Java                                                 | vscjava.vscode-java-test               |                                                                |
+| CodeSnap                                                             | adpyke.codesnap                        | 做 PPT 用                                                      |
+| Polacode-                                                            | √                                      | 生成代码截图，做 PPT 时用                                      |
+| GitLens — Git supercharged                                           | eamodio.gitlens                        | git 增强                                                       |
+| LeetCode                                                             | leetcode.vscode-leetcode               |                                                                |
+| Rainbow CSV                                                          | mechatroner.rainbow-csv                | csv 彩虹                                                       |
+| WakaTime                                                             | wakatime.vscode-wakatime               | 突出显示代码缩进                                               |
+| indent-rainbow                                                       | oderwat.indent-rainbow                 | 彩虹缩进                                                       |
+| vscode-icons                                                         | vscode-icons-team.vscode-icons         | 根据文件后缀显示不同图标                                       |
+| vscode-pdf                                                           | tomoki1207.pdf                         |                                                                |
+
+##### 5.2.6.1. Marquee
+
+id: stateful.marquee
+
+事项管理，如 TODO、工作区。可以当作一个临时的记事板
+
+##### 5.2.6.2. Prettier
+
+id: esbenp.prettier-vscode
+
+一个好用的代码格式化工具
+
+Prettier 本身是一个独立的程序，安装的 VsCode 插件目前使用的内核版本还不够高，有一些 bug
+
+可以在 VsCode 设置文件里设置一些东西，其本身也提供了一套完善复杂的设置文件的机制。如：
 
 在项目根目录下新建 `.prettierrc`
 
@@ -578,209 +546,6 @@ Prettier 设置文件参考
     "insertSpaceBeforeFunctionParenthesis": false
 }
 ```
-
-#### 5.2.46. 前端相关
-
-| 插件名                                        | 推荐 | 作用                                              |
-| --------------------------------------------- | ---- | ------------------------------------------------- |
-| Live Server                                   | √    | 浏览器中实时预览                                  |
-| open in browser                               |      | HTML 文件中，右键菜单增加 Open In Default Browser |
-| Auto Close Tag                                | √    | 自动闭合配对标签                                  |
-| Auto Rename Tag                               | √    | 同时修改匹配的标签                                |
-| HTML CSS Support                              | √    | 快速补全 HTML 和 CSS                              |
-| Vetur                                         |      | Vue 集成插件                                      |
-| ES7 React/Redux/GraphQL/React-Native snippets |      | React/Redux/react-router 的语法智能提示           |
-| JavaScript(ES6) code snippets                 |      | ES6 语法智能提示，支持快速输入                    |
-| javascript console utils                      | √    | Cmd + Shift + L 可以快速出现 `console.log()`      |
-| JS-CSS-HTML Formatter                         |      | 保存文件自动格式化 HTML CSS JS 代码               |
-| Image Preview                                 |      | 鼠标移动到 url 时，预览图片，并显示尺寸           |
-| CSS Peek                                      |      | 快速查看某个元素上的 CSS 样式                     |
-| Vue CSS Peek                                  |      | 增加了对 Vue 文件的支持                           |
-| Color Info                                    |      | 预览 CSS 中颜色的信息                             |
-
-#### 5.2.47. Markdown
-
-| 插件名                          | 推荐 | 作用                        |
-| ------------------------------- | ---- | --------------------------- |
-| Markdown Preview Github Styling | √    | 以 GitHub 风格预览 Markdown |
-| Markdown All in One             | √    | 一些便利的快捷键            |
-| Markdown Shortcuts              | √    | 一些便利的快捷键            |
-
-#### 5.2.48. 其他
-
-| 插件名    | 推荐 | 作用                      |
-| --------- | ---- | ------------------------- |
-| Polacode- | √    | 生成代码截图，做 PPT 时用 |
-
-#### 5.2.1. Better Comments
-
-> identity: aaron-bond.better-comments
-
-#### 5.2.2. GitHub Markdown Preview
-
-> identity: bierner.github-markdown-preview
-
-#### 5.2.3. Markdown Checkboxes
-
-bierner.markdown-checkbox
-
-#### 5.2.4. Markdown Emoji
-
-bierner.markdown-emoji
-
-#### 5.2.5. Markdown Footnotes
-
-bierner.markdown-footnotes
-
-#### 5.2.6. Markdown Preview Mermaid Support
-
-bierner.markdown-mermaid
-
-#### 5.2.7. Markdown Preview Github Styling
-
-bierner.markdown-preview-github-styles
-
-#### 5.2.8. Markdown yaml Preamble
-
-bierner.markdown-yaml-preamble
-
-#### 5.2.9. markdownlint
-
-davidanson.vscode-markdownlint
-
-#### 5.2.10. Prettier - Code formatter
-
-esbenp.prettier-vscode
-
-#### 5.2.11. Markdown+Math
-
-goessner.mdmath
-
-#### 5.2.12. Markdown Preview with Bitbucket Styles
-
-hbrok.markdown-preview-bitbucket
-
-#### 5.2.13. Folder Templates
-
-huuums.vscode-fast-folder-structure
-
-#### 5.2.14. Prettier SQL VSCode
-
-inferrinizzard.prettier-sql-vscode
-
-#### 5.2.15. Read Time
-
-johnpapa.read-time
-
-#### 5.2.16. Markwhen
-
-markwhen.markwhen
-
-#### 5.2.17. Markdown Shortcuts
-
-mdickin.markdown-shortcuts
-
-#### 5.2.18. Rainbow CSV
-
-mechatroner.rainbow-csv
-
-#### 5.2.19. Mermaid Chart
-
-mermaidchart.vscode-mermaid-chart
-
-#### 5.2.20. Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code
-
-ms-ceintl.vscode-language-pack-zh-hans
-
-#### 5.2.21. Black Formatter
-
-ms-python.black-formatter
-
-#### 5.2.22. Python Debugger
-
-ms-python.debugpy
-
-#### 5.2.23. Python
-
-ms-python.python
-
-#### 5.2.24. Pylance
-
-ms-python.vscode-pylance
-
-#### 5.2.25. Python Environments
-
-ms-python.vscode-python-envs
-
-#### 5.2.26. Jupyter
-
-ms-toolsai.jupyter
-
-#### 5.2.27. Jupyter Keymap
-
-ms-toolsai.jupyter-keymap
-
-#### 5.2.28. Jupyter Notebook Renderers
-
-ms-toolsai.jupyter-renderers
-
-#### 5.2.29. Jupyter Cell Tags
-
-ms-toolsai.vscode-jupyter-cell-tags
-
-#### 5.2.30. Jupyter Slide Show
-
-ms-toolsai.vscode-jupyter-slideshow
-
-#### 5.2.31. Markdown Theme Kit
-
-ms-vscode.theme-markdownkit
-
-#### 5.2.32. Word Count
-
-ms-vscode.wordcount
-
-#### 5.2.33. JSON Parse & Stringify
-
-nextfaze.json-parse-stringify
-
-#### 5.2.34. Print
-
-pdconsec.vscode-print
-
-#### 5.2.35. XML
-
-redhat.vscode-xml
-
-#### 5.2.36. Markdown 增强预览
-
-shd101wyy.markdown-preview-enhanced
-
-#### 5.2.37. Marquee
-
-stateful.marquee
-
-#### 5.2.38. Code Spell Checker
-
-streetsidesoftware.code-spell-checker
-
-#### 5.2.39. Mermaid Editor
-
-tomoyukim.vscode-mermaid-editor
-
-#### 5.2.40. Mermaid Preview
-
-vstirbu.vscode-mermaid-preview
-
-#### 5.2.41. Local History
-
-xyz.local-history
-
-#### 5.2.42. Markdown All in One
-
-yzhang.markdown-all-in-one
-
-
 
 ## 6. 快捷键
 
@@ -803,14 +568,14 @@ yzhang.markdown-all-in-one
 
 快捷输入后，按`Tab`或者`Enter`。
 
-| 快捷输入         | 功能                                                   |
-| ---------------- | ------------------------------------------------------ |
+| 快捷输入           | 功能                                                   |
+| ------------------ | ------------------------------------------------------ |
 | `!`                | 生成 html 骨架                                         |
 | `h1 / h2... / p …` | h1 等标签                                              |
 | `.class_name`      | 创建一个带有 class 属性，且值为`class_name`的 div 标签 |
-| `div.class_name` | 同上                                                   |
+| `div.class_name`   | 同上                                                   |
 | `#id_value`        | 创建一个带有 id 属性，且值为`id_value`的 div 标签      |
-| `div#id_value`   | 同上                                                   |
+| `div#id_value`     | 同上                                                   |
 
 ## 7. 用户片段 / 文件模板 / 文件夹模板
 
@@ -835,15 +600,246 @@ Code >> 首选项 >> 配置代码片段
 }
 ```
 
-## 8. 问题记录
+## 8. Markdown 支持
 
-### 8.1. Windows 上重启后 VSCode 消失/快捷方式失效
+> [官方文档](https://code.visualstudio.com/docs/languages/markdown)
+
+VS Code 现在已经原生支持 Markdown Preview，并且提供了一些便利的设置和快捷键。安装一些插件效果更好。
+
+### 8.1. 官方原生支持
+
+#### 8.1.1. 目录功能
+
+-   左侧 `文件--大纲` 可以当做目录
+
+#### 8.1.2. 快速跳转
+
+-   `Command + Shift + O` 快速跳到当前文件的各级标题
+
+-   `Command + T` 搜索当前工作区所有 Markdown 文件的各级标题
+
+#### 8.1.3. 智能选择
+
+可以用这 2 个快捷键进行智能选择
+
+Expand: `⌃⇧⌘→` `control + shift + command + RightArrow`
+Shrink: `⌃⇧⌘←` `control + shift + command + LeftArrow`
+
+#### 8.1.4. 引用链接
+
+##### 8.1.4.1. 路径补全
+
+-   路径补全：会自动对图片或文件链接的路径进行补全提示，`/`开头的会相对于当前工作区的根目录，`./`或者没有前缀的会相对于当前文件。
+-   可以通过`^Space`来手动触发提示。
+-   路径补全也可以链接到当前文件的标题，或者其他 Markdown 文件的标题。默认情况下，`#` 开头的路径，会认为是当前文件的标题。
+-   `##` 会查询当前工作区内其他文件的标题。
+
+##### 8.1.4.2. 文件复制进工作区
+
+-   可以在按住 shift 的时候，直接将资源管理器里的图片或文件拖进 markdown 文件，会快捷插入链接
+-   也可以直接复制粘贴进来。
+-   拖进来 或者 粘贴进来的时候，如果这个图片不在工作区内，会复制一份到当前工作区。
+
+###### 8.1.4.2.1. 复制路径设置
+
+`markdown.copyFiles.destination` 设置控制什么时候创建新的文件。这个设置是匹配 图片源目录 到 当前 markdown 文档的文件通配符。这个路径里还可以用一些变量，详见该设置处的说明
+
+例如，你希望将工作区的 `/docs` 下的每个 Markdown 文件，都将新的媒体文件放到当前文件特定的 `images` 目录下，你可以写
+
+```json
+"markdown.copyFiles.destination": {
+  "/docs/**/*": "images/${documentBaseName}/"
+}
+```
+
+现在，当一个新文件被粘贴进 `/docs/api/readme.md`，图片文件就会创建在 `/docs/api/images/readme/image.png`
+
+你甚至可以使用简单的正则表达式，以类似于片段的方式转换变量。
+
+```json
+"markdown.copyFiles.destination": {
+  "/docs/**/*": "images/${documentBaseName/(.).*/$1/}/"
+}
+```
+
+现在，当一个新文件被粘贴进 `/docs/api/readme.md`，图片文件就会创建在 `/docs/api/images/r/image.png`
+
+##### 8.1.4.3. 链接校验
+
+会校验链接是否有效
+
+默认关闭，为了开启，设置 `"markdown.validate.enabled": true`
+
+还有一些设置可以用来自定义链接校验：
+
+-   `markdown.validate.fileLinks.enabled` - 开启/关闭 本地文件链接 的校验 `[link](/path/to/file.md)`
+-   `markdown.validate.fragmentLinks.enabled` - 开启/关闭 当前文件标题链接 的校验 `[link](#_some-header)`
+-   `markdown.validate.fileLinks.markdownFragmentLinks` - 开启/关闭 其他文件标题链接 的校验 `[link](other-file.md#some-header)`
+-   `markdown.validate.referenceLinks.enabled` - 开启/关闭 链接 的校验 `[link][ref]`
+-   `markdown.validate.ignoredLinks -` 跳过校验的 链接 globs 的列表，当链接到一些本地没有，但是远程有的文件时，非常有用
+
+##### 8.1.4.4. 找到标题/链接的所有引用
+
+-   找到所有引用 - `⇧⌥F12` `shift + option + F12`
+
+该功能支持：
+
+-   标题：`# My Header` 展示所有引用到 `#my-header` 的链接
+-   外部链接：`[text](http://example.com)`。展示所有链接到 `http://example.com` 的链接
+-   内部链接：`[text](./path/to/file.md)`。展示所有链接到 `./path/to/file.md` 的链接
+-   链接中的片段：`[text](./path/to/file.md#my-header)`。展示所有链接到 `./path/to/file.md` 里 `#my-header` 的链接
+
+##### 8.1.4.5. 修改标题和链接
+
+-   `F2` 修改的时候可以修改掉所有引用，可用范围同上的 4 个
+
+##### 8.1.4.6. 文件移动或者重命名的时候，自动更新链接
+
+设置 `markdown.updateLinksOnFileMove.enabled`：
+
+可以设置为：
+
+-   never (the default) — 不要试着自动更新连接
+-   prompt — 在更新连接前让用户确认
+-   always — 不需要确认，自动更新连接
+
+自动连接更新会监测 Markdown 文件、图片、或目录 的改名。可以在 `markdown.updateLinksOnFileMove.include` 中为其他文件开启这个。
+
+#### 8.1.5. 预览
+
+-   `shift + command  + V` 可以直接在编辑器预览
+-   `command + K + V` 则可以在侧边预览
+
+##### 8.1.5.1. 动态预览 和 预览锁定
+
+默认开启
+
+##### 8.1.5.2. Markdown: Toggle Preview Locking
+
+编辑和预览同步滚动
+
+默认开启
+
+可以通过这两个设置禁用同步滚动：`markdown.preview.scrollPreviewWithEditor` 和 `markdown.preview.scrollEditorWithPreview`
+
+##### 8.1.5.3. 预览和编辑的交互
+
+编辑器里选择到的部分，会在预览里有一个灰色的高亮
+
+双击预览，也会自动打开编辑器，并且滚动到点击处最近的行
+
+##### 8.1.5.4. 数学公式预览，默认开启
+
+`"markdown.math.enabled"`
+
+##### 8.1.5.5. 预览安全
+
+为了安全，内容展示在 Markdown Preview 里，会禁用脚本执行，并且只允许 https 的资源被加载
+
+可以通过命令（`F1`）：`Markdown: Change preview security settings` 修改
+
+-   `Strict`: 默认设置，仅加载受信的内容，并且禁用脚本执行，禁止 http 的图片
+    推荐保持在这个设置。除非你有一个充分的理由修改它，并且你信任你工作区里所有的 Markdown 文件
+-   `Allow insecure content`: 禁用脚本，但是允许内容里加载 http
+-   `Disable`: 在预览窗口里，禁用附加的安全措施。允许脚本执行，且允许 http 的内容加载
+
+#### 8.1.6. 保留尾部空格
+
+要创建硬换行符，Markdown 要求在行尾有两个或更多空格。根据用户或工作区设置的不同，VS Code 可能会被配置为删除尾部空白。为了只在 Markdown 文件中保留拖尾空白，可以在 settings.json 中添加这些行：
+
+```json
+{
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    }
+}
+```
+
+#### 8.1.7. 拓展推荐
+
+| 插件                                   | 功能                                                   |
+| -------------------------------------- | ------------------------------------------------------ |
+| bierner.markdown-preview-github-styles | 改变 VS Code 内建 markdown 预览，匹配 Github 的风格    |
+| bierner.markdown-emoji                 | 添加 emoji 语法                                        |
+| goessner.mdmath                        | 数学公式的支持                                         |
+| hbrok.markdown-preview-bitbucket       | 支持 bitbucket 风格，支持 `[TOC]` 目录                 |
+| DavidAnson.vscode-markdownlint         | 检查 Markdown 语法，让 md 内容更通用（在不同解析器中） |
+| ms-vscode.Theme-MarkdownKit            | 主题                                                   |
+| pdconsec.vscode-print                  | 打印渲染                                               |
+| mdickin.markdown-shortcuts             | markdown 快捷键                                        |
+
+#### 8.1.8. Doc Writer Profile template
+
+> <https://code.visualstudio.com/docs/configure/profiles#_profile-templates>
+
+官方提供了 文档协作 的 Profile 模板，包含下面的插件：
+
+-   streetsidesoftware.code-spell-checker: 源码的拼写检查
+-   bierner.markdown-checkbox: 为 VS Code 内建的 Markdown 预览提供 checkbox 支持
+-   bierner.markdown-emoji: 为 Markdown 预览和 notebook 的 Markdown 单元格添加 emoji 语法的支持
+-   bierner.markdown-footnotes: 为 Markdown 预览添加 `^footnote` 的语法支持
+-   bierner.markdown-preview-github-styles: 在 Markdown 预览使用 Github 风格
+-   bierner.markdown-mermaid: Mermaid 图表
+-   bierner.markdown-yaml-preamble: 将 YAML 前端内容渲染为表格
+-   DavidAnson.vscode-markdownlint: VS Code 的 Markdown 提示和格式检查
+-   itemName=ms-vscode.wordcount: 在状态栏查看 Markdown 文档的单词字数
+-   johnpapa.read-time: 计算阅读你的 Markdown 需要多久
+
+这个 profile 还提供了如下的设置
+
+```json
+    "workbench.colorTheme": "Default Light Modern",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.glyphMargin": false,
+    "explorer.decorations.badges": false,
+    "explorer.decorations.colors": false,
+    "editor.fontLigatures": true,
+    "files.autoSave": "afterDelay",
+    "git.enableSmartCommit": true,
+    "window.commandCenter": true,
+    "editor.renderWhitespace": "none",
+    "workbench.editor.untitled.hint": "hidden",
+    "markdown.validate.enabled": true,
+    "markdown.updateLinksOnFileMove.enabled": "prompt",
+    "workbench.startupEditor": "none"
+```
+
+### 8.2. 插件汇总
+
+| 插件名                                              | 插件 id                                              | 功能                                                                           | 在插件包中     |
+| --------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------ | -------------- |
+| GitHub Markdown Preview                             | bierner.github-markdown-preview                      | 一个插件包                                                                     | 包含下面的插件 |
+| Markdown Checkboxes                                 | bierner.markdown-checkbox                            | 为 VS Code 内建的 Markdown 预览提供 checkbox 支持 `[ ]`                        | ✅             |
+| Markdown Emoji                                      | bierner.markdown-emoji                               | 为 Markdown 预览和 notebook 的 Markdown 单元格添加 emoji 语法的支持 `:emoji:`  | ✅             |
+| Markdown Footnotes                                  | bierner.markdown-footnotes                           | 为 Markdown 预览添加 `^footnote` 的语法支持 `[^1]`                             | ✅             |
+| Markdown Preview Github Styling                     | bierner.markdown-preview-github-styles               | 改变 VS Code 内建 markdown 预览，匹配 Github 的风格                            | ✅             |
+| Markdown Mermaid / Markdown Preview Mermaid Support | bierner.markdown-mermaid                             | Mermaid 图表支持                                                               | ✅             |
+| Markdown yaml Preamble                              | bierner.markdown-yaml-preamble                       | 将 YAML 前端内容渲染为表格。确保设置了 `"markdown.previewFrontMatter": "show"` | ✅             |
+| markdownlint                                        | DavidAnson.vscode-markdownlint                       | 检查 Markdown 语法，让 md 内容更通用（在不同解析器中）                         |                |
+| Markdown+Math                                       | goessner.mdmath                                      | 数学公式的支持                                                                 |                |
+| Markdown Preview with Bitbucket Styles              | hbrok.markdown-preview-bitbucket                     | 支持 bitbucket 风格，支持 `[TOC]` 目录                                         |                |
+| Word Count                                          | itemName=ms-vscode.wordcount                         | 在状态栏查看 Markdown 文档的单词字数                                           |                |
+| Read Time                                           | johnpapa.read-time                                   | 计算阅读你的 Markdown 需要多久                                                 |                |
+| Markdown Shortcuts                                  | mdickin.markdown-shortcuts                           | markdown 快捷键，标题等                                                        |                |
+| Markdown All in One                                 | Yu Zhang.Markdown All in One                         | 快捷键、表格、预览等，markdown 常用快捷键，快捷功能                            |                |
+| Code Spell Checker                                  | streetsidesoftware.code-spell-checker                | 拼写检查                                                                       |                |
+| Print                                               | pdconsec.vscode-print                                | markdown 打印渲染                                                              |                |
+| Markmap                                             | gera2ld.markmap-vscode                               | 用 markdown 画脑图                                                             |                |
+| Mermaid Editor                                      | tomoyukim.vscode-mermaid-editor                      | mermaid 预览、导出 svg 文件                                                    |                |
+| Mermaid Markdown Syntax Highlighting                | bpruitt-goddard.mermaid-markdown-syntax-highlighting | markdown mermaid 语法高亮                                                      |                |
+| Mermaid Preview                                     | vstirbu.vscode-mermaid-preview                       | 现在官方在维护的 mermaid 预览                                                  |                |
+| Mermaid Chart                                       |                                                      | 官方的                                                                         |                |
+
+## 9. 问题记录
+
+### 9.1. Windows 上重启后 VSCode 消失/快捷方式失效
 
 在 Windows 更新、VSCode 更新的时候有可能出现这个问题。可以通过快捷方式查看原本 exe 文件所在的目录，原来很多内容都被移动到该目录下的一个新目录`_`中，剪切出来即可。
 
 通常是：`C:\Users\<user>\AppData\Local\Programs\Microsoft VS Code\_`
 
-### 8.2. 回车 Enter 或者 Backspace 失效
+### 9.2. 回车 Enter 或者 Backspace 失效
 
 看一下后台是不是有疯狂在执行的脚本，ctrl + c 中止后就好了
 

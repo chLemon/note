@@ -1,4 +1,4 @@
 !.gitignore
-.*/
-__*/
+**/.*/
+**/__pycache__
 **/.DS_Store

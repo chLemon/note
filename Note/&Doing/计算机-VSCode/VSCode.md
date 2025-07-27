@@ -497,7 +497,6 @@
 | Better Comments                                                      | aaron-bond.better-comments             | 注释色彩，醒目、带分类                                         |
 | TODO Highlight                                                       | wayou.vscode-todo-highlight            | 在命令面板中，Todohighlist 可以显示所有的 TODO（必须是大写的） |
 | Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code | ms-ceintl.vscode-language-pack-zh-hans | 中文支持                                                       |
-| Folder Templates                                                     | huuums.vscode-fast-folder-structure    | 快速创建目录                                                   |
 | Local History                                                        | xyz.local-history                      | 本地历史插件                                                   |
 | Prettier SQL VSCode                                                  | inferrinizzard.prettier-sql-vscode     | sql 代码格式化                                                 |
 | XML                                                                  | redhat.vscode-xml                      | xml 支持                                                       |
@@ -546,6 +545,18 @@ Prettier 本身是一个独立的程序，安装的 VsCode 插件目前使用的
     "insertSpaceBeforeFunctionParenthesis": false
 }
 ```
+
+##### 5.2.6.3. Folder Templates
+
+id: huuums.vscode-fast-folder-structure
+
+文件夹模板，快速创建一个目录结构
+
+模板创建
+
+在工作区的目录下，创建`.fttemplates`文件夹，在这个文件夹下直接创建一个文件夹目录结构。
+
+一种方法是在项目根目录中创建一个 `.fttemplates` 文件夹，并将您希望在此项目中访问的所有模板保存到该文件夹中。此路径可以通过 VS Code 设置中的 `folderTemplates.templateFolderPath` 进行更改。
 
 ## 6. 快捷键
 

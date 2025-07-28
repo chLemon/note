@@ -552,10 +552,19 @@ id: huuums.vscode-fast-folder-structure
 
 文件夹模板，快速创建一个目录结构
 
-**模板创建方式**
+###### 5.2.6.3.1. 模板创建方式
 
 1. 创建一个文件夹目录结构
 2. 通过设置文件指定
+
+###### 5.2.6.3.2. 快捷键
+
+```json
+{
+    "key": "alt+cmd+n",
+    "command": "FT.createFolderStructure"
+}
+```
 
 ## 6. 快捷键
 

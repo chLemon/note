@@ -10,14 +10,7 @@
 
 ```json
 {
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.quickSuggestions": {
             "comments": "on",
             "other": "on",
@@ -31,6 +24,8 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
+    "cSpell.blockCheckingWhenLineLengthGreaterThan": 100000,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.fontFamily": "Menlo, 'Courier New', monospace",
     "editor.maxTokenizationLineLength": 10000000,
     "editor.minimap.showSlider": "always",
@@ -38,7 +33,7 @@
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?，。、（）：？”“！",
     "editor.wordWrap": "on",
     "files.trimTrailingWhitespace": true,
-    "folderTemplates.globalTemplateDirectoryPath": "/Users/chen/Documents/chen/requirement【需求】/.fttemplates",
+    "folderTemplates.globalTemplateDirectoryPath": "/Users/chen/Documents/chen/secret_note/fttemplates",
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
@@ -130,6 +125,10 @@
     {
         "key": "cmd+b",
         "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+cmd+n",
+        "command": "FT.createFolderStructure"
     }
 ]
 ```
@@ -552,10 +551,19 @@ id: huuums.vscode-fast-folder-structure
 
 文件夹模板，快速创建一个目录结构
 
-**模板创建方式**
+###### 5.2.6.3.1. 模板创建方式
 
 1. 创建一个文件夹目录结构
 2. 通过设置文件指定
+
+###### 5.2.6.3.2. 快捷键
+
+```json
+{
+    "key": "alt+cmd+n",
+    "command": "FT.createFolderStructure"
+}
+```
 
 ## 6. 快捷键
 

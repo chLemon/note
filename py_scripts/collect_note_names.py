@@ -64,7 +64,7 @@ def update_readme_file(git_path: Path):
     def concat_content(title: str, categories: str, items: str):
         if items == "":
             return ""
-        res = "# " + title + "\n\n"
+        res = "## " + title + "\n\n"
         if categories != "":
             res += "类别列表：" + categories + "\n\n"
         return res + items + "\n\n"

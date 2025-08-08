@@ -1,5 +1,7 @@
 # Markwhen
 
+> https://docs.markwhen.com/syntax/
+
 ## 1. 介绍
 
 Markwhen 是一种类似 Markdown 的日志语言 。你编写类似 Markdown 的文本，它会被转换成 JSON，然后可以渲染到时间轴或其他视图中。
@@ -542,15 +544,15 @@ Dec 29 2029: Some date
 
 #### 2.6.1. Header 快速参考 Header Quick Reference
 
-| Item                                                  | Syntax                       | Example                                         |
-| ----------------------------------------------------- | ---------------------------- | ----------------------------------------------- |
-| Coloring tags                                         | `#[tag name]: <color>`       | `#Movies: aquamarine`                           |
-| Date format. Change the formatting to European style. | `dateFormat: d/M/y`          | `dateFormat: d/M/y`                             |
-| Title of the page                                     | `title: <title>`             | `title: My timeline`                            |
-| Description of the page                               | `description: <description>` | `description: If anything looks off here, lmk!` |
-| Viewers                                               | `view: <viewer emails>`      | `view: you@example.com`                         |
-| Editors                                               | `edit: <editor emails>`      | `edit: otherperson@example.com`                 |
-| Timezones                                             | `timezone: <timezone>`       | `timezone: +5 or timezone: America/New_York`    |
+| Item               | Syntax                       | Example                                         |
+| ------------------ | ---------------------------- | ----------------------------------------------- |
+| 改变 tag 颜色      | `#[tag name]: <color>`       | `#Movies: aquamarine`                           |
+| 日期格式设置为欧式 | `dateFormat: d/M/y`          | `dateFormat: d/M/y`                             |
+| 页面的标题         | `title: <title>`             | `title: My timeline`                            |
+| 页面的描述         | `description: <description>` | `description: If anything looks off here, lmk!` |
+| Viewers            | `view: <viewer emails>`      | `view: you@example.com`                         |
+| Editors            | `edit: <editor emails>`      | `edit: otherperson@example.com`                 |
+| Timezones          | `timezone: <timezone>`       | `timezone: +5 or timezone: America/New_York`    |
 
 一些典型的标题项如下：
 
@@ -652,7 +654,6 @@ dateFormat: d/M/y
 
 > 导入其他文档是 Meridiem 特有的功能。
 
-
 ### 2.7. Tags
 
 markwhen 中的事件可以用 `#` 语法标记：
@@ -716,7 +717,7 @@ endGroup
 
 时区可以通过其名称指定，例如 `America/Los_Angeles` ，或者通过偏移量指定，例如 `+5` 或 `-3` 。
 
-> Luxon  
+> Luxon
 >
 > markwhen 的大部分解析，包括时区解析，都是使用 Luxon 完成的。有关时区的更多信息，请参阅 Luxon 的文档。
 
@@ -730,7 +731,7 @@ endGroup
 
 ```mw
 2025-06-09 11am / 2025-06-09 6:40pm: 🛫 Going home to NYC from LA
-  timezone: 
+  timezone:
     from: America/Los_Angeles
     to: America/New_York
 ```

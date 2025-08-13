@@ -636,7 +636,9 @@ VS Code 现在已经原生支持 Markdown Preview，并且提供了一些便利�
 
 -   `Command + T` 搜索当前工作区所有 Markdown 文件的各级标题
 
-#### 8.1.3. 智能选择
+#### 8.1.3. 智能选择 
+
+Smart Select / Copy / 复制
 
 可以用这 2 个快捷键进行智能选择
 

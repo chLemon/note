@@ -31,24 +31,23 @@ git config --global
 
 ```shell
 [alias]
-	cc = checkout
-	cm = commit
-	cmm = commit -m
-	br = branch
-	brd = branch -d
-	brdd = branch -D
-	st = status
 	sw = switch
 	swc = switch -c
+	br = branch
+	brdd = branch -D
+	brd = branch -d
+	st = status
 	sl = stash list
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ss = stash
+ 	pl = pull
+	ps = push
+	mm = merge master
+	cm = commit
+	cmm = commit -m 
+	cc = checkout
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lgme = lg --author=chenweijun
-	last = log -1
-
-	fix = commit -m "fix"
-	conf = commit -m "解决代码冲突"
-
-	unstage = reset HEAD
+	conf = commit -m "合并代码，解决冲突"
 [pull]
 	rebase = false
 

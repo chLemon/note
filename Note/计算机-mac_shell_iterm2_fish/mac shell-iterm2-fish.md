@@ -1,17 +1,29 @@
 # mac shell-iterm2-fish
 
 > 参考：
+> 
 > Linux 终端下使用 Fish shell 并美化 <https://www.cnblogs.com/aaroncoding/p/17118251.html>
+> 
 > Oh My Fish! 让你的 Shell 漂亮起来 <https://www.linux.cn/article-9515-1.html>
+> 
 > Fish and iTerm2 <https://lobster1234.github.io/2017/04/08/setting-up-fish-and-iterm2/>
+> 
 > Iterm 2 上简单安装 Fish 并配置主题 <https://segmentfault.com/a/1190000007164195?utm_source=sf-related>
+> 
 > iTerm2+fish 安装与配置以及 M1 使用 fish 与 brew 冲突问题 <https://www.jianshu.com/p/fa9c09302ffc>
+> 
 > iTerm2 + Fish 打造高效终端 <https://cloud.tencent.com/developer/article/2008550>
+> 
 > iTerm2 <https://iterm2.com/index.html>
+> 
 > iTerm2 文档 <https://iterm2.com/documentation.html>
+> 
 > oh-my-fish <https://github.com/oh-my-fish/oh-my-fish>
+> 
 > 美化你的 iterm2，快乐 coding <https://www.bilibili.com/video/BV16c411M78T/?spm_id_from=333.337.search-card.all.click&vd_source=9f68829e78088d41d3127b97b83ed97f>
+> 
 > 强大的终端工具--iterm2 食用指南 <https://www.bilibili.com/video/BV1zA411v7a2/?spm_id_from=333.337.search-card.all.click&vd_source=9f68829e78088d41d3127b97b83ed97f>
+> 
 > What is the difference between shell, console, and terminal? <https://superuser.com/questions/144666/what-is-the-difference-between-shell-console-and-terminal>
 
 ## 1. Shell / Terminal / Console 介绍

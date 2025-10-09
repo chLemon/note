@@ -17,17 +17,18 @@
 
 ## Doing
 
+类别列表：、计算机、&移动过来
+
++ &移动过来-可能还需要整理一下的
 + --3-Git
 + Alfred
 + Java学习路线
-+ marquee
-+ 瀑布流问题
++ 计算机-Python用Matplotlib画图
 
 ## 列表
 
-类别列表：工作、计算机、&移动过来
+类别列表：工作、计算机
 
-+ &移动过来-可能还需要整理一下的
 + 工作-5Why分析法
 + 工作-对标
 + 工作-职业规划
@@ -36,6 +37,8 @@
 + 计算机-Jupyter Notebook
 + 计算机-Markdown
 + 计算机-Mockito文档总结
++ 计算机-Prettier
++ 计算机-Python
 + 计算机-SharedNameTable过大
 + 计算机-VSCode
 + 计算机-Windows Terminal
@@ -43,6 +46,7 @@
 + 计算机-mac_shell_iterm2_fish
 + 计算机-markwhen
 + 计算机-mermaid
++ 计算机-各种问题
 + 计算机-命令参数说明事实约定
 + 计算机-常用字体
 + 计算机-常用小软件

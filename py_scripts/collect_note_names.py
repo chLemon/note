@@ -21,11 +21,7 @@ def concat_dir_files(dir: Path):
     """
     if not dir.exists():
         return "", ""
-    # 特殊逻辑兼容，Journal 现在没有整理，把所有文件都收集起来
-    if dir.name == "Journal":
-        items = [file.stem for file in dir.rglob("*.md")]
-    else:
-        items = [file.stem for file in dir.iterdir() if valid_file(file.name)]
+    items = [file.stem for file in dir.iterdir() if valid_file(file.name)]
     # items 排序，让文件列表稳定
     items.sort()
     categories = {item.split("-")[0] for item in items if "-" in item}
@@ -37,8 +33,8 @@ def update_readme_file(git_path: Path):
     更新当前笔记仓库下的 README.md 文件
 
     每个笔记仓库，主要是以下2个文件夹，需要整理到 README 中：
-    &Doing: 近期正在处理的一些东西
-    笔记仓库同名文件夹 note_dir: 已完成的笔记，同时作为坚果云同步的笔记文件夹
+        - &Doing: 近期正在处理的一些东西
+        - 笔记仓库同名文件夹 note_dir: 已完成的笔记，同时作为坚果云同步的笔记文件夹
     """
 
     git_name = git_path.name

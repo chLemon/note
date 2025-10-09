@@ -525,7 +525,7 @@ id: esbenp.prettier-vscode
 
 一个好用的代码格式化工具
 
-Prettier 本身是一个独立的程序，安装的 VsCode 插件目前使用的内核版本还不够高，有一些 bug
+Prettier 本身是一个独立的程序，安装的 VsCode 插件目前使用的内核版本还不够高，在 markdown 时会触发一些 bug
 
 可以在 VsCode 设置文件里设置一些东西，其本身也提供了一套完善复杂的设置文件的机制。如：
 
@@ -544,6 +544,8 @@ Prettier 本身是一个独立的程序，安装的 VsCode 插件目前使用的
     "insertSpaceBeforeFunctionParenthesis": false
 }
 ```
+
+详见 [计算机-Prettier](../计算机-Prettier.md)
 
 ##### 5.2.6.3. Folder Templates
 
@@ -636,7 +638,7 @@ VS Code 现在已经原生支持 Markdown Preview，并且提供了一些便利�
 
 -   `Command + T` 搜索当前工作区所有 Markdown 文件的各级标题
 
-#### 8.1.3. 智能选择 
+#### 8.1.3. 智能选择
 
 Smart Select / Copy / 复制
 

@@ -2,78 +2,93 @@
 
 ## 1. 设置总结
 
-1. 安装 [PowerShell 7](https://github.com/PowerShell/PowerShell/releases)
-2. 设置 Windows Terminal 为 PowerShell 7，设置 >> 启动 >> 默认配置文件，修改为`PowerShell`
-3. 安装主题、代码补全，用管理员模式启动 PowerShell 7
+### 1.1. 安装 PowerShell 7
 
-    ```shell
-    winget install JanDeDobbeleer.OhMyPosh -s winget
-    Install-Module -Name PowerShellGet -Force
-    PowerShellGet\Install-Module posh-git -Force
-    Install-Module PSReadLine -Force
-    ```
+<https://github.com/PowerShell/PowerShell/releases>
 
-4. [官网下载字体](https://www.nerdfonts.com/font-downloads) Meslo
-5. 设置窗口半透明，确认 桌面右键 > 个性化 > 颜色 > 透明效果：开启
-6. `ctrl + shift + ,` 打开 json 设置，在里面找到 `profiles.defaults`
+### 1.2. 设置 Windows Terminal 为 PowerShell 7
 
-    ```json
-    "defaults":
-            {
-                "opacity": 70,
-                "useAcrylic": true,
-                "font": {
-                    "face": "MesloLGL Nerd Font"
-                }
-            },
-    ```
+设置 >> 启动 >> 默认配置文件，修改为`PowerShell`
 
-7. 设置快捷键，设置值 >> 操作 >>
-    1. 关闭窗格（注意不是窗口）：`ctrl + w`
-    2. 新建标签页：`ctrl + n`
-8. 确保存在配置文件
+### 1.3. 安装主题、代码补全，用管理员模式启动 PowerShell 7
 
-    ```shell
-    New-Item -Path $PROFILE -Type File -Force
-    ```
+```shell
+winget install JanDeDobbeleer.OhMyPosh -s winget
+Install-Module -Name PowerShellGet -Force
+PowerShellGet\Install-Module posh-git -Force
+Install-Module PSReadLine -Force
+```
 
-9. 设置主题、快捷命令和代码补全
+### 1.4. 官网下载字体
 
-    ```shell
-    code $profile
-    ```
+<https://www.nerdfonts.com/font-downloads> Meslo
 
-    编写
+### 1.5. 设置窗口半透明前置确认
 
-    ```shell
-    ## 打开直接切换到这个目录下
-    set-location "D:\chen"
+确认 桌面右键 > 个性化 > 颜色 > 透明效果：开启
 
-    oh-my-posh init pwsh --config ~/iterm2.omp.json | Invoke-Expression
-    Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete #Tab键会出现自动补全菜单
-    Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
-    Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
-    ## 上下方向键箭头，搜索历史中进行自动补全
-    Import-Module posh-git # git的自动补全
+### 1.6. 字体和窗口半透明的设置
 
-    function note {
-        jupyter notebook --notebook-dir=D:\jupyterNote
-    }
+`ctrl + shift + ,` 打开 json 设置，在里面找到 `profiles.defaults`
 
-    function cdnote {
-        set-location "D:\坚果云\Note"
-    }
-    function cdjo {
-        set-location "D:\坚果云\Journal"
-    }
-    ```
+```json
+"defaults":
+        {
+            "opacity": 70,
+            "useAcrylic": true,
+            "font": {
+                "face": "MesloLGL Nerd Font"
+            }
+        },
+```
 
-10. git 中文设置
+### 1.7. 快捷键设置
 
-    ```shell
-    ## 禁用路径转义，默认情况下，Git会将非ASCII字符的路径进行转义
-    git config --global core.quotepath false
-    ```
+设置值 >> 操作 >> 1. 关闭窗格（注意不是窗口）：`ctrl + w` 2. 新建标签页：`ctrl + n`
+
+### 1.8. 确保存在配置文件
+
+```shell
+New-Item -Path $PROFILE -Type File -Force
+```
+
+### 1.9. 设置主题、快捷命令和代码补全
+
+```shell
+code $profile
+```
+
+编写
+
+```shell
+## 打开直接切换到这个目录下
+set-location "D:\chen"
+
+oh-my-posh init pwsh --config ~/iterm2.omp.json | Invoke-Expression
+Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete #Tab键会出现自动补全菜单
+Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
+## 上下方向键箭头，搜索历史中进行自动补全
+Import-Module posh-git # git的自动补全
+
+function note {
+    jupyter notebook --notebook-dir=D:\jupyterNote
+}
+
+function cdnote {
+    set-location "D:\坚果云\Note"
+}
+function cdjo {
+    set-location "D:\坚果云\Journal"
+}
+```
+
+### 1.10. git 中文设置
+
+```shell
+## 禁用路径转义，默认情况下，Git会将非ASCII字符的路径进行转义
+git config --global core.quotepath false
+```
 
 ## 2. 安装
 

@@ -3,6 +3,7 @@
 ```
 ssh -vT git@github.com
 ```
+
 ssh: connect to host github.com port 22: Connection refused
 
 ssh -vT -p 443 git@ssh.github.com
@@ -13,11 +14,30 @@ Host github.com
 HostName ssh.github.com
 Port 443
 
-
 # 中文乱码
 
 https://zhuanlan.zhihu.com/p/133706032
 
+# win 和 linux 的换行符问题
+
+由于 Windows 系统的换行符是 CRLF，而 Linux 和 MacOS 使用 LF 作为换行符。
+
+
+`core.autocrlf` 用来控制 Git 在提交和检出的时候是否对换行符进行转换：
+
+-   `true`: 提交时将 CRLF 转换为 LF，检出时将 LF 转换为 CRLF，适合用于 windows
+-   `input`: 提交时将 CRLF 转换为 LF，检出时不进行转换。适合 Linux 和 MacOS
+-   `false`: 不进行任何转换
+
+`core.eol` 文件使用哪种换行符
+- `lf`：使用 LF
+- `crlf`：使用 CRLF
+- `native`：使用当前操作系统默认的换行符
+
+```shell
+git config --global core.autocrlf true
+git config --global core.eol lf
+```
 # 0 我的配置
 
 ```shell
@@ -43,7 +63,7 @@ git config --global
 	ps = push
 	mm = merge master
 	cm = commit
-	cmm = commit -m 
+	cmm = commit -m
 	cc = checkout
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lgme = lg --author=chenweijun
@@ -58,37 +78,33 @@ git config --global
 	proxy = socks5://127.0.0.1:7890
 ```
 
+# 1 Git 概述
 
+C 语言写的，分布式版本控制工具（Distributed Version Control System，DVCS）
 
-# 1 Git概述
+-   代码托管平台：GitHub、GitLab、gitee（码云）
+-   注意 GitHub 是公开的，不要放敏感信息
+-   gitee 有免费的 5 人及以下的私有仓库
 
-C语言写的，分布式版本控制工具（Distributed Version Control System，DVCS）
-
-+ 代码托管平台：GitHub、GitLab、gitee（码云）
-+ 注意GitHub是公开的，不要放敏感信息
-+ gitee有免费的5人及以下的私有仓库
-
-
-
-github中文官方文档
+github 中文官方文档
 
 https://docs.github.com/cn/github
 
-git文档
+git 文档
 
 https://git-scm.com/book/zh/v2
 
-# 2 Git安装
+# 2 Git 安装
 
 ## 2.1 Linux
 
-+ 直接输入git会有提示
+-   直接输入 git 会有提示
 
 ```
 sudo apt-get install git
 ```
 
-+ 或根据源码编译
+-   或根据源码编译
 
 ```
 ./config
@@ -98,9 +114,9 @@ sudo make install
 
 ## 2.2 Mac
 
-+ homebrew，http://brew.sh/
-+ 从AppStore安装Xcode，Xcode集成了Git，不过默认没有安装，你需要运行Xcode，选择菜单“Xcode”->“Preferences”，在弹出窗口中找到“Downloads”，选择“Command Line Tools”，点“Install”就可以完成安装了。
-+ 官网
+-   homebrew，http://brew.sh/
+-   从 AppStore 安装 Xcode，Xcode 集成了 Git，不过默认没有安装，你需要运行 Xcode，选择菜单“Xcode”->“Preferences”，在弹出窗口中找到“Downloads”，选择“Command Line Tools”，点“Install”就可以完成安装了。
+-   官网
 
 ## 2.3 Windows
 
@@ -120,11 +136,11 @@ Working Directory，电脑里的文件夹
 
 ## 3.3 暂存区
 
-位于版本库中，叫stage或index
+位于版本库中，叫 stage 或 index
 
 ## 3.4 远程库
 
-默认叫origin
+默认叫 origin
 
 ## 3.5 分支
 
@@ -136,7 +152,7 @@ Working Directory，电脑里的文件夹
 
 这种分支策略叫做 Fast forward ，删除分支后，会丢掉分支信息
 
-强制禁用 Fast forward的话，merge的时候就会生成一个新的commit，就可以从分支历史上看出分支信息
+强制禁用 Fast forward 的话，merge 的时候就会生成一个新的 commit，就可以从分支历史上看出分支信息
 
 ```
 git merge --no-ff
@@ -144,17 +160,17 @@ git merge --no-ff
 
 ## 3.6 标签
 
-本身也是一个指针，指向某个commit，与分支的区别就是不能移动，容易记住的名字
+本身也是一个指针，指向某个 commit，与分支的区别就是不能移动，容易记住的名字
 
-# 4 Git配置
+# 4 Git 配置
 
-git配置的时候如果加了`--global`参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定。
+git 配置的时候如果加了`--global`参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定。
 
-配置信息会保存在~/.gitconfig文件中
+配置信息会保存在~/.gitconfig 文件中
 
 ## 4.1 配置用户名和邮箱
 
-Git每次提交的时候都会使用用户信息
+Git 每次提交的时候都会使用用户信息
 
 ```
 git config --global user.name "Your Name"
@@ -174,9 +190,9 @@ git config --global color.ui true
 
 ## 4.3 忽略特殊文件
 
-在仓库目录下创建`.gitignore`文件。不需要从头写`.gitignore`文件，GitHub已经为我们准备了各种配置文件，只需要组合一下就可以使用了。所有配置文件可以直接在线浏览：https://github.com/github/gitignore
+在仓库目录下创建`.gitignore`文件。不需要从头写`.gitignore`文件，GitHub 已经为我们准备了各种配置文件，只需要组合一下就可以使用了。所有配置文件可以直接在线浏览：https://github.com/github/gitignore
 
-> 使用Windows的童鞋注意了，如果你在资源管理器里新建一个`.gitignore`文件，它会非常弱智地提示你必须输入文件名，但是在文本编辑器里“保存”或者“另存为”就可以把文件保存为`.gitignore`了。
+> 使用 Windows 的童鞋注意了，如果你在资源管理器里新建一个`.gitignore`文件，它会非常弱智地提示你必须输入文件名，但是在文本编辑器里“保存”或者“另存为”就可以把文件保存为`.gitignore`了。
 
 某个文件被忽略后，强制添加：
 
@@ -203,7 +219,7 @@ $ git check-ignore -v App.class
 
 ### 注意
 
-`.gitignore`的作用是让没有被trace的文件保持没有被trace的状态，但是之前已经trace的文件想要ignore的话，更新完`.ignore`文件后需要删除cache
+`.gitignore`的作用是让没有被 trace 的文件保持没有被 trace 的状态，但是之前已经 trace 的文件想要 ignore 的话，更新完`.ignore`文件后需要删除 cache
 
 ```
 git rm -r --cached .
@@ -211,8 +227,6 @@ git add .
 git commit -m "update .gitignore"
 git push
 ```
-
-
 
 ## 4.4 别名
 
@@ -222,7 +236,7 @@ $ git config --global alias.st status
 
 把`git status`起个别名`git st`，当然还有别的命令可以简写，很多人都用`co`表示`checkout`，`ci`表示`commit`，`br`表示`branch`
 
-在[撤销修改](https://www.liaoxuefeng.com/wiki/896043488029600/897889638509536)一节中，我们知道，命令`git reset HEAD file`可以把暂存区的修改撤销掉（unstage），重新放回工作区。既然是一个unstage操作，就可以配置一个`unstage`别名：
+在[撤销修改](https://www.liaoxuefeng.com/wiki/896043488029600/897889638509536)一节中，我们知道，命令`git reset HEAD file`可以把暂存区的修改撤销掉（unstage），重新放回工作区。既然是一个 unstage 操作，就可以配置一个`unstage`别名：
 
 ```
 $ git config --global alias.unstage 'reset HEAD'
@@ -234,7 +248,7 @@ $ git config --global alias.unstage 'reset HEAD'
 $ git unstage test.py
 ```
 
-实际上Git执行的是：
+实际上 Git 执行的是：
 
 ```
 $ git reset HEAD test.py
@@ -262,7 +276,7 @@ Date:   Thu Aug 22 22:49:22 2013 +0800
 
 #### 4.4.1.1 每个仓库的
 
-每个仓库的Git配置文件都放在`.git/config`文件中：
+每个仓库的 Git 配置文件都放在`.git/config`文件中：
 
 ```
 $ cat .git/config
@@ -287,7 +301,7 @@ $ cat .git/config
 
 #### 4.4.1.2 当前用户的
 
-而当前用户的Git配置文件放在用户主目录下的一个隐藏文件`.gitconfig`中：
+而当前用户的 Git 配置文件放在用户主目录下的一个隐藏文件`.gitconfig`中：
 
 ```
 $ cat .gitconfig
@@ -303,18 +317,18 @@ $ cat .gitconfig
 
 配置别名也可以直接修改这个文件，如果改错了，可以删掉文件重新通过命令配置。
 
-#### 4.4.1.3 直接在bash_profile里面改
+#### 4.4.1.3 直接在 bash_profile 里面改
 
 ```
 vim ~/.bash_profile
 source ~/.bash_profile
 ```
 
-## 4.5 GitHub的SSH设置
+## 4.5 GitHub 的 SSH 设置
 
-### a 创建SSH Key
+### a 创建 SSH Key
 
-在用户主目录下，找有没有.ssh目录，如果有，id_rsa是私钥，id_rsa.pub是公钥，如果没有，用下面的命令创建（Windows用Git Bash）
+在用户主目录下，找有没有.ssh 目录，如果有，id_rsa 是私钥，id_rsa.pub 是公钥，如果没有，用下面的命令创建（Windows 用 Git Bash）
 
 ```
 ssh-keygen -t rsa -C "youremail@example.com"
@@ -322,9 +336,9 @@ ssh-keygen -t rsa -C "youremail@example.com"
 
 一路回车
 
-### b 在GitHub上添加SSH Key
+### b 在 GitHub 上添加 SSH Key
 
-登录GitHub，在Account settings，SSH Keys里，Add SSH Key，title任意，粘贴公钥内容
+登录 GitHub，在 Account settings，SSH Keys 里，Add SSH Key，title 任意，粘贴公钥内容
 
 ## 4.6 代理设置
 
@@ -351,16 +365,16 @@ git config --global -l
 
 ### 4.6.1 镜像
 
-2个常用的镜像地址：
+2 个常用的镜像地址：
 
-- https://github.com.cnpmjs.org
-- https://hub.fastgit.org
+-   https://github.com.cnpmjs.org
+-   https://hub.fastgit.org
 
 只需要将 [www.github.com](https://link.zhihu.com/?target=http%3A//www.github.com/)/后面为代码库 改为 www.github.com.cnpmjs.org/后面为代码库地址
 
-### 4.6.2 通过Gitee中转fork仓库加速下载
+### 4.6.2 通过 Gitee 中转 fork 仓库加速下载
 
-1. 登录gitee，顶部选择，“从GiHhub/GitLab导入仓库”
+1. 登录 gitee，顶部选择，“从 GiHhub/GitLab 导入仓库”
 2. 粘贴链接，等待导入完成。或可以刷新同步（在仓库名旁边）
 
 # 5 常用命令
@@ -379,7 +393,7 @@ git clone git@github.com:chLemon/repo.git
 克隆一个指定的repo到本地
 ```
 
-关于协议：```git://```使用ssh，也可以使用```https```等，但是```https```速度慢，且每次推送必须输入口令
+关于协议：`git://`使用 ssh，也可以使用`https`等，但是`https`速度慢，且每次推送必须输入口令
 
 ### add
 
@@ -388,7 +402,7 @@ git add <file>
 把文件添加到暂存区，可以添加多个文件
 ```
 
-如果想添加被.gitignore忽略的文件，可以用`-f`强制添加：
+如果想添加被.gitignore 忽略的文件，可以用`-f`强制添加：
 
 ```
 git add -f App.class
@@ -472,8 +486,8 @@ git reflog
 git rebase
 ```
 
-- rebase操作可以把本地未push的分叉提交历史整理成直线；
-- rebase的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比
+-   rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
+-   rebase 的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比
 
 ```
 git rebase <base>
@@ -566,7 +580,7 @@ git push <remote> --tags
 推送的时候把本地的tag也推送上去
 ```
 
-dev和master推送，其他的可以不推送
+dev 和 master 推送，其他的可以不推送
 
 ```
 git push 远程主机名 本地分支:远程分支
@@ -580,7 +594,7 @@ git pull <remote>
 拉去所有分支的commit，并立刻合并
 ```
 
-+ 会合并
+-   会合并
 
 ### fetch
 
@@ -589,7 +603,7 @@ git fetch <remote> <branch>
 从指定<remote>抓取指定<branch>的所有commit到本地repo。去掉<branch>将抓取远程所有分⽀的修改。
 ```
 
-+ 不会合并，会生成一个分支，然后用`git merge <想要合并到的分支>`进行合并
+-   不会合并，会生成一个分支，然后用`git merge <想要合并到的分支>`进行合并
 
 ### restore
 
@@ -697,16 +711,16 @@ https://www.sourcetreeapp.com/
 
 文件大小的缓存设置大点:
 
- git config --global http.postBuffer  524288000
+git config --global http.postBuffer 524288000
 
 ## warning: LF will be replaced by CRLF in ball_pool/assets/Main.js.
 
 1. warning: LF will be replaced by CRLF in ball_pool/assets/Main.js.
 2. The file will have its original line endings in your working directory
 
-git add的时候出现，是因为文件中换行符的差别导致的。这个提示的意思是说：会把windows格式（CRLF（也就是回车换行））转换成Unix格式（LF），这些是转换文件格式的警告，不影响使用。
+git add 的时候出现，是因为文件中换行符的差别导致的。这个提示的意思是说：会把 windows 格式（CRLF（也就是回车换行））转换成 Unix 格式（LF），这些是转换文件格式的警告，不影响使用。
 
-git默认支持LF。windows commit代码时git会把CRLF转LF，update代码时LF换CRLF。
+git 默认支持 LF。windows commit 代码时 git 会把 CRLF 转 LF，update 代码时 LF 换 CRLF。
 
 **解决：**
 
@@ -722,9 +736,4 @@ git config --global core.autocrlf false
 
 **解决：**
 
-此问题可以在git pull命令后加入参数`--allow-unrelated-histories`
-
-
-
-
-
+此问题可以在 git pull 命令后加入参数`--allow-unrelated-histories`

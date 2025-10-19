@@ -294,6 +294,10 @@
 
 #### 1.2.3. 插件
 
+```shell
+code --install-extension aaron-bond.better-comments wayou.vscode-todo-highlight ms-ceintl.vscode-language-pack-zh-hans streetsidesoftware.code-spell-checker xyz.local-history stateful.marquee github.copilot github.copilot-chat ms-toolsai.jupyter njpwerner.autodocstring ms-python.black-formatter ms-python.vscode-pylance ms-python.python ms-python.debugpy kevinrose.vsc-python-indent ms-python.isort bierner.github-markdown-preview yzhang.markdown-all-in-one shd101wyy.markdown-preview-enhanced hbrok.markdown-preview-bitbucket mdickin.markdown-shortcuts ms-vscode.theme-markdownkit goessner.mdmath davidanson.vscode-markdownlint gera2ld.markmap-vscode tomoyukim.vscode-mermaid-editor pdconsec.vscode-print johnpapa.read-time ms-vscode.wordcount bpruitt-goddard.mermaid-markdown-syntax-highlighting vstirbu.vscode-mermaid-preview formulahendry.auto-complete-tag pranaygp.vscode-css-peek bierner.color-info  kisstkondoros.vscode-gutter-preview ritwickdey.liveserver whtouche.vscode-js-console-utils lonefy.vscode-js-css-html-formatter techer.open-in-browser ms-vscode.cpptools vscjava.vscode-java-pack vscjava.vscode-java-test adpyke.codesnap √ esbenp.prettier-vscode eamodio.gitlens leetcode.vscode-leetcode mechatroner.rainbow-csv wakatime.vscode-wakatime dotjoshjohnson.xml oderwat.indent-rainbow vscode-icons-team.vscode-icons tomoki1207.pdf
+```
+
 | 插件名                                                               | 插件 id                                              | 简述                                           |
 | -------------------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------- |
 | Better Comments                                                      | aaron-bond.better-comments                           | 注释色彩，醒目、带分类                         |

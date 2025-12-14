@@ -33,13 +33,13 @@ Install-Module PSReadLine -Force
 
 ```json
 "defaults":
-        {
-            "opacity": 70,
-            "useAcrylic": true,
-            "font": {
-                "face": "MesloLGL Nerd Font"
-            }
-        },
+    {
+        "opacity": 70,
+        "useAcrylic": true,
+        "font": {
+            "face": "MesloLGL Nerd Font"
+        }
+    },
 ```
 
 ### 1.7. 快捷键设置

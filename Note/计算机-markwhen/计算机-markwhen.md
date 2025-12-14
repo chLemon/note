@@ -1,6 +1,6 @@
 # Markwhen
 
-> https://docs.markwhen.com/syntax/
+> <https://docs.markwhen.com/syntax/>
 
 ## 1. 介绍
 

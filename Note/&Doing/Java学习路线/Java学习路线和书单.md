@@ -2,7 +2,22 @@
 
 > 这玩意儿确实一直在更新，离谱
 
-## JavaGuide
+## 书单
+
+
+
+## 八股文链接
+
+- JavaGuide
+- pdai Java 全栈知识体系
+- 小林 coding
+- 小傅哥
+- 三分恶
+- 陌溪
+- DreamCats
+- CyC2018/CS-Notes
+
+## 1. JavaGuide
 
 Java 学习路径最新版：
 

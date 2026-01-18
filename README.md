@@ -17,13 +17,15 @@
 
 ## Doing
 
-类别列表：、计算机、&移动过来
+类别列表：、&移动过来、计算机
 
 + &移动过来-可能还需要整理一下的
 + --3-Git
 + Alfred
 + Java学习路线
 + 计算机-Python用Matplotlib画图
++ 计算机-log4j2线程block问题
++ 领域驱动设计
 
 ## 列表
 
@@ -34,9 +36,11 @@
 + 工作-职业规划
 + 计算机-Extended Backus–Naur form(EBNF)
 + 计算机-IDEA
++ 计算机-Java泛型类型推断链式调用时无效
 + 计算机-Jupyter Notebook
 + 计算机-Markdown
 + 计算机-Mockito文档总结
++ 计算机-Nodejs和npm的安装
 + 计算机-Prettier
 + 计算机-Python
 + 计算机-SharedNameTable过大

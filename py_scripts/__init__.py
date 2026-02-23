@@ -1,3 +1,3 @@
-from .collect_note_names import collect_note_names
+from .update_readme_file import update_readme_file
 from .check_every_note_is_classified import check_every_note_is_classified
 from .check_every_pic_is_used import check_every_pic_is_used

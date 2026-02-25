@@ -6,30 +6,31 @@ import re
 
 class Note:
     # 笔记名称，不含分类
-    name: str = None
+    name: str | None = None
     # 笔记名称，含分类
-    stem: str = None
+    stem: str | None = None
     # 路径
-    path: Path = None
+    path: Path | None = None
     # 一级分类
-    first_category: str = None
+    first_category: str | None = None
     # 二级分类
-    second_category: str = None
+    second_category: str | None = None
 
     @classmethod
     def parse_from_path_str(cls, path_str: str, second_category: str | None):
         path = Path(path_str)
         note = cls.parse_from_path(path, None)
-        note.second_category = second_category
+        if note:
+            note.second_category = second_category
         return note
 
     @classmethod
-    def parse_from_path(cls, path: Path, base_path: Path):
+    def parse_from_path(cls, path: Path, base_path: Path | None):
         file_stem = path.stem
-        if "-" not in file_stem:
-            return None
-            # raise ValueError(f"{str(path)} 未分类")
         match = re.search(r"(.*?)-(.*)", file_stem)
+        if not match:
+            # raise ValueError(f"{str(path)} 未分类")
+            return None
 
         note = cls()
         note.name = match.group(2)
@@ -47,6 +48,8 @@ class Note:
         if not isinstance(other, Note):
             return NotImplemented
         # 按照文件名 stem 排序
+        if self.stem is None or other.stem is None:
+            return False
         return self.stem < other.stem
 
 

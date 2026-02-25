@@ -28,13 +28,26 @@
 
 ## 列表
 
-类别列表：工作、计算机
+类别列表：做饭、工作、护肤、计算机
+
+### 做饭
+
++ [炝炒包菜](<Note\做饭-炝炒包菜.md>)
++ [煮鸡胸肉](<Note\做饭-煮鸡胸肉.md>)
++ [煮鸡蛋](<Note\做饭-煮鸡蛋.md>)
++ [葱烧豆腐](<Note\做饭-葱烧豆腐.md>)
++ [蒜蓉油麦菜](<Note\做饭-蒜蓉油麦菜.md>)
++ [锅具](<Note\做饭-锅具.md>)
 
 ### 工作
 
 + [5Why分析法](<Note\工作-5Why分析法.md>)
 + [对标](<Note\工作-对标.md>)
 + [职业规划](<Note\工作-职业规划.md>)
+
+### 护肤
+
++ [痘痘](<Note\护肤-痘痘\护肤-痘痘.md>)
 
 ### 计算机
 
@@ -43,7 +56,7 @@
 + [Java泛型类型推断链式调用时无效](<Note\计算机-Java泛型类型推断链式调用时无效.md>)
 + [Jupyter Notebook](<Note\计算机-Jupyter Notebook\计算机-Jupyter Notebook.md>)
 + [Markdown](<Note\计算机-Markdown.md>)
-+ [Mockito文档总结](<Note\计算机-Mockito文档总结\计算机-Mockito文档总结.md>)
++ [Mockito](<Note\计算机-Mockito\计算机-Mockito.md>)
 + [Nodejs和npm的安装](<Note\计算机-Nodejs和npm的安装.md>)
 + [Prettier](<Note\计算机-Prettier.md>)
 + [Python单元测试](<Note\计算机-Python单元测试.md>)
@@ -56,6 +69,7 @@
 + [mac_shell_iterm2_fish](<Note\计算机-mac_shell_iterm2_fish\计算机-mac_shell_iterm2_fish.md>)
 + [markwhen](<Note\计算机-markwhen\计算机-markwhen.md>)
 + [mermaid](<Note\计算机-mermaid\计算机-mermaid.md>)
++ [加密货币原理](<Note\计算机-加密货币原理\计算机-加密货币原理.md>)
 + [各种问题](<Note\计算机-各种问题.md>)
 + [命令参数说明事实约定](<Note\计算机-命令参数说明事实约定.md>)
 + [常用字体](<Note\计算机-常用字体.md>)

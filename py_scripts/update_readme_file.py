@@ -116,7 +116,7 @@ class ReadmeContent:
         self.doing_part = "## Doing\n\n"
         self.doing_part += "类别列表：" + "、".join(sorted(doing_categories)) + "\n\n"
         for note in sorted(doing_notes):
-            self.doing_part += f"+ [{note.name}]({note.path})\n"
+            self.doing_part += f"+ [{note.name}]({note.path.as_posix()})\n"
         # note_part 的拼接
         self.note_part = "## 列表\n\n"
         self.note_part += "类别列表：" + "、".join(sorted(note_categories)) + "\n"

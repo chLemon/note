@@ -237,6 +237,6 @@ $$
 
 ## 4. VS Code 支持 和 相关插件
 
-[目前 VS Code 已经原生支持了 markdown 的一些内容。](计算机-VSCode/VSCode.md#8-markdown-支持)
+[目前 VS Code 已经原生支持了 markdown 的一些内容。](./计算机-VSCode/计算机-VSCode.md#8-markdown-支持)
 
 > <https://code.visualstudio.com/docs/languages/markdown>

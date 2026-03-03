@@ -23,7 +23,7 @@
 + [-3-Git](note/&Doing/--3-Git/--3-Git.md)
 + [log4j2线程block问题](note/&Doing/计算机-log4j2线程block问题.md)
 + [python-uv](note/&Doing/计算机-python-uv.md)
-+ [双拼输入法](note/&Doing/计算机-双拼输入法.md)
++ [双拼输入法](note/计算机-双拼输入法/计算机-双拼输入法.md)
 
 
 ## 列表

@@ -18,6 +18,10 @@ Port 443
 
 https://zhuanlan.zhihu.com/p/133706032
 
+```
+git config --global core.quotepath false
+```
+
 # win 和 linux 的换行符问题
 
 由于 Windows 系统的换行符是 CRLF，而 Linux 和 MacOS 使用 LF 作为换行符。
@@ -44,6 +48,7 @@ git config --global core.eol lf
 git config --global user.name "chLemon"
 git config --global user.email "550125499@qq.com"
 git config --global color.ui true
+git config --global core.quotepath false
 git config --global
 ```
 

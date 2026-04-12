@@ -13,7 +13,7 @@ def check_note_is_correct(note_dir: Path) -> List[str]:
 
     for note in note_dir.iterdir():
         # 跳过 Doing 文件夹 和 隐藏文件、文件夹
-        if (note.name == "&Doing" or note.name.startswith(".")):
+        if (note.name == "_Doing" or note.name.startswith(".")):
             continue
         if not re.match(r".+-.+", note.stem):
             non_valid.append(note.stem)

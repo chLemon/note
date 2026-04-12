@@ -116,7 +116,7 @@ class ReadmeContent:
         self.doing_part = "## Doing\n\n"
         self.doing_part += "类别列表：" + "、".join(sorted(doing_categories)) + "\n\n"
         for note in sorted(doing_notes):
-            self.doing_part += f"+ [{note.name}]({note.path.as_posix()})\n"
+            self.doing_part += f"- [{note.name}]({note.path.as_posix()})\n"
         # note_part 的拼接
         self.note_part = "## 列表\n\n"
         self.note_part += "类别列表：" + "、".join(sorted(note_categories)) + "\n"
@@ -138,7 +138,7 @@ class ReadmeContent:
                 if second_category:
                     self.note_part += f"\n#### {second_category}\n\n"
                 for note in sorted(notes_in_second):
-                    self.note_part += f"+ [{note.name}](<{note.path}>)\n"
+                    self.note_part += f"- [{note.name}](<{note.path}>)\n"
 
     def to_markdown(self):
         return self.description + "\n\n" + self.doing_part + "\n\n" + self.note_part
@@ -176,8 +176,9 @@ def get_all_notes(note_dir: Path, base_path: Path) -> tuple[list[Note], set[str]
             categories.add(note.first_category)
     return notes, categories
 
+import json
 
-def update_readme_file(git_path: Path):
+def update_readme_file(git_path: Path, debug = False):
     """
     更新当前笔记仓库下的 README.md 文件
 
@@ -204,6 +205,7 @@ def update_readme_file(git_path: Path):
     readme_content.read_from_md(last_readme_content)
     old_notes = readme_content.parse_note_part()
 
+    # 2. 读取文件
     # 2.1 Doing 目录下所有的内容
     doing_notes, doing_categories = get_all_notes(note_dir / DOING_DIR_NAME, git_path)
 
@@ -225,4 +227,4 @@ def update_readme_file(git_path: Path):
 
 
 if __name__ == "__main__":
-    update_readme_file(Path.cwd().parent)
+    update_readme_file(Path(__file__).resolve().parent.parent, True)

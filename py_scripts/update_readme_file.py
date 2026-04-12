@@ -90,7 +90,7 @@ class ReadmeContent:
             if match := re.search(r"^#### (.*)", note_item):
                 # 二级目录
                 cur_second_category = match.group(1)
-            elif match := re.search(r"\+ \[.*\]\(<(.*)>\)", note_item):
+            elif match := re.search(r"\- \[.*\]\(<(.*)>\)", note_item):
                 # 具体的笔记
                 notes.append(
                     Note.parse_from_path_str(match.group(1), cur_second_category)
@@ -116,7 +116,7 @@ class ReadmeContent:
         self.doing_part = "## Doing\n\n"
         self.doing_part += "类别列表：" + "、".join(sorted(doing_categories)) + "\n\n"
         for note in sorted(doing_notes):
-            self.doing_part += f"- [{note.name}]({note.path.as_posix()})\n"
+            self.doing_part += f"- [{note.name}](<{note.path.as_posix()}>)\n"
         # note_part 的拼接
         self.note_part = "## 列表\n\n"
         self.note_part += "类别列表：" + "、".join(sorted(note_categories)) + "\n"
@@ -178,7 +178,7 @@ def get_all_notes(note_dir: Path, base_path: Path) -> tuple[list[Note], set[str]
 
 import json
 
-def update_readme_file(git_path: Path, debug = False):
+def update_readme_file(git_path: Path):
     """
     更新当前笔记仓库下的 README.md 文件
 

@@ -1,4 +1,4 @@
-lfrom pathlib import Path
+from pathlib import Path
 from py_scripts.models.readme_content import ReadmeContent
 from py_scripts.models.note import Note
 
@@ -68,8 +68,9 @@ def update_readme_file(git_path: Path):
     Note.update_second_category(doing_notes, old_notes)
     Note.update_second_category(notes, old_notes)
 
-    # 3. 更新 readme_content 的 note_part
-    last_readme_content.new_note_part(doing_notes, notes)
+    # 3. 更新 readme_content 的 doing_part 和 note_part
+    last_readme_content.new_doing_part(doing_notes)
+    last_readme_content.new_note_part(notes)
 
     # 4. 生成新的 readme 文件内容
     new_content = last_readme_content.to_markdown()

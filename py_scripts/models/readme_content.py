@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import ClassVar
 from collections import defaultdict
 import re
@@ -55,39 +56,31 @@ class ReadmeContent:
                 notes.append(Note.parse_from_path_str(note_path, cur_second_category))
         return notes
 
-    def new_note_part(self, doing_notes: list[Note], notes: list[Note]):
+    # 定义排序规则：None 排在最前，其他按字符串升序
+    ITEM_SORT_KEY = lambda self, x: (0, "") if x is None else (1, str(x))
+
+    def new_doing_part(self, doing_notes: list[Note]):
+        """更新 doing_part
+
+        Args:
+            doing_notes (list[Note]): doing 笔记
+        """
+
+        self.doing_part = rf"""## Doing
+
+类别列表：{"、".join( sorted(
+            {note.first_category for note in doing_notes if note.first_category},
+            key=self.ITEM_SORT_KEY,
+        ))}
+
+{"\n".join([note.to_markdown_item() for note in sorted(doing_notes)])}"""
+
+    def new_note_part(self, notes: list[Note]):
         """更新 note_part
 
         Args:
             doing_notes (list[Note]): doing 笔记
             notes (list[Note]): 普通笔记
-        """
-
-        # 定义排序规则：None 排在最前，其他按字符串升序
-        def sort_key(x):
-            return (0, "") if x is None else (1, str(x))
-
-        # 1. doing_part 的拼接
-        doing_categories = sorted(
-            {note.first_category for note in doing_notes if note.first_category},
-            key=sort_key,
-        )
-        self.doing_part = rf"""## Doing
-
-        类别列表：{"、".join(doing_categories)}
-
-        """
-        for note in sorted(doing_notes):
-            self.doing_part += f"{note.to_markdown_item()}\n"
-
-        # 2. note_part 的拼接
-        note_categories = sorted(
-            {note.first_category for note in notes if note.first_category}, key=sort_key
-        )
-        self.note_part = rf"""## 列表
-
-        类别列表：{"、".join(sorted(note_categories))}
-
         """
         ## 整理成 一级目录 -> 二级目录 -> note
         first_to_second_to_notes = defaultdict(lambda: defaultdict(list))
@@ -96,15 +89,28 @@ class ReadmeContent:
                 note
             )
 
-        for first_category in sorted(first_to_second_to_notes.keys(), key=sort_key):
-            self.note_part += f"\n### {first_category}\n\n"
+        self.note_part = rf"""## 列表
+
+类别列表：{"、".join(sorted(sorted(
+            {note.first_category for note in notes if note.first_category}, key=self.ITEM_SORT_KEY
+        )))}
+"""
+        for first_category in sorted(
+            first_to_second_to_notes.keys(), key=self.ITEM_SORT_KEY
+        ):
+            self.note_part += rf"""
+### {first_category}
+
+"""
             second_to_notes = first_to_second_to_notes[first_category]
             second_categories = sorted(
-                [k for k in second_to_notes.keys() if k], key=sort_key
+                {k for k in second_to_notes.keys() if k}, key=self.ITEM_SORT_KEY
             )
             if second_categories:
                 self.note_part += "类别列表：" + "、".join(second_categories) + "\n\n"
-            for second_category in sorted(second_to_notes.keys(), key=sort_key):
+            for second_category in sorted(
+                second_to_notes.keys(), key=self.ITEM_SORT_KEY
+            ):
                 notes_in_second = second_to_notes[second_category]
                 if second_category:
                     self.note_part += f"\n#### {second_category}\n\n"

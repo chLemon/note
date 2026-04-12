@@ -7,6 +7,8 @@ def test_note_parser():
         ("- [n](<./dir.md>)", "./dir.md"),
         ("+ [n](./dir.md)", "./dir.md"),
         ("+ [n](<./dir.md>)", "./dir.md"),
+        ("+ [n](<./dir().md>)", "./dir().md"),
+        ("+ [name-sub](<./name-sub.md>)", "./name-sub.md"),
         ("  -   [indent](./dir.md)", "./dir.md"),  # 带缩进
     ]
     for line, expected in cases:

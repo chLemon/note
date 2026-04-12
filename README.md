@@ -17,7 +17,7 @@
 
 ## Doing
 
-类别列表：、&移动过来、计算机
+类别列表：&移动过来、计算机
 
 - [可能还需要整理一下的](<note/_Doing/&移动过来-可能还需要整理一下的/&移动过来-可能还需要整理一下的.md>)
 - [-3-Git](<note/_Doing/--3-Git/--3-Git.md>)
@@ -48,7 +48,7 @@
 
 ### 计算机
 
-类别列表：Java、Python
+类别列表：Java、Markdown、Python、其他
 
 - [MySQL深分页问题](<note\计算机-MySQL深分页问题.md>)
 - [加密货币原理](<note\计算机-加密货币原理\计算机-加密货币原理.md>)
@@ -58,17 +58,9 @@
 
 - [IDEA](<note\计算机-IDEA\计算机-IDEA.md>)
 - [Java泛型类型推断链式调用时无效](<note\计算机-Java泛型类型推断链式调用时无效.md>)
-- [SharedNameTable过大](<note\计算机-SharedNameTable过大.md>)
 - [Mockito](<note\计算机-Mockito\计算机-Mockito.md>)
+- [SharedNameTable过大](<note\计算机-SharedNameTable过大.md>)
 - [log4j2线程block问题](<note\计算机-log4j2线程block问题\计算机-log4j2线程block问题.md>)
-
-#### Python
-
-- [Jupyter Notebook](<note\计算机-Jupyter Notebook\计算机-Jupyter Notebook.md>)
-- [Python安装和项目管理](<note\计算机-Python安装和项目管理.md>)
-- [Python用Matplotlib画图](<note\计算机-Python用Matplotlib画图.md>)
-- [Python项目结构和单元测试](<note\计算机-Python项目结构和单元测试.md>)
-- [Python-uv](<note\计算机-Python-uv.md>)
 
 #### Markdown
 
@@ -76,18 +68,26 @@
 - [markwhen](<note\计算机-markwhen\计算机-markwhen.md>)
 - [mermaid](<note\计算机-mermaid\计算机-mermaid.md>)
 
+#### Python
+
+- [Jupyter Notebook](<note\计算机-Jupyter Notebook\计算机-Jupyter Notebook.md>)
+- [Python-uv](<note\计算机-Python-uv.md>)
+- [Python安装和项目管理](<note\计算机-Python安装和项目管理.md>)
+- [Python用Matplotlib画图](<note\计算机-Python用Matplotlib画图.md>)
+- [Python项目结构和单元测试](<note\计算机-Python项目结构和单元测试.md>)
+
 #### 其他
 
 - [Alfred](<note\计算机-Alfred\计算机-Alfred.md>)
-- [macOS](<note\计算机-macOS.md>)
-- [mac_shell_iterm2_fish](<note\计算机-mac_shell_iterm2_fish\计算机-mac_shell_iterm2_fish.md>)
-- [常用小软件](<note\计算机-常用小软件\计算机-常用小软件.md>)
-- [常用字体](<note\计算机-常用字体.md>)
-- [浏览器环境打标](<note\计算机-浏览器环境打标\计算机-浏览器环境打标.md>)
-- [双拼输入法](<note\计算机-双拼输入法\计算机-双拼输入法.md>)
+- [Extended Backus–Naur form(EBNF)](<note\计算机-Extended Backus–Naur form(EBNF).md>)
 - [Nodejs和npm的安装](<note\计算机-Nodejs和npm的安装.md>)
 - [Prettier](<note\计算机-Prettier.md>)
 - [VSCode](<note\计算机-VSCode\计算机-VSCode.md>)
 - [Windows Terminal](<note\计算机-Windows Terminal\计算机-Windows Terminal.md>)
-- [Extended Backus–Naur form(EBNF)](<note\计算机-Extended Backus–Naur form(EBNF).md>)
+- [macOS](<note\计算机-macOS.md>)
+- [mac_shell_iterm2_fish](<note\计算机-mac_shell_iterm2_fish\计算机-mac_shell_iterm2_fish.md>)
+- [双拼输入法](<note\计算机-双拼输入法\计算机-双拼输入法.md>)
 - [命令参数说明事实约定](<note\计算机-命令参数说明事实约定.md>)
+- [常用字体](<note\计算机-常用字体.md>)
+- [常用小软件](<note\计算机-常用小软件\计算机-常用小软件.md>)
+- [浏览器环境打标](<note\计算机-浏览器环境打标\计算机-浏览器环境打标.md>)

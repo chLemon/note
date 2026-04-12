@@ -1,3 +1,4 @@
+from __future__ import annotations
 from pathlib import Path
 import re
 
@@ -21,7 +22,7 @@ class Note:
         self.first_category = first_category
         self.second_category = second_category
 
-    _NOTE_LINK_PATTERN = re.compile(r"[-+]\s+\[.*?\]\(<?([^>)]+)>?\)")
+    _NOTE_LINK_PATTERN = re.compile(r"[-+]\s+\[.*?\]\(<?([^>]+)>?\)")
 
     @classmethod
     def is_note_markdown_item(cls, markdown_line: str) -> str | None:

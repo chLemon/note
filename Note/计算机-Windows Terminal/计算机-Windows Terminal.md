@@ -54,6 +54,25 @@ New-Item -Path $PROFILE -Type File -Force
 
 ### 1.9. 设置主题、快捷命令和代码补全
 
+#### 主题的下载
+
+```
+ 所有官方主题都在 GitHub
+  仓库里：https://github.com/JanDeDobbeleer/oh-my-posh/tree/main/themes
+
+  如果你想把全部主题下载到本地，可以克隆这个仓库的 themes 目录：
+
+  git clone --depth 1 --filter=blob:none --sparse
+  https://github.com/JanDeDobbeleer/oh-my-posh.git ~/.oh-my-posh-themes
+  cd ~/.oh-my-posh-themes
+  git sparse-checkout set themes
+
+  这样 ~/.oh-my-posh-themes/themes/ 下就有所有 .omp.json 主题文件了，之后
+  profile 里可以引用本地路径。
+```
+
+#### 设置
+
 ```shell
 code $profile
 ```
@@ -64,6 +83,7 @@ code $profile
 ## 打开直接切换到这个目录下
 set-location "D:\chen"
 
+# 在 ~/itemr2.omp.json 加载主题，要下载好这个文件
 oh-my-posh init pwsh --config ~/iterm2.omp.json | Invoke-Expression
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete #Tab键会出现自动补全菜单
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward

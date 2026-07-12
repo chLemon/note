@@ -58,18 +58,18 @@ def update_readme_file(git_path: Path):
 
     # 2. 读取文件
     # 2.1 Doing 目录下所有的内容
-    doing_notes = get_all_notes(note_dir / DOING_DIR_NAME, git_path)
+    # doing_notes = get_all_notes(note_dir / DOING_DIR_NAME, git_path)
 
     # 2.2 笔记目录下所有的一级目录名（不包含 Doing）
     notes = get_all_notes(note_dir, git_path)
 
     # 2.3 更新二级目录
     old_notes = last_readme_content.parse_note_part()
-    Note.update_second_category(doing_notes, old_notes)
+    # Note.update_second_category(doing_notes, old_notes)
     Note.update_second_category(notes, old_notes)
 
     # 3. 更新 readme_content 的 doing_part 和 note_part
-    last_readme_content.new_doing_part(doing_notes)
+    # last_readme_content.new_doing_part(doing_notes)
     last_readme_content.new_note_part(notes)
 
     # 4. 生成新的 readme 文件内容

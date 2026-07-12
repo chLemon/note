@@ -30,6 +30,7 @@
 ### 做饭
 
 - [炝炒包菜](<note\做饭-炝炒包菜.md>)
+- [焯水](<note\做饭-焯水.md>)
 - [煮鸡胸肉](<note\做饭-煮鸡胸肉.md>)
 - [煮鸡蛋](<note\做饭-煮鸡蛋.md>)
 - [葱烧豆腐](<note\做饭-葱烧豆腐.md>)
@@ -39,6 +40,7 @@
 ### 工作
 
 - [5Why分析法](<note\工作-5Why分析法.md>)
+- [业务通用概念](<note\工作-业务通用概念.md>)
 - [对标](<note\工作-对标.md>)
 - [职业规划](<note\工作-职业规划.md>)
 
@@ -50,10 +52,6 @@
 
 类别列表：Java、Markdown、Python、其他
 
-- [MySQL深分页问题](<note\计算机-MySQL深分页问题.md>)
-- [加密货币原理](<note\计算机-加密货币原理\计算机-加密货币原理.md>)
-- [瀑布流分页问题](<note\计算机-瀑布流分页问题.md>)
-
 #### Java
 
 - [IDEA](<note\计算机-IDEA\计算机-IDEA.md>)
@@ -61,6 +59,10 @@
 - [Mockito](<note\计算机-Mockito\计算机-Mockito.md>)
 - [SharedNameTable过大](<note\计算机-SharedNameTable过大.md>)
 - [log4j2线程block问题](<note\计算机-log4j2线程block问题\计算机-log4j2线程block问题.md>)
+- [MySQL深分页问题](<note\计算机-MySQL深分页问题.md>)
+- [Spring启动情况](<note\计算机-Spring启动情况.md>)
+- [线程池大小调整](<note\计算机-线程池大小调整.md>)
+- [瀑布流分页问题](<note\计算机-瀑布流分页问题.md>)
 
 #### Markdown
 
@@ -75,11 +77,13 @@
 - [Python安装和项目管理](<note\计算机-Python安装和项目管理.md>)
 - [Python用Matplotlib画图](<note\计算机-Python用Matplotlib画图.md>)
 - [Python项目结构和单元测试](<note\计算机-Python项目结构和单元测试.md>)
+- [FastAPI](<note\计算机-FastAPI.md>)
 
 #### 其他
 
 - [Alfred](<note\计算机-Alfred\计算机-Alfred.md>)
 - [Extended Backus–Naur form(EBNF)](<note\计算机-Extended Backus–Naur form(EBNF).md>)
+- [ClaudeCode](<note\计算机-ClaudeCode\计算机-ClaudeCode.md>)
 - [Nodejs和npm的安装](<note\计算机-Nodejs和npm的安装.md>)
 - [Prettier](<note\计算机-Prettier.md>)
 - [VSCode](<note\计算机-VSCode\计算机-VSCode.md>)
@@ -91,3 +95,5 @@
 - [常用字体](<note\计算机-常用字体.md>)
 - [常用小软件](<note\计算机-常用小软件\计算机-常用小软件.md>)
 - [浏览器环境打标](<note\计算机-浏览器环境打标\计算机-浏览器环境打标.md>)
+- [git](<note\计算机-git\计算机-git.md>)
+- [加密货币原理](<note\计算机-加密货币原理\计算机-加密货币原理.md>)

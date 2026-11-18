@@ -192,7 +192,7 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 -   bobthefish(powerline 风格，横条有多种配色选择)
 
 ays:
-!ays[](images/ays.png)
+![ays](images/ays.png)
 
 batman:
 ![batman](images/batman.png)
